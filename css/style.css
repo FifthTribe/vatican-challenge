@@ -307,6 +307,23 @@ hr {
   border: 2px solid #B3282D;
 }
 
+.focus-areas .stat-tabs-nav div .tooltip {
+  visibility: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #353535;
+  text-align: center;
+  width: 100px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  margin-top: -20px;
+  margin-left: -10px;
+}
+
+.focus-areas .stat-tabs-nav div:hover .tooltip {
+  visibility: visible;
+}
+
 .focus-areas #energy {
   background-image: url(../img/icon-energy.png);
 }
@@ -341,7 +358,7 @@ hr {
 
 .focus-areas .stat-tab-facts {
   position: absolute;
-  top: 35%;
+  top: 28%;
   width: 60%;
 }
 
@@ -352,8 +369,36 @@ hr {
   font-size: 2rem;
   font-family: "Georgia", serif;
   font-weight: normal;
+  line-height: 1.2em;
+}
+
+.focus-areas .stat-tab-facts p span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  color: #353535;
+  font-weight: 600;
 }
 
 .focus-areas #stat-tab-1 {
   background-image: url(../img/bg-energy.jpeg);
+}
+
+.faq .faq-box {
+  padding: 30px;
+  text-align: left;
+}
+
+.faq .faq-box h3 {
+  font-size: 2rem;
+  color: black;
+  margin-bottom: 40px;
+}
+
+.faq .faq-box p {
+  color: #353535;
+}
+
+.faq .faq-box p span {
+  font-weight: 600;
+  color: black;
 }

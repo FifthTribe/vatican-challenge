@@ -295,6 +295,23 @@ button {
       background-color: white;
       border: 2px solid $red;
     }
+    .tooltip {
+        visibility: hidden;
+        background-color: rgba(255,255,255,.8);
+        color: $dark-grey;
+        text-align: center;
+        width: 100px;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+        margin-top: -20px;
+        margin-left: -10px;
+    }
+    &:hover {
+      .tooltip {
+        visibility: visible;
+      }
+    }
   }
 }
 
@@ -327,7 +344,7 @@ button {
 
 .stat-tab-facts {
   position: absolute;
-  top: 35%;
+  top: 28%;
   width: 60%;
   p {
     text-align: center;
@@ -336,10 +353,38 @@ button {
     font-size: 2rem;
     font-family: "Georgia", serif;
     font-weight: normal;
+    line-height: 1.2em;
+    span {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.2rem;
+      color: $dark-grey;
+      font-weight: 600;
+    }
   }
 }
 
 #stat-tab-1 {
   background-image: url(../img/bg-energy.jpeg);
 }
+}
+
+//FAQ
+.faq {
+  .faq-box {
+    padding: 30px;
+    text-align: left;
+    h3 {
+      font-size: 2rem;
+      color: black;
+      margin-bottom: 40px;
+    }
+    p {
+      color: $dark-grey;
+      span {
+        font-weight: 600;
+        color: black;
+      }
+    }
+
+  }
 }
