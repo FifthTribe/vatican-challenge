@@ -143,49 +143,8 @@ mattis consectetur purus sit amet fermentum.</p>
 
 		<script src="js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
 
-		<script>
-			Reveal.initialize({
-        width: "100%",
-      	height: "100%",
-      	margin: 0,
-      	minScale: 1,
-      	maxScale: 1,
-        autoSlide: 0,
-				controls: true,
-        mouseWheel: false,
-				progress: true,
-				history: true,
-				center: true,
-				transition: 'slide' // none/fade/slide/convex/concave/zoom
-			});
-
-		</script>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-     <script>
-     $(function(){
-       $('.stat-tabs-nav a').on('click',function(e){
-         e.preventDefault();
-         $('.stat-tabs-nav li').removeClass('active');
-         $(this).parent().addClass('active');
-         $('.stat-tab').removeClass('active');
-         var id = $(this).attr('href')
-         $(id).addClass('active');
-       });
-       $('.stat-tab-answer-no').on('click',function(e){
-         e.preventDefault();
-         $('.stat-tabs-nav li').removeClass('active');
-         $('.stat-tab').removeClass('active');
-         var id = $(this).attr('href')
-         $(id).addClass('active');
-         $('.stat-tabs-nav li a[href="'+id+'"]').parent().addClass('active');
-       })
-
-       $('.goto-next-slide').on('click',function(e){
-         e.preventDefault();
-         Reveal.next();
-       });
-     });
-     </script>
 	</body>
 </html>
