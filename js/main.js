@@ -10,7 +10,7 @@ Reveal.initialize({
   progress: true,
   history: true,
   center: true,
-  transition: 'slide' // none/fade/slide/convex/concave/zoom
+  transition: 'fade' // none/fade/slide/convex/concave/zoom
 });
 
 $(function(){
