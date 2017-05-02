@@ -62,7 +62,7 @@ h2 {
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -140,17 +140,85 @@ hr {
 .reveal .controls {
   display: none !important;
 }
+
+//Navigation
+.nav {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+  .logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px;
+    img {
+      max-width: 60px;
+    }
+  }
+  .menu {
+    margin-top: 40px;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+    .about {
+      display: inline-block;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: $dark-grey;
+      text-decoration: none;
+      margin-right: 30px;
+      transition: color .3s ease;
+      &:hover {
+        color: $blue;
+      }
+    }
+    .social {
+      display: inline-block;
+      margin-right: 30px;
+      a {
+        background-color: white;
+        padding: 8px 10px;
+        border-radius: 50px;
+        color: $dark-grey;
+        margin-right: 5px;
+        .fa-facebook {
+          padding: 0px 3px;
+        }
+        .fa-instagram {
+          padding: 0px 2px;
+        }
+        transition: all .3s ease;
+        &:hover {
+          background-color: $blue;
+          color: white;
+        }
+      }
+    }
+    button {
+      display: inline-block;
+      background-color: $blue;
+      a {
+        color: white;
+        font-weight: 600;
+      }
+      &:hover {
+        background-color: $dark-blue;
+      }
+    }
+  }
+}
+
 //HOME PAGE
 .home {
   .row {
-    padding-top: 150px;
+    padding-top: 280px;
   }
   h2 {
     color: $dark-grey;
   }
   .inspire {
     color: $red;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     text-decoration: none;
     background-color: rgba(255,255,255,0);
     padding: 5px 10px;
@@ -171,7 +239,7 @@ hr {
 //FOCUS AREAS page
 .focus-areas {
   .row {
-    max-width: 100%;
+    width: 100%;
     height: 100%;
   }
   .stat-tabs-wrapper {
@@ -181,8 +249,8 @@ hr {
   width: 40%;
   height: 100%;
   float: right;
-  padding: 280px 50px;
-  background-color: rgba($beige, .9);
+  padding: 350px 50px 0 50px;
+  background-color: rgba($beige, .95);
   background-image: url(../img/corner-icon.png);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -207,7 +275,7 @@ button {
 
 .stat-tabs-nav {
   position: absolute;
-  top: 180px;
+  top: 260px;
   left: 60%;
   margin-left: 50px;
   z-index: 1000000;
@@ -222,9 +290,15 @@ button {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: center;
+    transition: all .3s ease;
+    &.active {
+      background-color: white;
+      border: 2px solid $red;
+    }
   }
 }
 
+// Icons
 #energy {
   background-image: url(../img/icon-energy.png);
 }
@@ -247,17 +321,25 @@ button {
   background-image: url(../img/icon-finance.png);
 }
 
+.action {
+  margin-top: 30px;
+}
+
 .stat-tab-facts {
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 60%;
   p {
     text-align: center;
     width: 80%;
     margin: auto;
-    font-size: 24px;
+    font-size: 2rem;
     font-family: "Georgia", serif;
     font-weight: normal;
   }
+}
+
+#stat-tab-1 {
+  background-image: url(../img/bg-energy.jpeg);
 }
 }

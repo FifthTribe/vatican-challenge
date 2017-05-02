@@ -52,7 +52,7 @@ h2 {
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0;
 }
 
@@ -132,8 +132,87 @@ hr {
   display: none !important;
 }
 
+.nav {
+  position: absolute;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav .logo {
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.nav .logo img {
+  max-width: 60px;
+}
+
+.nav .menu {
+  margin-top: 40px;
+  display: inline-block;
+  float: right;
+  margin-right: 50px;
+}
+
+.nav .menu .about {
+  display: inline-block;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #353535;
+  text-decoration: none;
+  margin-right: 30px;
+  transition: color .3s ease;
+}
+
+.nav .menu .about:hover {
+  color: #00AEEF;
+}
+
+.nav .menu .social {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav .menu .social a {
+  background-color: white;
+  padding: 8px 10px;
+  border-radius: 50px;
+  color: #353535;
+  margin-right: 5px;
+  transition: all .3s ease;
+}
+
+.nav .menu .social a .fa-facebook {
+  padding: 0px 3px;
+}
+
+.nav .menu .social a .fa-instagram {
+  padding: 0px 2px;
+}
+
+.nav .menu .social a:hover {
+  background-color: #00AEEF;
+  color: white;
+}
+
+.nav .menu button {
+  display: inline-block;
+  background-color: #00AEEF;
+}
+
+.nav .menu button a {
+  color: white;
+  font-weight: 600;
+}
+
+.nav .menu button:hover {
+  background-color: #0A7096;
+}
+
 .home .row {
-  padding-top: 150px;
+  padding-top: 280px;
 }
 
 .home h2 {
@@ -142,7 +221,7 @@ hr {
 
 .home .inspire {
   color: #B3282D;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0);
   padding: 5px 10px;
@@ -163,7 +242,7 @@ hr {
 }
 
 .focus-areas .row {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
@@ -175,8 +254,8 @@ hr {
   width: 40%;
   height: 100%;
   float: right;
-  padding: 280px 50px;
-  background-color: rgba(235, 227, 219, 0.9);
+  padding: 350px 50px 0 50px;
+  background-color: rgba(235, 227, 219, 0.95);
   background-image: url(../img/corner-icon.png);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -203,7 +282,7 @@ hr {
 
 .focus-areas .stat-tabs-nav {
   position: absolute;
-  top: 180px;
+  top: 260px;
   left: 60%;
   margin-left: 50px;
   z-index: 1000000;
@@ -220,6 +299,12 @@ hr {
   background-size: 55%;
   background-repeat: no-repeat;
   background-position: center;
+  transition: all .3s ease;
+}
+
+.focus-areas .stat-tabs-nav div.active {
+  background-color: white;
+  border: 2px solid #B3282D;
 }
 
 .focus-areas #energy {
@@ -250,9 +335,13 @@ hr {
   background-image: url(../img/icon-finance.png);
 }
 
+.focus-areas .action {
+  margin-top: 30px;
+}
+
 .focus-areas .stat-tab-facts {
   position: absolute;
-  top: 40%;
+  top: 35%;
   width: 60%;
 }
 
@@ -260,7 +349,11 @@ hr {
   text-align: center;
   width: 80%;
   margin: auto;
-  font-size: 24px;
+  font-size: 2rem;
   font-family: "Georgia", serif;
   font-weight: normal;
+}
+
+.focus-areas #stat-tab-1 {
+  background-image: url(../img/bg-energy.jpeg);
 }
