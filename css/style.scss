@@ -45,7 +45,7 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: "Source Sans Pro", sans-serif;
   color: $red;
   margin: 0;
@@ -208,7 +208,7 @@ hr {
   }
 }
 
-//HOME PAGE
+//HOME SLIDE
 .home {
   .row {
     padding-top: 280px;
@@ -236,7 +236,7 @@ hr {
   }
 }
 
-//FOCUS AREAS page
+//FOCUS AREAS SLIDE
 .focus-areas {
   .row {
     width: 100%;
@@ -258,8 +258,13 @@ hr {
 }
 
 h1 {
-  line-height: 2rem;
-  margin-bottom: 15px;
+  line-height: 3.5rem;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 1.8rem;
+  margin-top: 40px;
 }
 button {
   display: block;
@@ -275,17 +280,16 @@ button {
 
 .stat-tabs-nav {
   position: absolute;
-  top: 260px;
+  top: 240px;
   left: 60%;
   margin-left: 50px;
   z-index: 1000000;
   div {
     display: inline-block;
     margin-right: 10px;
-    width: 55px;
-    height: 55px;
-    background-color: $beige;
-    border: 1px solid $dark-grey;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255,255,255,.8);
     border-radius: 100px;
     background-size: 55%;
     background-repeat: no-repeat;
@@ -298,7 +302,7 @@ button {
     }
     &.active {
       background-color: white;
-      border: 2px solid $red;
+      border: 3px solid $red;
     }
   }
 }
@@ -332,7 +336,7 @@ button {
 
 .stat-tab-facts {
   position: absolute;
-  top: 28%;
+  top: 30%;
   width: 60%;
   p {
     text-align: center;
@@ -351,9 +355,16 @@ button {
   }
 }
 
-#stat-tab-energy, #stat-tab-food, #stat-tab-water  {
+#stat-tab-energy, #stat-tab-food, #stat-tab-water{
   background-image: url(../img/bg-energy.jpeg);
   }
+}
+
+//MAP
+.map {
+  background-image: url(../img/bg-map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 //FAQ
@@ -362,14 +373,14 @@ button {
   .row {
     padding: 150px 0px;
   }
+  text-align: left;
+  h3 {
+    font-size: 2rem;
+    color: black;
+    margin-bottom: 20px;
+  }
   .faq-box {
     padding: 30px;
-    text-align: left;
-    h3 {
-      font-size: 2rem;
-      color: black;
-      margin-bottom: 40px;
-    }
     p {
       color: $dark-grey;
       font-size: 1.1rem;
@@ -378,6 +389,50 @@ button {
         color: black;
       }
     }
+    ol {
+      padding-left: 10px;
+    }
+  }
+  .apply-box {
+    padding: 40px 60px 180px 60px;
+    background-color: $dark-blue;
+    background-image: url(../img/bg-apply.png);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    h3 {
+      color: white;
+    }
+    p {
+      font-size: 20px;
+    }
+    button {
+      display: inline-block;
+      margin-top: 30px;
+      a {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+    .deadline {
+      font-size: 18px;
+      color: white;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+  }
 
+  .subscribe-box {
+    margin-top: 10px;
+    background-color: $blue;
+    padding: 40px 60px;
+    h5 {
+      color: white;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 22px;
+      text-transform: uppercase;
+    }
   }
 }

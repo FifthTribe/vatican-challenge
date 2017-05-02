@@ -35,7 +35,7 @@ p {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #B3282D;
   margin: 0;
@@ -263,8 +263,13 @@ hr {
 }
 
 .focus-areas h1 {
-  line-height: 2rem;
-  margin-bottom: 15px;
+  line-height: 3.5rem;
+  margin-bottom: 20px;
+}
+
+.focus-areas h5 {
+  font-size: 1.8rem;
+  margin-top: 40px;
 }
 
 .focus-areas button {
@@ -282,7 +287,7 @@ hr {
 
 .focus-areas .stat-tabs-nav {
   position: absolute;
-  top: 260px;
+  top: 240px;
   left: 60%;
   margin-left: 50px;
   z-index: 1000000;
@@ -291,10 +296,9 @@ hr {
 .focus-areas .stat-tabs-nav div {
   display: inline-block;
   margin-right: 10px;
-  width: 55px;
-  height: 55px;
-  background-color: #EBE3DB;
-  border: 1px solid #353535;
+  width: 70px;
+  height: 70px;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 100px;
   background-size: 55%;
   background-repeat: no-repeat;
@@ -310,7 +314,7 @@ hr {
 
 .focus-areas .stat-tabs-nav div.active {
   background-color: white;
-  border: 2px solid #B3282D;
+  border: 3px solid #B3282D;
 }
 
 .focus-areas #energy {
@@ -347,7 +351,7 @@ hr {
 
 .focus-areas .stat-tab-facts {
   position: absolute;
-  top: 28%;
+  top: 30%;
   width: 60%;
 }
 
@@ -372,23 +376,29 @@ hr {
   background-image: url(../img/bg-energy.jpeg);
 }
 
+.map {
+  background-image: url(../img/bg-map.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .faq {
   background-color: #EBE3DB;
+  text-align: left;
 }
 
 .faq .row {
   padding: 150px 0px;
 }
 
-.faq .faq-box {
-  padding: 30px;
-  text-align: left;
-}
-
-.faq .faq-box h3 {
+.faq h3 {
   font-size: 2rem;
   color: black;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
+}
+
+.faq .faq-box {
+  padding: 30px;
 }
 
 .faq .faq-box p {
@@ -399,4 +409,57 @@ hr {
 .faq .faq-box p span {
   font-weight: 600;
   color: black;
+}
+
+.faq .faq-box ol {
+  padding-left: 10px;
+}
+
+.faq .apply-box {
+  padding: 40px 60px 180px 60px;
+  background-color: #0A7096;
+  background-image: url(../img/bg-apply.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.faq .apply-box h3 {
+  color: white;
+}
+
+.faq .apply-box p {
+  font-size: 20px;
+}
+
+.faq .apply-box button {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.faq .apply-box button a {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.faq .apply-box .deadline {
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+.faq .subscribe-box {
+  margin-top: 10px;
+  background-color: #00AEEF;
+  padding: 40px 60px;
+}
+
+.faq .subscribe-box h5 {
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+  text-transform: uppercase;
 }
