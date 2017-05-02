@@ -302,26 +302,15 @@ hr {
   transition: all .3s ease;
 }
 
+.focus-areas .stat-tabs-nav div a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
 .focus-areas .stat-tabs-nav div.active {
   background-color: white;
   border: 2px solid #B3282D;
-}
-
-.focus-areas .stat-tabs-nav div .tooltip {
-  visibility: hidden;
-  background-color: rgba(255, 255, 255, 0.8);
-  color: #353535;
-  text-align: center;
-  width: 100px;
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  margin-top: -20px;
-  margin-left: -10px;
-}
-
-.focus-areas .stat-tabs-nav div:hover .tooltip {
-  visibility: visible;
 }
 
 .focus-areas #energy {
@@ -379,8 +368,16 @@ hr {
   font-weight: 600;
 }
 
-.focus-areas #stat-tab-1 {
+.focus-areas #stat-tab-energy, .focus-areas #stat-tab-food, .focus-areas #stat-tab-water {
   background-image: url(../img/bg-energy.jpeg);
+}
+
+.faq {
+  background-color: #EBE3DB;
+}
+
+.faq .row {
+  padding: 150px 0px;
 }
 
 .faq .faq-box {
@@ -396,6 +393,7 @@ hr {
 
 .faq .faq-box p {
   color: #353535;
+  font-size: 1.1rem;
 }
 
 .faq .faq-box p span {

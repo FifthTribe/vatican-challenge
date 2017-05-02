@@ -291,26 +291,14 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     transition: all .3s ease;
+    a {
+      display: block;
+      height: 100%;
+      width: 100%;
+    }
     &.active {
       background-color: white;
       border: 2px solid $red;
-    }
-    .tooltip {
-        visibility: hidden;
-        background-color: rgba(255,255,255,.8);
-        color: $dark-grey;
-        text-align: center;
-        width: 100px;
-        /* Position the tooltip */
-        position: absolute;
-        z-index: 1;
-        margin-top: -20px;
-        margin-left: -10px;
-    }
-    &:hover {
-      .tooltip {
-        visibility: visible;
-      }
     }
   }
 }
@@ -363,13 +351,17 @@ button {
   }
 }
 
-#stat-tab-1 {
+#stat-tab-energy, #stat-tab-food, #stat-tab-water  {
   background-image: url(../img/bg-energy.jpeg);
-}
+  }
 }
 
 //FAQ
 .faq {
+  background-color: $beige;
+  .row {
+    padding: 150px 0px;
+  }
   .faq-box {
     padding: 30px;
     text-align: left;
@@ -380,6 +372,7 @@ button {
     }
     p {
       color: $dark-grey;
+      font-size: 1.1rem;
       span {
         font-weight: 600;
         color: black;
