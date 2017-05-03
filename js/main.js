@@ -372,3 +372,8 @@ $(function(){
     svgAnimate();
 
 });
+
+function goBack() {
+  console.log("go all the way back");
+    window.history.back();
+};
