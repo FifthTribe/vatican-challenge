@@ -160,7 +160,7 @@ hr {
     display: inline-block;
     float: right;
     margin-right: 50px;
-    .about {
+    .about, .faqs {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
@@ -392,6 +392,12 @@ button {
     font-size: 1.4em;
     line-height: 1.5em;
   }
+  #journey-map {
+    text {
+      color: $dark-grey;
+      font-weight: 600 !important;
+    }
+  }
   .process-box {
     background-color: rgba(white, .7);
     padding: 40px;
@@ -400,6 +406,15 @@ button {
       &.active {
         display:block;
       }
+    }
+    p {
+      span {
+        color: $red;
+        font-weight: 600;
+      }
+    }
+    .deadline {
+      margin-top: 10px;
     }
   }
   h4 {
@@ -672,12 +687,6 @@ button {
 
 
 // SVG
-.svg-wrapper {
-  position:absolute;
-  width:100%;
-  top:30%;
-  left:0;
-}
 #journey-map {
   width:1024px;
   height:500px;

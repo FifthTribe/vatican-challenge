@@ -156,7 +156,7 @@ hr {
   margin-right: 50px;
 }
 
-.nav .menu .about {
+.nav .menu .about, .nav .menu .faqs {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -167,7 +167,7 @@ hr {
   transition: color .3s ease;
 }
 
-.nav .menu .about:hover {
+.nav .menu .about:hover, .nav .menu .faqs:hover {
   color: #00AEEF;
 }
 
@@ -416,6 +416,11 @@ hr {
   line-height: 1.5em;
 }
 
+.map #journey-map text {
+  color: #353535;
+  font-weight: 600 !important;
+}
+
 .map .process-box {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 40px;
@@ -427,6 +432,15 @@ hr {
 
 .map .process-box div.active {
   display: block;
+}
+
+.map .process-box p span {
+  color: #B3282D;
+  font-weight: 600;
+}
+
+.map .process-box .deadline {
+  margin-top: 10px;
 }
 
 .map h4 {
@@ -737,13 +751,6 @@ hr {
 
 #faqs .faqs-canvas .content .two {
   padding-left: 80px;
-}
-
-.svg-wrapper {
-  position: absolute;
-  width: 100%;
-  top: 30%;
-  left: 0;
 }
 
 #journey-map {
