@@ -395,6 +395,12 @@ button {
   .process-box {
     background-color: rgba(white, .7);
     padding: 40px;
+    div {
+      display:none;
+      &.active {
+        display:block;
+      }
+    }
   }
   h4 {
     font-weight: 600;
@@ -555,6 +561,7 @@ button {
     }
   }
 }
+<<<<<<< HEAD
 // ABOUT PAGE
 #about {
   .about-canvas {
@@ -619,4 +626,20 @@ button {
       }
     }
   }
+=======
+
+
+// SVG
+.svg-wrapper {
+  position:absolute;
+  width:100%;
+  top:30%;
+  left:0;
+}
+#journey-map {
+  width:1024px;
+  height:500px;
+  margin:0 auto;
+  display:block;
+>>>>>>> f428d726d5a3ccb6ea2e720342a3ad12be82fc73
 }

@@ -40,35 +40,48 @@ $(function(){
 
   function svgAnimate (){
       var s = Snap('#journey-map');
-      //var linePath = "M-3,148.6c0,0,43.9,7,49.4-17.2c3.5-15.3-9.4-19.7-17.3-13.8c-6,4.4-10,19,11.3,25.4 c24.9,7.5,70.7-31.2,91-61.8S233-41.5,286.3,29.2c0,0-60.7,35.5-24.9,87.9c36.2,53,83.5,15.6,83.5,15.6s19.3,19.5,68.4,17.1";
-      var linePath = "M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105";
-      //var reverseLinePath = "M 400 105 S 400 105 190 95 S 190 95 100 130 S 100 130 150 75 S 150 75 75 150";
-      var reverseLinePath = "M 400 105 C 190 95 280 60 190 95 C 100 130 125 110 100 130 S 100 130 75 150";
-      var lineLength = Snap.path.getTotalLength(linePath);
-      var reverseLineLength = Snap.path.getTotalLength(reverseLinePath);
+      var activeColor = '#00AEEF';
+      //M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105
+      var applyToMentorLinePath = "M 53 446 S 53 446 75 400 S 75 400 100 350 S 100 350 300 270";
+      var applyToMentorLineLength = Snap.path.getTotalLength(applyToMentorLinePath);
+      var mentorToAcceleratorLinePath = "M 300 270 S 300 270 350 280 S 350 280 500 290 S 500 290 600 300";
+      var mentorToAcceleratorLineLength = Snap.path.getTotalLength(mentorToAcceleratorLinePath);
+      var acceleratorToPitchLinePath = "M 600 300 S 600 300 680 250 S 680 250 760 190 S 760 190 900 150";
+      var acceleratorToPitchLineLength = Snap.path.getTotalLength(acceleratorToPitchLinePath);
 
-      /*var originalLine = s.path(linePath);
-      originalLine.attr({
+      // Apply to Mentor Line
+      var applyToMentorLine = s.path(applyToMentorLinePath);
+      applyToMentorLine.attr({
           fill:'none',
-          stroke:'#FFFFFF',
-          'stroke-dasharray': lineLength + ' ' + lineLength,
-          'stroke-dashoffset': lineLength,
+          stroke:activeColor,
+          'stroke-dasharray': applyToMentorLineLength + ' ' + applyToMentorLineLength,
+          'stroke-dashoffset': applyToMentorLineLength,
           'stroke-width' :6,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
       });
-      originalLine.animate({
-          strokeDashoffset : 0
-      },0);*/
 
-      // Apply to Mentor Line
-      var applyToMentorLine = s.path(linePath);
-      applyToMentorLine.attr({
+      // Mentor to Accelerator Line
+      var mentorToAcceleratorLine = s.path(mentorToAcceleratorLinePath);
+      mentorToAcceleratorLine.attr({
           fill:'none',
-          stroke:'#B3282D',
-          'stroke-dasharray': lineLength + ' ' + lineLength,
-          'stroke-dashoffset': lineLength,
+          stroke:activeColor,
+          'stroke-dasharray': mentorToAcceleratorLineLength + ' ' + mentorToAcceleratorLineLength,
+          'stroke-dashoffset': mentorToAcceleratorLineLength,
+          'stroke-width' :6,
+          'stroke-linecap' :'round',
+          'stroke-linejoin' :'round',
+          'stroke-miterlimit' :10
+      });
+
+      // Accelerator to Pitch Line
+      var acceleratorToPitchLine = s.path(acceleratorToPitchLinePath);
+      acceleratorToPitchLine.attr({
+          fill:'none',
+          stroke:activeColor,
+          'stroke-dasharray': acceleratorToPitchLineLength + ' ' + acceleratorToPitchLineLength,
+          'stroke-dashoffset': acceleratorToPitchLineLength,
           'stroke-width' :6,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
@@ -76,58 +89,283 @@ $(function(){
       });
 
       // Apply Cricle
-      var applyCircle = s.paper.circle(53, 146, 25);
+      var applyCircle = s.paper.circle(53, 446, 25);
       applyCircle.attr({
         fill:'#EEEAE4',
-        stroke: '#B3282D',
+        stroke: activeColor,
         'stroke-width':6
       });
+      var applyText = s.paper.text(20, 500, "APPLY");
+      applyText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
 
+      var currentLevel = 1;
       applyCircle.click(function(){
-        //reverseAnimateFromMentor();
-        applyToMentorLine.animate({
-            strokeDashoffset : lineLength
-        },1000);
+        $('.process-box > div').removeClass('active');
+        $('#apply-box').addClass('active');
+        this.attr({
+          stroke: activeColor
+        });
+        switch(currentLevel){
+          case 3:
+            pitchCircle.attr({
+              stroke: '#ADADAD'
+            });
+            acceleratorToPitchLine.animate({
+              strokeDashoffset:acceleratorToPitchLineLength
+            },333,function(){
+              acceleratorCircle.attr({
+                stroke: '#ADADAD'
+              });
+              mentorToAcceleratorLine.animate({
+                strokeDashoffset:mentorToAcceleratorLineLength
+              },333,function(){
+                mentorCircle.attr({
+                  stroke: '#ADADAD'
+                });
+                applyToMentorLine.animate({
+                  strokeDashoffset:applyToMentorLineLength
+                },334);
+              });
+            });
+            break;
+          case 2:
+            acceleratorCircle.attr({
+              stroke: '#ADADAD'
+            });
+            mentorToAcceleratorLine.animate({
+              strokeDashoffset:mentorToAcceleratorLineLength
+            },500,function(){
+              mentorCircle.attr({
+                stroke: '#ADADAD'
+              });
+              applyToMentorLine.animate({
+                strokeDashoffset:applyToMentorLineLength
+              },500);
+            });
+            break;
+          case 1:
+            mentorCircle.attr({
+              stroke: '#ADADAD'
+            });
+            applyToMentorLine.animate({
+              strokeDashoffset:applyToMentorLineLength
+            },1000);
+            break;
+          default:
+            break;
+        }
+        currentLevel = 1;
       });
 
       // Mentor Cricle
-      var mentorCircle = s.paper.circle(420, 120, 25);
+      var mentorCircle = s.paper.circle(300, 270, 25);
       mentorCircle.attr({
         fill:'#EEEAE4',
         stroke: '#ADADAD',
         'stroke-width':6
       });
-
-      mentorCircle.click(function(){
-        animateToMentor();
+      var mentorText = s.paper.text(250, 325, "MENTOR");
+      mentorText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
       });
 
-      function animateToMentor(){
-        applyToMentorLine.animate({
-            strokeDashoffset : 0
-        },1000);
-
-      }
-
-      function reverseAnimateFromMentor(){
-        var reversedPathString = SmartSVGPath.reverse( linePath );
-        console.log('reversedPathString');
-        console.log(reversedPathString);
-        var reverseApplyToMentorLine = s.path(reverseLinePath);
-        reverseApplyToMentorLine.attr({
-            fill:'none',
-            stroke:'green',
-            'stroke-dasharray': reverseLineLength + ' ' + reverseLineLength,
-            'stroke-dashoffset': reverseLineLength,
-            'stroke-width' :6,
-            'stroke-linecap' :'round',
-            'stroke-linejoin' :'round',
-            'stroke-miterlimit' :10
+      mentorCircle.hover(function(){
+        this.attr({
+          stroke: activeColor
         });
-        reverseApplyToMentorLine.animate({
-          strokeDashoffset:0
-        }, 1000);
-      }
+      }, function(){
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
+      });
+
+      mentorCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#mentor-box').addClass('active');
+        this.addClass('clicked');
+        this.attr({
+          stroke: activeColor
+        });
+        switch(currentLevel){
+          case 3:
+            pitchCircle.attr({
+              stroke: '#ADADAD'
+            });
+            acceleratorToPitchLine.animate({
+              strokeDashoffset:acceleratorToPitchLineLength
+            },500,function(){
+              acceleratorCircle.attr({
+                stroke: '#ADADAD'
+              });
+              mentorToAcceleratorLine.animate({
+                strokeDashoffset:mentorToAcceleratorLineLength
+              },500);
+            });
+            break;
+          case 2:
+            acceleratorCircle.attr({
+              stroke: '#ADADAD'
+            });
+            mentorToAcceleratorLine.animate({
+              strokeDashoffset:mentorToAcceleratorLineLength
+            },1000);
+            break;
+          case 1:
+            applyToMentorLine.animate({
+              strokeDashoffset:0
+            },1000);
+            break;
+          default:
+            break;
+        }
+        currentLevel = 1;
+      });
+
+      // Accelerator Cricle
+      var acceleratorCircle = s.paper.circle(600, 300, 25);
+      acceleratorCircle.attr({
+        fill:'#EEEAE4',
+        stroke: '#ADADAD',
+        'stroke-width':6
+      });
+      var acceleratorText = s.paper.text(525, 357, "ACCELERATOR");
+      acceleratorText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
+
+      acceleratorCircle.hover(function(){
+        this.attr({
+          stroke: activeColor
+        });
+      }, function(){
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
+      });
+
+      acceleratorCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#accelerator-box').addClass('active');
+        this.attr({
+          stroke: activeColor
+        });
+        switch(currentLevel){
+          case 3:
+            pitchCircle.attr({
+              stroke: '#ADADAD'
+            });
+            acceleratorToPitchLine.animate({
+              strokeDashoffset:acceleratorToPitchLineLength
+            },1000);
+            break;
+          case 2:
+            mentorToAcceleratorLine.animate({
+              strokeDashoffset:0
+            },1000);
+            break;
+          case 1:
+            applyToMentorLine.animate({
+              strokeDashoffset:0
+            },500, function(){
+              mentorCircle.attr({
+                stroke: activeColor
+              });
+              mentorToAcceleratorLine.animate({
+                strokeDashoffset:0
+              }, 500);
+            });
+            break;
+          default:
+            break;
+        }
+        currentLevel = 2;
+      });
+
+      // Pitch Cricle
+      var pitchCircle = s.paper.circle(900, 150, 25);
+      pitchCircle.attr({
+        fill:'#EEEAE4',
+        stroke: '#ADADAD',
+        'stroke-width':6
+      });
+      var pitchText = s.paper.text(838, 205, "$1M PITCH");
+      pitchText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
+
+      pitchCircle.hover(function(){
+        this.attr({
+          stroke: activeColor
+        });
+      }, function(){
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
+      });
+
+      pitchCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#pitch-box').addClass('active');
+        this.attr({
+          stroke: activeColor
+        });
+        switch(currentLevel){
+          case 3:
+            break;
+          case 2:
+            mentorCircle.attr({
+              stroke: activeColor
+            });
+            mentorToAcceleratorLine.animate({
+              strokeDashoffset:0
+            },500, function(){
+              acceleratorCircle.attr({
+                stroke: activeColor
+              });
+              acceleratorToPitchLine.animate({
+                strokeDashoffset:0
+              },500);
+            });
+            break;
+          case 1:
+            applyCircle.attr({
+              stroke: activeColor
+            });
+            applyToMentorLine.animate({
+              strokeDashoffset:0
+            },333, function(){
+              mentorCircle.attr({
+                stroke: activeColor
+              });
+              mentorToAcceleratorLine.animate({
+                strokeDashoffset:0
+              }, 333, function(){
+                acceleratorCircle.attr({
+                  stroke: activeColor
+                });
+                acceleratorToPitchLine.animate({
+                  strokeDashoffset:0
+                },334);
+              });
+            });
+            break;
+          default:
+            break;
+        }
+        currentLevel = 3;
+      });
 
     }
     svgAnimate();

@@ -135,7 +135,7 @@ hr {
 
 .nav {
   position: absolute;
-  z-index: 50;
+  z-index: 1000;
   width: 100%;
 }
 
@@ -421,6 +421,14 @@ hr {
   padding: 40px;
 }
 
+.map .process-box div {
+  display: none;
+}
+
+.map .process-box div.active {
+  display: block;
+}
+
 .map h4 {
   font-weight: 600;
   font-size: 2rem;
@@ -606,78 +614,18 @@ hr {
   font-weight: normal;
 }
 
-#about .about-canvas {
-  background-image: url("../img/bg-about.png");
-  background-size: cover;
-  background-position: center;
+.svg-wrapper {
   position: absolute;
-  z-index: 100;
   width: 100%;
-  height: 100%;
+  top: 30%;
+  left: 0;
 }
 
-#about .about-canvas .row {
-  max-width: 100%;
+#journey-map {
+  width: 1024px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
 }
 
-#about .close {
-  float: right;
-  margin-right: 60px;
-  margin-top: 60px;
-}
-
-#about .content {
-  width: 90%;
-  margin: auto;
-  color: white;
-}
-
-#about .content .about {
-  padding-right: 80px;
-}
-
-#about .content .about p {
-  font-size: 1.4rem;
-}
-
-#about .content .about p span {
-  font-weight: 600;
-}
-
-#about .content .team {
-  padding-left: 80px;
-}
-
-#about .content h4 {
-  margin-top: 15px;
-  color: black;
-}
-
-#about .content a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-#about .content ul {
-  margin: 0px;
-  padding-left: 18px;
-}
-
-#about .content li {
-  margin-bottom: 5px;
-}
-
-#about .content li p {
-  font-size: 1.4rem;
-}
-
-#about .content li p.title {
-  color: black;
-  font-size: 1.2rem;
-  line-height: 1em;
-}
-
-#about .content li span {
-  font-weight: 600;
-}
+/*# sourceMappingURL=style.css.map */
