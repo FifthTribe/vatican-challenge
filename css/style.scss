@@ -145,7 +145,7 @@ hr {
 //Navigation
 .nav {
   position: absolute;
-  z-index: 1000;
+  z-index: 50;
   width: 100%;
   .logo {
     display: inline-block;
@@ -561,6 +561,72 @@ button {
     }
   }
 }
+<<<<<<< HEAD
+// ABOUT PAGE
+#about {
+  .about-canvas {
+    .row {
+      max-width: 100%;
+    }
+    background-image: url("../img/bg-about.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+  }
+  .close {
+    float: right;
+    margin-right: 60px;
+    margin-top: 60px;
+  }
+  .content {
+    width: 90%;
+    margin: auto;
+    color: white;
+    .about {
+      padding-right: 80px;
+      p {
+        font-size: 1.4rem;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .team {
+      padding-left: 80px;
+    }
+
+    h4 {
+      margin-top: 15px;
+      color: black;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    ul {
+      margin: 0px;
+      padding-left: 18px;
+    }
+    li {
+      margin-bottom: 5px;
+      p {
+        font-size: 1.4rem;
+        &.title {
+          color: black;
+          font-size: 1.2rem;
+          line-height: 1em;
+        }
+      }
+      span {
+        font-weight: 600;
+      }
+    }
+  }
+=======
 
 
 // SVG
@@ -575,4 +641,5 @@ button {
   height:500px;
   margin:0 auto;
   display:block;
+>>>>>>> f428d726d5a3ccb6ea2e720342a3ad12be82fc73
 }
