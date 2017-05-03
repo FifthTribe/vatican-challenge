@@ -41,6 +41,7 @@ $(function(){
   function svgAnimate (){
       var s = Snap('#journey-map');
       var activeColor = '#00AEEF';
+      var activePathColor = '#353535';
       //M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105
       var applyToMentorLinePath = "M 53 446 S 53 446 75 400 S 75 400 100 350 S 100 350 300 270";
       var applyToMentorLineLength = Snap.path.getTotalLength(applyToMentorLinePath);
@@ -53,7 +54,7 @@ $(function(){
       var applyToMentorLine = s.path(applyToMentorLinePath);
       applyToMentorLine.attr({
           fill:'none',
-          stroke:activeColor,
+          stroke:activePathColor,
           'stroke-dasharray': applyToMentorLineLength + ' ' + applyToMentorLineLength,
           'stroke-dashoffset': applyToMentorLineLength,
           'stroke-width' :6,
@@ -66,7 +67,7 @@ $(function(){
       var mentorToAcceleratorLine = s.path(mentorToAcceleratorLinePath);
       mentorToAcceleratorLine.attr({
           fill:'none',
-          stroke:activeColor,
+          stroke:activePathColor,
           'stroke-dasharray': mentorToAcceleratorLineLength + ' ' + mentorToAcceleratorLineLength,
           'stroke-dashoffset': mentorToAcceleratorLineLength,
           'stroke-width' :6,
@@ -79,7 +80,7 @@ $(function(){
       var acceleratorToPitchLine = s.path(acceleratorToPitchLinePath);
       acceleratorToPitchLine.attr({
           fill:'none',
-          stroke:activeColor,
+          stroke:activePathColor,
           'stroke-dasharray': acceleratorToPitchLineLength + ' ' + acceleratorToPitchLineLength,
           'stroke-dashoffset': acceleratorToPitchLineLength,
           'stroke-width' :6,
