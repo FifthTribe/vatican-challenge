@@ -421,6 +421,14 @@ hr {
   padding: 40px;
 }
 
+.map .process-box div {
+  display: none;
+}
+
+.map .process-box div.active {
+  display: block;
+}
+
 .map h4 {
   font-weight: 600;
   font-size: 2rem;

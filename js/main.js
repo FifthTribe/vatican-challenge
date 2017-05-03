@@ -98,14 +98,28 @@ $(function(){
 
       var currentLevel = 1;
       applyCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#apply-box').addClass('active');
+        this.attr({
+          stroke: activeColor
+        });
         switch(currentLevel){
           case 3:
+            pitchCircle.attr({
+              stroke: '#ADADAD'
+            });
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },333,function(){
+              acceleratorCircle.attr({
+                stroke: '#ADADAD'
+              });
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:mentorToAcceleratorLineLength
               },333,function(){
+                mentorCircle.attr({
+                  stroke: '#ADADAD'
+                });
                 applyToMentorLine.animate({
                   strokeDashoffset:applyToMentorLineLength
                 },334);
@@ -113,15 +127,24 @@ $(function(){
             });
             break;
           case 2:
+            acceleratorCircle.attr({
+              stroke: '#ADADAD'
+            });
             mentorToAcceleratorLine.animate({
               strokeDashoffset:mentorToAcceleratorLineLength
             },500,function(){
+              mentorCircle.attr({
+                stroke: '#ADADAD'
+              });
               applyToMentorLine.animate({
                 strokeDashoffset:applyToMentorLineLength
               },500);
             });
             break;
           case 1:
+            mentorCircle.attr({
+              stroke: '#ADADAD'
+            });
             applyToMentorLine.animate({
               strokeDashoffset:applyToMentorLineLength
             },1000);
@@ -145,12 +168,17 @@ $(function(){
           stroke: activeColor
         });
       }, function(){
-        this.attr({
-          stroke: '#ADADAD'
-        });
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
       });
 
       mentorCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#mentor-box').addClass('active');
+        this.addClass('clicked');
         this.attr({
           stroke: activeColor
         });
@@ -198,6 +226,8 @@ $(function(){
       });
 
       acceleratorCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#accelerator-box').addClass('active');
         this.attr({
           stroke: activeColor
         });
@@ -220,7 +250,7 @@ $(function(){
               strokeDashoffset:0
             },500, function(){
               mentorCircle.attr({
-                stroke: '#ADADAD'
+                stroke: activeColor
               });
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:0
@@ -242,25 +272,45 @@ $(function(){
       });
 
       pitchCircle.click(function(){
+        $('.process-box > div').removeClass('active');
+        $('#pitch-box').addClass('active');
+        this.attr({
+          stroke: activeColor
+        });
         switch(currentLevel){
           case 3:
             break;
           case 2:
+            mentorCircle.attr({
+              stroke: activeColor
+            });
             mentorToAcceleratorLine.animate({
               strokeDashoffset:0
             },500, function(){
+              acceleratorCircle.attr({
+                stroke: activeColor
+              });
               acceleratorToPitchLine.animate({
                 strokeDashoffset:0
               },500);
             });
             break;
           case 1:
+            applyCircle.attr({
+              stroke: activeColor
+            });
             applyToMentorLine.animate({
               strokeDashoffset:0
             },333, function(){
+              mentorCircle.attr({
+                stroke: activeColor
+              });
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:0
               }, 333, function(){
+                acceleratorCircle.attr({
+                  stroke: activeColor
+                });
                 acceleratorToPitchLine.animate({
                   strokeDashoffset:0
                 },334);
