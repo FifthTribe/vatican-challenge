@@ -561,7 +561,6 @@ button {
     }
   }
 }
-<<<<<<< HEAD
 // ABOUT PAGE
 #about {
   .about-canvas {
@@ -626,7 +625,50 @@ button {
       }
     }
   }
-=======
+}
+
+// FAQS PAGE
+#faqs {
+  .faqs-canvas {
+    .row {
+      max-width: 100%;
+    }
+    background-image: url("../img/bg-faqs.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    .close {
+      float: right;
+      margin-right: 60px;
+      margin-top: 60px;
+    }
+    .content {
+      width: 90%;
+      margin: auto;
+      p {
+        font-size: 1.3rem;
+        span {
+          font-weight: 600;
+        }
+      }
+      ol {
+        padding-left: 18px;
+      }
+      li {
+        margin-bottom: 20px;
+      }
+      .one {
+        padding-right: 80px;
+      }
+      .two {
+        padding-left: 80px;
+      }
+    }
+  }
+}
 
 
 // SVG
@@ -641,5 +683,4 @@ button {
   height:500px;
   margin:0 auto;
   display:block;
->>>>>>> f428d726d5a3ccb6ea2e720342a3ad12be82fc73
 }
