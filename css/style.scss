@@ -69,6 +69,7 @@ h3 {
 h4 {
   font-size: 1.5rem;
   color: $red;
+  margin: 0;
 }
 
 h5 {
@@ -189,7 +190,7 @@ hr {
         }
         transition: all .3s ease;
         &:hover {
-          background-color: $blue;
+          background-color: $dark-blue;
           color: white;
         }
       }
@@ -336,28 +337,47 @@ button {
 
 .stat-tab-facts {
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: 60%;
   p {
     text-align: center;
-    width: 80%;
     margin: auto;
     font-size: 2rem;
     font-family: "Georgia", serif;
     font-weight: normal;
-    line-height: 1.2em;
+    line-height: 1.3em;
+    color: white;
     span {
       font-family: "Source Sans Pro", sans-serif;
       font-size: 1.2rem;
-      color: $dark-grey;
+      color: white;
       font-weight: 600;
     }
   }
 }
 
-#stat-tab-energy, #stat-tab-food, #stat-tab-water{
-  background-image: url(../img/bg-energy.jpeg);
+#stat-tab-energy {
+  background-image: url(../img/bg-energy.jpg);
   }
+#stat-tab-food {
+    background-image: url(../img/bg-food.jpg)
+  }
+#stat-tab-water {
+  background-image: url(../img/bg-water.jpg)
+}
+#stat-tab-city {
+  background-image: url(../img/bg-city.jpg)
+}
+#stat-tab-employment {
+  background-image: url(../img/bg-employment.jpg);
+}
+#stat-tab-conservation {
+  background-image: url(../img/bg-conservation.jpg);
+}
+#stat-tab-finance {
+  background-image: url(../img/bg-finance.jpg);
+}
+
 }
 
 //MAP
@@ -365,74 +385,173 @@ button {
   background-image: url(../img/bg-map.png);
   background-size: cover;
   background-repeat: no-repeat;
+  .row {
+    padding-top: 130px;
+  }
+  h5 {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+  .process-box {
+    background-color: rgba(white, .7);
+    padding: 40px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1rem;
+  }
+  p {
+    font-size:20px;
+  }
+  button {
+    margin-top: 20px;
+  }
+  h3 {
+    margin-top: 20px;
+  }
 }
 
-//FAQ
-.faq {
-  background-color: $beige;
+//NETWORK
+.network {
+  background-image: url(../img/bg-network.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   .row {
-    padding: 150px 0px;
+    padding-top: 130px;
   }
-  text-align: left;
-  h3 {
+  h5 {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+  h4 {
+    font-weight: 600;
     font-size: 2rem;
-    color: black;
+    margin-bottom: 20px;
+    line-height: 1rem;
+  }
+  h6 {
+    font-size: 1.5em;
+    color: $red;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    line-height: 1em;
+  }
+  p {
+    font-size:20px;
     margin-bottom: 20px;
   }
-  .faq-box {
-    padding: 30px;
-    p {
-      color: $dark-grey;
-      font-size: 1.1rem;
-      span {
-        font-weight: 600;
-        color: black;
-      }
-    }
-    ol {
-      padding-left: 10px;
-    }
+  button {
+    margin-top: 20px;
   }
-  .apply-box {
-    padding: 40px 60px 180px 60px;
-    background-color: $dark-blue;
-    background-image: url(../img/bg-apply.png);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: center;
-    h3 {
-      color: white;
-    }
-    p {
-      font-size: 20px;
-    }
-    button {
-      display: inline-block;
-      margin-top: 30px;
-      a {
-        text-transform: uppercase;
-        font-weight: 600;
-      }
-    }
-    .deadline {
-      font-size: 18px;
-      color: white;
-      font-weight: 600;
-      margin-top: 15px;
-    }
+  .network-box {
+    background-color: rgba(white, .7);
+    padding: 40px;
+    margin-top: 40px;
   }
+  .network-graphic {
+    padding-top: 180px;
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+}
 
-  .subscribe-box {
-    margin-top: 10px;
-    background-color: $blue;
-    padding: 40px 60px;
-    h5 {
+//APPLY
+.apply {
+  background-image: url(../img/bg-apply.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  .row {
+    text-align: center;
+    padding-top: 250px;
+  }
+  h2 {
+    color: white;
+    margin: 0 0 30px 0;
+  }
+  p {
+    font-size: 1.5rem;
+    span {
       color: white;
-      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.3rem;
+    }
+  }
+  a {
+    color: white;
+    &:hover {
+      color: $red;
+    }
+  }
+  button {
+    display: block;
+    margin: 40px auto 20px auto;
+    padding: 15px 25px;
+    a {
+      color: $red;
       font-weight: 600;
-      font-size: 22px;
+      font-size: 1.8rem;
       text-transform: uppercase;
+    }
+    &:hover {
+      a {
+        color: white;
+      }
+    }
+  }
+  hr {
+    width: 40%;
+    margin: 30px auto;
+    border: 1px solid $grey;
+  }
+  h5 {
+    color: white;
+  }
+  h4 {
+    margin-top: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+  #mc_embed_signup {
+    margin-top: 20px;
+    .mc-field-group {
+      width: 50%;
+    }
+    .mc-field-group, .clear {
+      display: inline-block;
+      vertical-align: top;
+    }
+    input {
+      width: 100%;
+      display: inline-block;
+      height: 50px;
+      padding-left: 15px;
+      border: none;
+      outline: none;
+      background-color: rgba(white, .75);
+      font-family: "Source Sans Pro"
+    }
+    input.button {
+      background-color: white;
+      padding: 10px 25px;
+      font-family: "Source Sans Pro";
+      cursor: pointer;
+      &:hover {
+        background-color: $dark-blue;
+        color: white;
+      }
+    }
+    div.mce_inline_error {
+      background-color: transparent;
+      color: black;
+      text-align: left;
+      font-family: "Source Sans Pro";
+      font-weight: normal;
     }
   }
 }

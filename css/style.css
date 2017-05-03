@@ -59,6 +59,7 @@ h3 {
 h4 {
   font-size: 1.5rem;
   color: #B3282D;
+  margin: 0;
 }
 
 h5 {
@@ -193,7 +194,7 @@ hr {
 }
 
 .nav .menu .social a:hover {
-  background-color: #00AEEF;
+  background-color: #0A7096;
   color: white;
 }
 
@@ -351,29 +352,53 @@ hr {
 
 .focus-areas .stat-tab-facts {
   position: absolute;
-  top: 30%;
+  top: 40%;
   width: 60%;
 }
 
 .focus-areas .stat-tab-facts p {
   text-align: center;
-  width: 80%;
   margin: auto;
   font-size: 2rem;
   font-family: "Georgia", serif;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.3em;
+  color: white;
 }
 
 .focus-areas .stat-tab-facts p span {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 1.2rem;
-  color: #353535;
+  color: white;
   font-weight: 600;
 }
 
-.focus-areas #stat-tab-energy, .focus-areas #stat-tab-food, .focus-areas #stat-tab-water {
-  background-image: url(../img/bg-energy.jpeg);
+.focus-areas #stat-tab-energy {
+  background-image: url(../img/bg-energy.jpg);
+}
+
+.focus-areas #stat-tab-food {
+  background-image: url(../img/bg-food.jpg);
+}
+
+.focus-areas #stat-tab-water {
+  background-image: url(../img/bg-water.jpg);
+}
+
+.focus-areas #stat-tab-city {
+  background-image: url(../img/bg-city.jpg);
+}
+
+.focus-areas #stat-tab-employment {
+  background-image: url(../img/bg-employment.jpg);
+}
+
+.focus-areas #stat-tab-conservation {
+  background-image: url(../img/bg-conservation.jpg);
+}
+
+.focus-areas #stat-tab-finance {
+  background-image: url(../img/bg-finance.jpg);
 }
 
 .map {
@@ -382,84 +407,201 @@ hr {
   background-repeat: no-repeat;
 }
 
-.faq {
-  background-color: #EBE3DB;
-  text-align: left;
+.map .row {
+  padding-top: 130px;
 }
 
-.faq .row {
-  padding: 150px 0px;
+.map h5 {
+  font-size: 1.4em;
+  line-height: 1.5em;
 }
 
-.faq h3 {
-  font-size: 2rem;
-  color: black;
-  margin-bottom: 20px;
+.map .process-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
 }
 
-.faq .faq-box {
-  padding: 30px;
-}
-
-.faq .faq-box p {
-  color: #353535;
-  font-size: 1.1rem;
-}
-
-.faq .faq-box p span {
+.map h4 {
   font-weight: 600;
-  color: black;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1rem;
 }
 
-.faq .faq-box ol {
-  padding-left: 10px;
-}
-
-.faq .apply-box {
-  padding: 40px 60px 180px 60px;
-  background-color: #0A7096;
-  background-image: url(../img/bg-apply.png);
-  background-position: bottom;
-  background-repeat: no-repeat;
-  color: white;
-  text-align: center;
-}
-
-.faq .apply-box h3 {
-  color: white;
-}
-
-.faq .apply-box p {
+.map p {
   font-size: 20px;
 }
 
-.faq .apply-box button {
+.map button {
+  margin-top: 20px;
+}
+
+.map h3 {
+  margin-top: 20px;
+}
+
+.network {
+  background-image: url(../img/bg-network.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.network .row {
+  padding-top: 130px;
+}
+
+.network h5 {
+  font-size: 1.4em;
+  line-height: 1.5em;
+}
+
+.network h4 {
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1rem;
+}
+
+.network h6 {
+  font-size: 1.5em;
+  color: #B3282D;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+  line-height: 1em;
+}
+
+.network p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.network button {
+  margin-top: 20px;
+}
+
+.network .network-box {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.network .network-graphic {
+  padding-top: 180px;
+  display: block;
+  width: 80%;
+  margin: auto;
+}
+
+.apply {
+  background-image: url(../img/bg-apply.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.apply .row {
+  text-align: center;
+  padding-top: 250px;
+}
+
+.apply h2 {
+  color: white;
+  margin: 0 0 30px 0;
+}
+
+.apply p {
+  font-size: 1.5rem;
+}
+
+.apply p span {
+  color: white;
+  font-size: 1.3rem;
+}
+
+.apply a {
+  color: white;
+}
+
+.apply a:hover {
+  color: #B3282D;
+}
+
+.apply button {
+  display: block;
+  margin: 40px auto 20px auto;
+  padding: 15px 25px;
+}
+
+.apply button a {
+  color: #B3282D;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+.apply button:hover a {
+  color: white;
+}
+
+.apply hr {
+  width: 40%;
+  margin: 30px auto;
+  border: 1px solid #5A5A5A;
+}
+
+.apply h5 {
+  color: white;
+}
+
+.apply h4 {
+  margin-top: 5px;
+  color: black;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.apply #mc_embed_signup {
+  margin-top: 20px;
+}
+
+.apply #mc_embed_signup .mc-field-group {
+  width: 50%;
+}
+
+.apply #mc_embed_signup .mc-field-group, .apply #mc_embed_signup .clear {
   display: inline-block;
-  margin-top: 30px;
+  vertical-align: top;
 }
 
-.faq .apply-box button a {
-  text-transform: uppercase;
-  font-weight: 600;
+.apply #mc_embed_signup input {
+  width: 100%;
+  display: inline-block;
+  height: 50px;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: "Source Sans Pro";
 }
 
-.faq .apply-box .deadline {
-  font-size: 18px;
+.apply #mc_embed_signup input.button {
+  background-color: white;
+  padding: 10px 25px;
+  font-family: "Source Sans Pro";
+  cursor: pointer;
+}
+
+.apply #mc_embed_signup input.button:hover {
+  background-color: #0A7096;
   color: white;
-  font-weight: 600;
-  margin-top: 15px;
 }
 
-.faq .subscribe-box {
-  margin-top: 10px;
-  background-color: #00AEEF;
-  padding: 40px 60px;
-}
-
-.faq .subscribe-box h5 {
-  color: white;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 22px;
-  text-transform: uppercase;
+.apply #mc_embed_signup div.mce_inline_error {
+  background-color: transparent;
+  color: black;
+  text-align: left;
+  font-family: "Source Sans Pro";
+  font-weight: normal;
 }
