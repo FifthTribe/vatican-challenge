@@ -95,6 +95,11 @@ $(function(){
         stroke: activeColor,
         'stroke-width':6
       });
+      var applyText = s.paper.text(20, 500, "APPLY");
+      applyText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
 
       var currentLevel = 1;
       applyCircle.click(function(){
@@ -162,6 +167,11 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':6
       });
+      var mentorText = s.paper.text(250, 325, "MENTOR");
+      mentorText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
 
       mentorCircle.hover(function(){
         this.attr({
@@ -224,6 +234,23 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':6
       });
+      var acceleratorText = s.paper.text(525, 357, "ACCELERATOR");
+      acceleratorText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
+
+      acceleratorCircle.hover(function(){
+        this.attr({
+          stroke: activeColor
+        });
+      }, function(){
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
+      });
 
       acceleratorCircle.click(function(){
         $('.process-box > div').removeClass('active');
@@ -269,6 +296,23 @@ $(function(){
         fill:'#EEEAE4',
         stroke: '#ADADAD',
         'stroke-width':6
+      });
+      var pitchText = s.paper.text(838, 205, "$1M PITCH");
+      pitchText.attr({
+        'font-size': '26px',
+        'font-weight':'bold'
+      });
+
+      pitchCircle.hover(function(){
+        this.attr({
+          stroke: activeColor
+        });
+      }, function(){
+        if ( !this.hasClass('clicked') ){
+          this.attr({
+            stroke: '#ADADAD'
+          });
+        }
       });
 
       pitchCircle.click(function(){
