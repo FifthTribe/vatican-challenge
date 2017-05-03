@@ -555,3 +555,18 @@ button {
     }
   }
 }
+
+
+// SVG
+.svg-wrapper {
+  position:absolute;
+  width:100%;
+  top:30%;
+  left:0;
+}
+#journey-map {
+  width:1024px;
+  height:500px;
+  margin:0 auto;
+  display:block;
+}
