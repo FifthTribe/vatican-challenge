@@ -40,6 +40,8 @@ $(function(){
 
   function svgAnimate (){
       var s = Snap('#journey-map');
+      var s_mobile = Snap('#journey-map-mobile');
+
       var activeColor = '#00AEEF';
       var activePathColor = '#353535';
       //M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105
@@ -50,6 +52,14 @@ $(function(){
       var acceleratorToPitchLinePath = "M 600 300 S 600 300 680 250 S 680 250 760 190 S 760 190 900 150";
       var acceleratorToPitchLineLength = Snap.path.getTotalLength(acceleratorToPitchLinePath);
 
+      var applyToMentorLinePath_mobile = "M 20 290 S 20 290 45 277 S 45 277 77 250 S 77 250 120 230";
+      var applyToMentorLineLength_mobile = Snap.path.getTotalLength(applyToMentorLinePath_mobile);
+      var mentorToAcceleratorLinePath_mobile = "M 120 230 S 120 230 150 200 S 150 200 180 175 S 180 175 210 150";
+      var mentorToAcceleratorLineLength_mobile = Snap.path.getTotalLength(mentorToAcceleratorLinePath_mobile);
+      var acceleratorToPitchLinePath_mobile = "M 210 150 S 219 150 233 108 S 233 108 247 57 S 247 57 260 20";
+      var acceleratorToPitchLineLength_mobile = Snap.path.getTotalLength(acceleratorToPitchLinePath_mobile);
+
+
       // Apply to Mentor Line
       var applyToMentorLine = s.path(applyToMentorLinePath);
       applyToMentorLine.attr({
@@ -58,6 +68,17 @@ $(function(){
           'stroke-dasharray': applyToMentorLineLength + ' ' + applyToMentorLineLength,
           'stroke-dashoffset': applyToMentorLineLength,
           'stroke-width' :6,
+          'stroke-linecap' :'round',
+          'stroke-linejoin' :'round',
+          'stroke-miterlimit' :10
+      });
+      var applyToMentorLine_mobile = s_mobile.path(applyToMentorLinePath_mobile);
+      applyToMentorLine_mobile.attr({
+          fill:'none',
+          stroke:activePathColor,
+          'stroke-dasharray': applyToMentorLineLength_mobile + ' ' + applyToMentorLineLength_mobile,
+          'stroke-dashoffset': applyToMentorLineLength_mobile,
+          'stroke-width' :3,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
@@ -75,6 +96,17 @@ $(function(){
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
       });
+      var mentorToAcceleratorLine_mobile = s_mobile.path(mentorToAcceleratorLinePath_mobile);
+      mentorToAcceleratorLine_mobile.attr({
+          fill:'none',
+          stroke:activePathColor,
+          'stroke-dasharray': mentorToAcceleratorLineLength_mobile + ' ' + mentorToAcceleratorLineLength_mobile,
+          'stroke-dashoffset': mentorToAcceleratorLineLength_mobile,
+          'stroke-width' :3,
+          'stroke-linecap' :'round',
+          'stroke-linejoin' :'round',
+          'stroke-miterlimit' :10
+      });
 
       // Accelerator to Pitch Line
       var acceleratorToPitchLine = s.path(acceleratorToPitchLinePath);
@@ -84,6 +116,17 @@ $(function(){
           'stroke-dasharray': acceleratorToPitchLineLength + ' ' + acceleratorToPitchLineLength,
           'stroke-dashoffset': acceleratorToPitchLineLength,
           'stroke-width' :6,
+          'stroke-linecap' :'round',
+          'stroke-linejoin' :'round',
+          'stroke-miterlimit' :10
+      });
+      var acceleratorToPitchLine_mobile = s_mobile.path(acceleratorToPitchLinePath_mobile);
+      acceleratorToPitchLine_mobile.attr({
+          fill:'none',
+          stroke:activePathColor,
+          'stroke-dasharray': acceleratorToPitchLineLength_mobile + ' ' + acceleratorToPitchLineLength_mobile,
+          'stroke-dashoffset': acceleratorToPitchLineLength_mobile,
+          'stroke-width' :3,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
@@ -99,6 +142,17 @@ $(function(){
       var applyText = s.paper.text(20, 500, "APPLY");
       applyText.attr({
         'font-size': '26px',
+        'font-weight':'bold'
+      });
+      var applyCircle_mobile = s_mobile.paper.circle(20, 290, 15);
+      applyCircle_mobile.attr({
+        fill:'#EEEAE4',
+        stroke: activeColor,
+        'stroke-width':3
+      });
+      var applyText_mobile = s_mobile.paper.text(3, 320, "APPLY");
+      applyText_mobile.attr({
+        'font-size': '14px',
         'font-weight':'bold'
       });
 
@@ -173,6 +227,17 @@ $(function(){
         'font-size': '26px',
         'font-weight':'bold'
       });
+      var mentorCircle_mobile = s_mobile.paper.circle(120, 230, 15);
+      mentorCircle_mobile.attr({
+        fill:'#EEEAE4',
+        stroke: '#ADADAD',
+        'stroke-width':3
+      });
+      var mentorText_mobile = s_mobile.paper.text(100, 260, "MENTOR");
+      mentorText_mobile.attr({
+        'font-size': '14px',
+        'font-weight':'bold'
+      });
 
       mentorCircle.hover(function(){
         this.attr({
@@ -240,6 +305,17 @@ $(function(){
         'font-size': '26px',
         'font-weight':'bold'
       });
+      var acceleratorCircle_mobile = s_mobile.paper.circle(210, 150, 15);
+      acceleratorCircle_mobile.attr({
+        fill:'#EEEAE4',
+        stroke: '#ADADAD',
+        'stroke-width':3
+      });
+      var acceleratorText_mobile = s_mobile.paper.text(170, 180, "ACCELERATOR");
+      acceleratorText_mobile.attr({
+        'font-size': '14px',
+        'font-weight':'bold'
+      });
 
       acceleratorCircle.hover(function(){
         this.attr({
@@ -301,6 +377,17 @@ $(function(){
       var pitchText = s.paper.text(838, 205, "$1M PITCH");
       pitchText.attr({
         'font-size': '26px',
+        'font-weight':'bold'
+      });
+      var pitchCircle_mobile = s_mobile.paper.circle(260, 20, 15);
+      pitchCircle_mobile.attr({
+        fill:'#EEEAE4',
+        stroke: '#ADADAD',
+        'stroke-width':3
+      });
+      var pitchText_mobile = s_mobile.paper.text(230, 48, "$1M PITCH");
+      pitchText_mobile.attr({
+        'font-size': '14px',
         'font-weight':'bold'
       });
 
@@ -376,4 +463,4 @@ $(function(){
 function goBack() {
   console.log("go all the way back");
     window.history.back();
-};
+}

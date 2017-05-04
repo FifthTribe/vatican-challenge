@@ -759,3 +759,33 @@ hr {
   margin: 0 auto;
   display: block;
 }
+
+#journey-block-mobile {
+  margin: 0 auto;
+  display: none;
+}
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #journey-map {
+    display: none;
+  }
+  #journey-map-mobile {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .map h5 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=style.css.map */

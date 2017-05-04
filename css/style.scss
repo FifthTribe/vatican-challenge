@@ -693,3 +693,45 @@ button {
   margin:0 auto;
   display:block;
 }
+#journey-block-mobile {
+  margin:0 auto;
+  display:none;
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  #journey-map {
+    display:none;
+  }
+  #journey-map-mobile {
+    display:block;
+    width:300px;
+    height:400px;
+  }
+  .map h5 {
+    font-size:14px;
+  }
+  h3 {
+    font-size:20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}
