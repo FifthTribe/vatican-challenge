@@ -815,7 +815,7 @@ hr {
   }
   .focus-areas .stat-tabs-nav {
     top: 90px;
-    left: 2%;
+    left: 0;
   }
   .focus-areas .stat-tabs-nav div {
     width: 40px;
