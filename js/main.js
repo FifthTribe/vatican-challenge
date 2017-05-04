@@ -368,6 +368,7 @@ $(function(){
         });
         $('.process-box > div').removeClass('active');
         $('#accelerator-box').addClass('active');
+        this.addClass('clicked');
         this.attr({
           stroke: activeColor
         });
@@ -454,6 +455,7 @@ $(function(){
         });
         $('.process-box > div').removeClass('active');
         $('#pitch-box').addClass('active');
+        this.addClass('clicked');
         this.attr({
           stroke: activeColor
         });
