@@ -1,38 +1,37 @@
-.reveal .slides > section {
+.reveal .slides>section {
   text-align: left;
-  width:100%;
-  height:100%;
-  padding:0;
-  margin:0;
-}
-.stat-tab {
-  display:none;
-  width:100%;
-  height:100%;
-  background-size:cover;
-  background-repeat: no-repeat;
-  &.active {
-    display:block;
-  }
-}
-.navigate-up, .navigate-down {
-  display:none;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 
+.stat-tab {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &.active {
+    display: block;
+  }
+}
+
+.navigate-up,
+.navigate-down {
+  display: none;
+}
 
 // BASE STYLING
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 @import url('foundation.min.css');
-
 $red: #B3282D;
 $blue: #00AEEF;
 $dark-blue: #0A7096;
 $beige: #EBE3DB;
 $grey: #5A5A5A;
 $dark-grey: #353535;
-
-html {
-}
+html {}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -89,31 +88,29 @@ a {
   cursor: pointer;
 }
 
-button {
+.btn {
   padding: 10px 25px;
   background-color: white;
   border-radius: 0;
   display: block;
-  a {
-    color: black;
-    text-decoration: none;
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 20px;
-    span {margin-right: 10px}
+  color: black;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 20px;
+  span {
+    margin-right: 10px
   }
   cursor: pointer;
   transition: all .3s ease;
   &:hover {
-    a {
+    color: white;
+    span {
       color: white;
-      span {
-        color: white;
-      }
     }
   }
 }
 
-button.red {
+.btn.red {
   span {
     color: $red;
   }
@@ -122,7 +119,7 @@ button.red {
   }
 }
 
-button.blue {
+.btn.blue {
   span {
     color: $blue;
   }
@@ -160,7 +157,8 @@ hr {
     display: inline-block;
     float: right;
     margin-right: 50px;
-    .about, .faqs {
+    .about,
+    .faqs {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
@@ -195,13 +193,11 @@ hr {
         }
       }
     }
-    button {
+    .btn {
       display: inline-block;
       background-color: $blue;
-      a {
-        color: white;
-        font-weight: 600;
-      }
+      color: white;
+      font-weight: 600;
       &:hover {
         background-color: $dark-blue;
       }
@@ -221,7 +217,7 @@ hr {
     color: $red;
     font-size: 1.6rem;
     text-decoration: none;
-    background-color: rgba(255,255,255,0);
+    background-color: rgba(255, 255, 255, 0);
     padding: 5px 10px;
     margin-left: -10px;
     span {
@@ -229,10 +225,10 @@ hr {
     }
     transition: all .3s ease;
     &:hover {
-      background-color: rgba(255,255,255,.6)
+      background-color: rgba(255, 255, 255, .6)
     }
   }
-  button {
+  .btn {
     margin-top: 30px;
   }
 }
@@ -246,138 +242,130 @@ hr {
   .stat-tabs-wrapper {
     height: 100%;
   }
-.stat-tab-question {
-  width: 40%;
-  height: 100%;
-  float: right;
-  padding: 350px 50px 0 50px;
-  background-color: rgba($beige, .95);
-  background-image: url(../img/corner-icon.png);
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 20%;
-}
-
-h1 {
-  line-height: 3.5rem;
-  margin-bottom: 20px;
-}
-
-h5 {
-  font-size: 1.8rem;
-  margin-top: 40px;
-}
-button {
-  display: block;
-  margin: 10px 0px;
-}
-.label {
-  font-size: 18px;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: $grey;
-}
-
-.stat-tabs-nav {
-  position: absolute;
-  top: 240px;
-  left: 60%;
-  margin-left: 50px;
-  z-index: 1000000;
-  div {
-    display: inline-block;
-    margin-right: 10px;
-    width: 70px;
-    height: 70px;
-    background-color: rgba(255,255,255,.8);
-    border-radius: 100px;
-    background-size: 55%;
+  .stat-tab-question {
+    width: 40%;
+    height: 100%;
+    float: right;
+    padding: 350px 50px 0 50px;
+    background-color: rgba($beige, .95);
+    background-image: url(../img/corner-icon.png);
+    background-position: bottom right;
     background-repeat: no-repeat;
-    background-position: center;
-    transition: all .3s ease;
-    a {
-      display: block;
-      height: 100%;
-      width: 100%;
-    }
-    &.active {
-      background-color: white;
-      border: 3px solid $red;
+    background-size: 20%;
+  }
+  h1 {
+    line-height: 3.5rem;
+    margin-bottom: 20px;
+  }
+  h5 {
+    font-size: 1.8rem;
+    margin-top: 40px;
+  }
+  .btn {
+    display: block;
+    margin: 10px 0px;
+  }
+  .label {
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $grey;
+  }
+  .stat-tabs-nav {
+    position: absolute;
+    top: 240px;
+    left: 60%;
+    margin-left: 50px;
+    z-index: 1000000;
+    div {
+      display: inline-block;
+      margin-right: 10px;
+      width: 70px;
+      height: 70px;
+      background-color: rgba(255, 255, 255, .8);
+      border-radius: 100px;
+      background-size: 55%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: all .3s ease;
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+      &.active {
+        background-color: white;
+        border: 3px solid $red;
+      }
     }
   }
-}
-
-// Icons
-#energy {
-  background-image: url(../img/icon-energy.png);
-}
-#food {
-  background-image: url(../img/icon-food.png);
-}
-#water {
-  background-image: url(../img/icon-water.png);
-}
-#city {
-  background-image: url(../img/icon-city.png);
-}
-#employment {
-  background-image: url(../img/icon-employment.png);
-}
-#conservation {
-  background-image: url(../img/icon-conservation.png);
-}
-#finance {
-  background-image: url(../img/icon-finance.png);
-}
-
-.action {
-  margin-top: 30px;
-}
-
-.stat-tab-facts {
-  position: absolute;
-  top: 40%;
-  width: 60%;
-  p {
-    text-align: center;
-    margin: auto;
-    font-size: 2rem;
-    font-family: "Georgia", serif;
-    font-weight: normal;
-    line-height: 1.3em;
-    color: white;
-    span {
-      font-family: "Source Sans Pro", sans-serif;
-      font-size: 1.2rem;
+  // Icons
+  #energy {
+    background-image: url(../img/icon-energy.png);
+  }
+  #food {
+    background-image: url(../img/icon-food.png);
+  }
+  #water {
+    background-image: url(../img/icon-water.png);
+  }
+  #city {
+    background-image: url(../img/icon-city.png);
+  }
+  #employment {
+    background-image: url(../img/icon-employment.png);
+  }
+  #conservation {
+    background-image: url(../img/icon-conservation.png);
+  }
+  #finance {
+    background-image: url(../img/icon-finance.png);
+  }
+  .action {
+    margin-top: 30px;
+  }
+  .stat-tab-facts {
+    position: absolute;
+    top: 40%;
+    width: 60%;
+    p {
+      text-align: center;
+      margin: auto;
+      font-size: 2rem;
+      font-family: "Georgia", serif;
+      font-weight: normal;
+      line-height: 1.3em;
       color: white;
-      font-weight: 600;
+      span {
+        font-family: "Source Sans Pro", sans-serif;
+        font-size: 1.2rem;
+        color: white;
+        font-weight: 600;
+      }
     }
   }
-}
-
-#stat-tab-energy {
-  background-image: url(../img/bg-energy.jpg);
+  #stat-tab-energy {
+    background-image: url(../img/bg-energy.jpg);
   }
-#stat-tab-food {
+  #stat-tab-food {
     background-image: url(../img/bg-food.jpg)
   }
-#stat-tab-water {
-  background-image: url(../img/bg-water.jpg)
-}
-#stat-tab-city {
-  background-image: url(../img/bg-city.jpg)
-}
-#stat-tab-employment {
-  background-image: url(../img/bg-employment.jpg);
-}
-#stat-tab-conservation {
-  background-image: url(../img/bg-conservation.jpg);
-}
-#stat-tab-finance {
-  background-image: url(../img/bg-finance.jpg);
-}
-
+  #stat-tab-water {
+    background-image: url(../img/bg-water.jpg)
+  }
+  #stat-tab-city {
+    background-image: url(../img/bg-city.jpg)
+  }
+  #stat-tab-employment {
+    background-image: url(../img/bg-employment.jpg);
+  }
+  #stat-tab-conservation {
+    background-image: url(../img/bg-conservation.jpg);
+  }
+  #stat-tab-finance {
+    background-image: url(../img/bg-finance.jpg);
+  }
 }
 
 //MAP
@@ -402,9 +390,9 @@ button {
     background-color: rgba(white, .7);
     padding: 40px;
     div {
-      display:none;
+      display: none;
       &.active {
-        display:block;
+        display: block;
       }
     }
     p {
@@ -424,9 +412,9 @@ button {
     line-height: 1rem;
   }
   p {
-    font-size:20px;
+    font-size: 20px;
   }
-  button {
+  .btn {
     margin-top: 20px;
   }
   h3 {
@@ -461,10 +449,10 @@ button {
     line-height: 1em;
   }
   p {
-    font-size:20px;
+    font-size: 20px;
     margin-bottom: 20px;
   }
-  button {
+  .btn {
     margin-top: 20px;
   }
   .network-box {
@@ -507,20 +495,16 @@ button {
       color: $red;
     }
   }
-  button {
+  .btn {
     display: block;
     margin: 40px auto 20px auto;
     padding: 15px 25px;
-    a {
-      color: $red;
-      font-weight: 600;
-      font-size: 1.8rem;
-      text-transform: uppercase;
-    }
+    color: $red;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase;
     &:hover {
-      a {
-        color: white;
-      }
+      color: white;
     }
   }
   hr {
@@ -543,7 +527,8 @@ button {
     .mc-field-group {
       width: 50%;
     }
-    .mc-field-group, .clear {
+    .mc-field-group,
+    .clear {
       display: inline-block;
       vertical-align: top;
     }
@@ -557,7 +542,7 @@ button {
       background-color: rgba(white, .75);
       font-family: "Source Sans Pro"
     }
-    input.button {
+    input.btn {
       background-color: white;
       padding: 10px 25px;
       font-family: "Source Sans Pro";
@@ -576,6 +561,7 @@ button {
     }
   }
 }
+
 // ABOUT PAGE
 #about {
   .about-canvas {
@@ -611,7 +597,6 @@ button {
     .team {
       padding-left: 80px;
     }
-
     h4 {
       margin-top: 15px;
       color: black;
@@ -685,128 +670,131 @@ button {
   }
 }
 
-
 // SVG
 #journey-map {
-  width:1024px;
-  height:500px;
-  margin:0 auto;
-  display:block;
+  width: 1024px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
 }
+
 #journey-block-mobile {
-  margin:0 auto;
-  display:none;
+  margin: 0 auto;
+  display: none;
 }
+
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px) {
 
-}
+@media only screen and (max-width: 1200px) {}
+
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
 
-}
+@media only screen and (max-width: 992px) {}
+
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+
+@media only screen and (max-width: 768px) {
   // Navigation menu / Logo mobile
   .nav .logo {
-    margin-left:20px;
-    margin-top:20px;
+    margin-left: 20px;
+    margin-top: 20px;
   }
   .nav .logo img {
-    max-width:30px;
+    max-width: 30px;
   }
-  .nav button {
-    padding:5px 15px;
-    clear:both;
-    float:right;
+  .nav .btn {
+    padding: 5px 15px;
+    clear: both;
+    float: right;
   }
-  .nav button a {
-    font-size:14px;
+  .nav .btn {
+    font-size: 14px;
   }
   .nav .menu .social a {
-    font-size:14px;
-    padding:4px 5px;
+    font-size: 14px;
+    padding: 4px 5px;
   }
   .nav .menu {
-    margin-top:20px;
-    margin-right:20px;
+    margin-top: 20px;
+    margin-right: 20px;
   }
   .nav .menu .social {
-    margin-right:10px;
+    margin-right: 10px;
   }
-  .nav .menu .about, .nav .menu .faqs {
-    margin-right:5px;
-    font-size:14px;
+  .nav .menu .about,
+  .nav .menu .faqs {
+    margin-right: 5px;
+    font-size: 14px;
   }
   // Homepage Mobile
   .home .row {
-    padding-top:70px;
+    padding-top: 70px;
   }
   .home h2 {
-    font-size:30px;
+    font-size: 30px;
   }
-
   // Stats tabs mobile view
   .focus-areas {
     .stat-tab-facts {
-      display:none;
+      display: none;
     }
     .stat-tab-question {
-      width:100%;
-      background-color:rgba(235, 227, 219, 0.6);
-      padding:140px 20px 0 20px;
+      width: 100%;
+      background-color: rgba(235, 227, 219, 0.6);
+      padding: 140px 20px 0 20px;
     }
     .stat-tabs-nav {
-      top:90px;
-      left:0;
-      margin-left:20px;
+      top: 90px;
+      left: 0;
+      margin-left: 20px;
       div {
-        width:40px;
-        height:40px;
-        border-radius:40px;
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
       }
     }
   }
-
-
   // Journey Map SVG Mobile
   #journey-map {
-    display:none;
+    display: none;
   }
   #journey-map-mobile {
-    display:block;
-    width:300px;
-    height:400px;
+    display: block;
+    width: 300px;
+    height: 400px;
   }
   .map h5 {
-    font-size:14px;
+    font-size: 14px;
   }
   h3 {
-    font-size:20px;
+    font-size: 20px;
   }
 }
+
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+
+@media only screen and (max-width: 480px) {
   .nav .menu {
-    width:260px;
+    width: 260px;
   }
-  .nav button {
-    margin-top:5px;
-    clear:both;
+  .nav .btn {
+    margin-top: 5px;
+    clear: both;
   }
   .nav .menu .social {
-    float:right;
+    float: right;
   }
 }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px) {
-  .nav .menu {
-    width:230px;
-  }
 
+/* Custom, iPhone Retina */
+
+@media only screen and (max-width: 320px) {
+  .nav .menu {
+    width: 230px;
+  }
 }

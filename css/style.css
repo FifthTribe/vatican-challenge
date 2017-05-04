@@ -1,225 +1,207 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
 @import url("foundation.min.css");
+/* line 1, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .reveal .slides > section {
   text-align: left;
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0;
-}
+  margin: 0; }
 
+/* line 9, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .stat-tab {
   display: none;
   width: 100%;
   height: 100%;
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
+  /* line 15, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .stat-tab.active {
+    display: block; }
 
-.stat-tab.active {
-  display: block;
-}
+/* line 20, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.navigate-up,
+.navigate-down {
+  display: none; }
 
-.navigate-up, .navigate-down {
-  display: none;
-}
-
+/* line 36, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
-  font-weight: 400;
-}
+  font-weight: 400; }
 
+/* line 42, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 p {
-  margin: 0px;
-}
+  margin: 0px; }
 
+/* line 46, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 h1 {
   font-size: 3.5rem;
   font-family: "Source Sans Pro", sans-serif;
   color: #B3282D;
   margin: 0;
-  font-weight: 600;
-}
+  font-weight: 600; }
 
+/* line 54, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 h2 {
   font-family: "Georgia", serif;
   font-size: 3rem;
   font-weight: normal;
-  line-height: 1.2em;
-}
+  line-height: 1.2em; }
 
+/* line 61, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 h3 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
-  margin: 0;
-}
+  margin: 0; }
 
+/* line 68, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 h4 {
   font-size: 1.5rem;
   color: #B3282D;
-  margin: 0;
-}
+  margin: 0; }
 
+/* line 74, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 h5 {
   font-family: "Georgia", serif;
   font-size: 1.5rem;
   line-height: 1.3em;
   font-weight: normal;
-  margin: 0px;
-}
+  margin: 0px; }
 
+/* line 82, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .row {
   max-width: 85%;
-  margin: auto;
-}
+  margin: auto; }
 
+/* line 87, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 a {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-button {
+/* line 91, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.btn {
   padding: 10px 25px;
   background-color: white;
   border-radius: 0;
   display: block;
-  cursor: pointer;
-  transition: all .3s ease;
-}
-
-button a {
   color: black;
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 20px;
-}
+  cursor: pointer;
+  transition: all .3s ease; }
+  /* line 100, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .btn span {
+    margin-right: 10px; }
+  /* line 105, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .btn:hover {
+    color: white; }
+    /* line 107, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .btn:hover span {
+      color: white; }
 
-button a span {
-  margin-right: 10px;
-}
+/* line 114, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.btn.red span {
+  color: #B3282D; }
 
-button:hover a {
-  color: white;
-}
+/* line 117, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.btn.red:hover {
+  background-color: #B3282D; }
 
-button:hover a span {
-  color: white;
-}
+/* line 123, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.btn.blue span {
+  color: #00AEEF; }
 
-button.red span {
-  color: #B3282D;
-}
+/* line 126, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.btn.blue:hover {
+  background-color: #00AEEF; }
 
-button.red:hover {
-  background-color: #B3282D;
-}
-
-button.blue span {
-  color: #00AEEF;
-}
-
-button.blue:hover {
-  background-color: #00AEEF;
-}
-
+/* line 131, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 hr {
   width: 15%;
   border-color: #B3282D;
-  margin-left: 0px;
-}
+  margin-left: 0px; }
 
+/* line 138, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .reveal .controls {
-  display: none !important;
-}
+  display: none !important; }
 
+/* line 143, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .nav {
   position: absolute;
   z-index: 50;
-  width: 100%;
-}
+  width: 100%; }
+  /* line 147, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .logo {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 30px; }
+    /* line 151, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .nav .logo img {
+      max-width: 60px; }
+  /* line 155, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .menu {
+    margin-top: 40px;
+    display: inline-block;
+    float: right;
+    margin-right: 50px; }
+    /* line 160, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .nav .menu .about,
+    .nav .menu .faqs {
+      display: inline-block;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      color: #353535;
+      text-decoration: none;
+      margin-right: 30px;
+      transition: color .3s ease; }
+      /* line 170, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      .nav .menu .about:hover,
+      .nav .menu .faqs:hover {
+        color: #B3282D; }
+    /* line 174, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .nav .menu .social {
+      display: inline-block;
+      margin-right: 30px; }
+      /* line 177, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      .nav .menu .social a {
+        background-color: white;
+        padding: 8px 10px;
+        border-radius: 50px;
+        color: #353535;
+        margin-right: 5px;
+        transition: all .3s ease; }
+        /* line 183, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+        .nav .menu .social a .fa-facebook {
+          padding: 0px 3px; }
+        /* line 186, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+        .nav .menu .social a .fa-instagram {
+          padding: 0px 2px; }
+        /* line 190, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+        .nav .menu .social a:hover {
+          background-color: #0A7096;
+          color: white; }
+    /* line 196, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .nav .menu .btn {
+      display: inline-block;
+      background-color: #00AEEF;
+      color: white;
+      font-weight: 600; }
+      /* line 201, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      .nav .menu .btn:hover {
+        background-color: #0A7096; }
 
-.nav .logo {
-  display: inline-block;
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
-.nav .logo img {
-  max-width: 60px;
-}
-
-.nav .menu {
-  margin-top: 40px;
-  display: inline-block;
-  float: right;
-  margin-right: 50px;
-}
-
-.nav .menu .about, .nav .menu .faqs {
-  display: inline-block;
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 600;
-  font-size: 18px;
-  color: #353535;
-  text-decoration: none;
-  margin-right: 30px;
-  transition: color .3s ease;
-}
-
-.nav .menu .about:hover, .nav .menu .faqs:hover {
-  color: #B3282D;
-}
-
-.nav .menu .social {
-  display: inline-block;
-  margin-right: 30px;
-}
-
-.nav .menu .social a {
-  background-color: white;
-  padding: 8px 10px;
-  border-radius: 50px;
-  color: #353535;
-  margin-right: 5px;
-  transition: all .3s ease;
-}
-
-.nav .menu .social a .fa-facebook {
-  padding: 0px 3px;
-}
-
-.nav .menu .social a .fa-instagram {
-  padding: 0px 2px;
-}
-
-.nav .menu .social a:hover {
-  background-color: #0A7096;
-  color: white;
-}
-
-.nav .menu button {
-  display: inline-block;
-  background-color: #00AEEF;
-}
-
-.nav .menu button a {
-  color: white;
-  font-weight: 600;
-}
-
-.nav .menu button:hover {
-  background-color: #0A7096;
-}
-
+/* line 210, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .home .row {
-  padding-top: 280px;
-}
+  padding-top: 280px; }
 
+/* line 213, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .home h2 {
-  color: #353535;
-}
+  color: #353535; }
 
+/* line 216, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .home .inspire {
   color: #B3282D;
   font-size: 1.6rem;
@@ -227,30 +209,28 @@ hr {
   background-color: rgba(255, 255, 255, 0);
   padding: 5px 10px;
   margin-left: -10px;
-  transition: all .3s ease;
-}
+  transition: all .3s ease; }
+  /* line 223, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .home .inspire span {
+    font-weight: 600; }
+  /* line 227, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .home .inspire:hover {
+    background-color: rgba(255, 255, 255, 0.6); }
 
-.home .inspire span {
-  font-weight: 600;
-}
+/* line 231, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.home .btn {
+  margin-top: 30px; }
 
-.home .inspire:hover {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.home button {
-  margin-top: 30px;
-}
-
+/* line 238, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .row {
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
 
+/* line 242, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .stat-tabs-wrapper {
-  height: 100%;
-}
+  height: 100%; }
 
+/* line 245, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .stat-tab-question {
   width: 40%;
   height: 100%;
@@ -260,374 +240,329 @@ hr {
   background-image: url(../img/corner-icon.png);
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 20%;
-}
+  background-size: 20%; }
 
+/* line 256, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas h1 {
   line-height: 3.5rem;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
+/* line 260, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas h5 {
   font-size: 1.8rem;
-  margin-top: 40px;
-}
+  margin-top: 40px; }
 
-.focus-areas button {
+/* line 264, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+.focus-areas .btn {
   display: block;
-  margin: 10px 0px;
-}
+  margin: 10px 0px; }
 
+/* line 268, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .label {
   font-size: 18px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
   text-transform: uppercase;
-  color: #5A5A5A;
-}
+  color: #5A5A5A; }
 
+/* line 275, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .stat-tabs-nav {
   position: absolute;
   top: 240px;
   left: 60%;
   margin-left: 50px;
-  z-index: 1000000;
-}
+  z-index: 1000000; }
+  /* line 281, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .focus-areas .stat-tabs-nav div {
+    display: inline-block;
+    margin-right: 10px;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    background-size: 55%;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .3s ease; }
+    /* line 292, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .focus-areas .stat-tabs-nav div a {
+      display: block;
+      height: 100%;
+      width: 100%; }
+    /* line 297, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .focus-areas .stat-tabs-nav div.active {
+      background-color: white;
+      border: 3px solid #B3282D; }
 
-.focus-areas .stat-tabs-nav div {
-  display: inline-block;
-  margin-right: 10px;
-  width: 70px;
-  height: 70px;
-  background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 100px;
-  background-size: 55%;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: all .3s ease;
-}
-
-.focus-areas .stat-tabs-nav div a {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-.focus-areas .stat-tabs-nav div.active {
-  background-color: white;
-  border: 3px solid #B3282D;
-}
-
+/* line 304, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #energy {
-  background-image: url(../img/icon-energy.png);
-}
+  background-image: url(../img/icon-energy.png); }
 
+/* line 307, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #food {
-  background-image: url(../img/icon-food.png);
-}
+  background-image: url(../img/icon-food.png); }
 
+/* line 310, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #water {
-  background-image: url(../img/icon-water.png);
-}
+  background-image: url(../img/icon-water.png); }
 
+/* line 313, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #city {
-  background-image: url(../img/icon-city.png);
-}
+  background-image: url(../img/icon-city.png); }
 
+/* line 316, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #employment {
-  background-image: url(../img/icon-employment.png);
-}
+  background-image: url(../img/icon-employment.png); }
 
+/* line 319, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #conservation {
-  background-image: url(../img/icon-conservation.png);
-}
+  background-image: url(../img/icon-conservation.png); }
 
+/* line 322, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #finance {
-  background-image: url(../img/icon-finance.png);
-}
+  background-image: url(../img/icon-finance.png); }
 
+/* line 325, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .action {
-  margin-top: 30px;
-}
+  margin-top: 30px; }
 
+/* line 328, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas .stat-tab-facts {
   position: absolute;
   top: 40%;
-  width: 60%;
-}
+  width: 60%; }
+  /* line 332, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .focus-areas .stat-tab-facts p {
+    text-align: center;
+    margin: auto;
+    font-size: 2rem;
+    font-family: "Georgia", serif;
+    font-weight: normal;
+    line-height: 1.3em;
+    color: white; }
+    /* line 340, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .focus-areas .stat-tab-facts p span {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 1.2rem;
+      color: white;
+      font-weight: 600; }
 
-.focus-areas .stat-tab-facts p {
-  text-align: center;
-  margin: auto;
-  font-size: 2rem;
-  font-family: "Georgia", serif;
-  font-weight: normal;
-  line-height: 1.3em;
-  color: white;
-}
-
-.focus-areas .stat-tab-facts p span {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.2rem;
-  color: white;
-  font-weight: 600;
-}
-
+/* line 348, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-energy {
-  background-image: url(../img/bg-energy.jpg);
-}
+  background-image: url(../img/bg-energy.jpg); }
 
+/* line 351, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-food {
-  background-image: url(../img/bg-food.jpg);
-}
+  background-image: url(../img/bg-food.jpg); }
 
+/* line 354, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-water {
-  background-image: url(../img/bg-water.jpg);
-}
+  background-image: url(../img/bg-water.jpg); }
 
+/* line 357, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-city {
-  background-image: url(../img/bg-city.jpg);
-}
+  background-image: url(../img/bg-city.jpg); }
 
+/* line 360, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-employment {
-  background-image: url(../img/bg-employment.jpg);
-}
+  background-image: url(../img/bg-employment.jpg); }
 
+/* line 363, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-conservation {
-  background-image: url(../img/bg-conservation.jpg);
-}
+  background-image: url(../img/bg-conservation.jpg); }
 
+/* line 366, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .focus-areas #stat-tab-finance {
-  background-image: url(../img/bg-finance.jpg);
-}
+  background-image: url(../img/bg-finance.jpg); }
 
+/* line 372, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .map {
   background-image: url(../img/bg-map.png);
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
+  /* line 376, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map .row {
+    padding-top: 130px; }
+  /* line 379, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map h5 {
+    font-size: 1.4em;
+    line-height: 1.5em; }
+  /* line 384, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map #journey-map text {
+    color: #353535;
+    font-weight: 600 !important; }
+  /* line 389, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map .process-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px; }
+    /* line 392, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .map .process-box div {
+      display: none; }
+      /* line 394, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      .map .process-box div.active {
+        display: block; }
+    /* line 399, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .map .process-box p span {
+      color: #B3282D;
+      font-weight: 600; }
+    /* line 404, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .map .process-box .deadline {
+      margin-top: 10px; }
+  /* line 408, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1rem; }
+  /* line 414, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map p {
+    font-size: 20px; }
+  /* line 417, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map .btn {
+    margin-top: 20px; }
+  /* line 420, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map h3 {
+    margin-top: 20px; }
 
-.map .row {
-  padding-top: 130px;
-}
-
-.map h5 {
-  font-size: 1.4em;
-  line-height: 1.5em;
-}
-
-.map #journey-map text {
-  color: #353535;
-  font-weight: 600 !important;
-}
-
-.map .process-box {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px;
-}
-
-.map .process-box div {
-  display: none;
-}
-
-.map .process-box div.active {
-  display: block;
-}
-
-.map .process-box p span {
-  color: #B3282D;
-  font-weight: 600;
-}
-
-.map .process-box .deadline {
-  margin-top: 10px;
-}
-
-.map h4 {
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  line-height: 1rem;
-}
-
-.map p {
-  font-size: 20px;
-}
-
-.map button {
-  margin-top: 20px;
-}
-
-.map h3 {
-  margin-top: 20px;
-}
-
+/* line 426, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .network {
   background-image: url(../img/bg-network.png);
   background-size: cover;
-  background-repeat: no-repeat;
-}
+  background-repeat: no-repeat; }
+  /* line 430, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network .row {
+    padding-top: 130px; }
+  /* line 433, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network h5 {
+    font-size: 1.4em;
+    line-height: 1.5em; }
+  /* line 437, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network h4 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    line-height: 1rem; }
+  /* line 443, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network h6 {
+    font-size: 1.5em;
+    color: #B3282D;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+    line-height: 1em; }
+  /* line 451, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network p {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  /* line 455, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network .btn {
+    margin-top: 20px; }
+  /* line 458, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network .network-box {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    margin-top: 40px; }
+  /* line 463, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network .network-graphic {
+    padding-top: 180px;
+    display: block;
+    width: 80%;
+    margin: auto; }
 
-.network .row {
-  padding-top: 130px;
-}
-
-.network h5 {
-  font-size: 1.4em;
-  line-height: 1.5em;
-}
-
-.network h4 {
-  font-weight: 600;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  line-height: 1rem;
-}
-
-.network h6 {
-  font-size: 1.5em;
-  color: #B3282D;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 0 0 10px 0;
-  line-height: 1em;
-}
-
-.network p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.network button {
-  margin-top: 20px;
-}
-
-.network .network-box {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px;
-  margin-top: 40px;
-}
-
-.network .network-graphic {
-  padding-top: 180px;
-  display: block;
-  width: 80%;
-  margin: auto;
-}
-
+/* line 472, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 .apply {
   background-image: url(../img/bg-apply.png);
   background-size: cover;
   background-repeat: no-repeat;
-  text-align: center;
-}
+  text-align: center; }
+  /* line 477, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply .row {
+    text-align: center;
+    padding-top: 250px; }
+  /* line 481, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply h2 {
+    color: white;
+    margin: 0 0 30px 0; }
+  /* line 485, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply p {
+    font-size: 1.5rem; }
+    /* line 487, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply p span {
+      color: white;
+      font-size: 1.3rem; }
+  /* line 492, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply a {
+    color: white; }
+    /* line 494, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply a:hover {
+      color: #B3282D; }
+  /* line 498, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply .btn {
+    display: block;
+    margin: 40px auto 20px auto;
+    padding: 15px 25px;
+    color: #B3282D;
+    font-weight: 600;
+    font-size: 1.8rem;
+    text-transform: uppercase; }
+    /* line 506, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply .btn:hover {
+      color: white; }
+  /* line 510, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply hr {
+    width: 40%;
+    margin: 30px auto;
+    border: 1px solid #5A5A5A; }
+  /* line 515, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply h5 {
+    color: white; }
+  /* line 518, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply h4 {
+    margin-top: 5px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 600; }
+  /* line 525, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .apply #mc_embed_signup {
+    margin-top: 20px; }
+    /* line 527, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply #mc_embed_signup .mc-field-group {
+      width: 50%; }
+    /* line 530, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply #mc_embed_signup .mc-field-group,
+    .apply #mc_embed_signup .clear {
+      display: inline-block;
+      vertical-align: top; }
+    /* line 535, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply #mc_embed_signup input {
+      width: 100%;
+      display: inline-block;
+      height: 50px;
+      padding-left: 15px;
+      border: none;
+      outline: none;
+      background-color: rgba(255, 255, 255, 0.75);
+      font-family: "Source Sans Pro"; }
+    /* line 545, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply #mc_embed_signup input.btn {
+      background-color: white;
+      padding: 10px 25px;
+      font-family: "Source Sans Pro";
+      cursor: pointer; }
+      /* line 550, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      .apply #mc_embed_signup input.btn:hover {
+        background-color: #0A7096;
+        color: white; }
+    /* line 555, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .apply #mc_embed_signup div.mce_inline_error {
+      background-color: transparent;
+      color: black;
+      text-align: left;
+      font-family: "Source Sans Pro";
+      font-weight: normal; }
 
-.apply .row {
-  text-align: center;
-  padding-top: 250px;
-}
-
-.apply h2 {
-  color: white;
-  margin: 0 0 30px 0;
-}
-
-.apply p {
-  font-size: 1.5rem;
-}
-
-.apply p span {
-  color: white;
-  font-size: 1.3rem;
-}
-
-.apply a {
-  color: white;
-}
-
-.apply a:hover {
-  color: #B3282D;
-}
-
-.apply button {
-  display: block;
-  margin: 40px auto 20px auto;
-  padding: 15px 25px;
-}
-
-.apply button a {
-  color: #B3282D;
-  font-weight: 600;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-}
-
-.apply button:hover a {
-  color: white;
-}
-
-.apply hr {
-  width: 40%;
-  margin: 30px auto;
-  border: 1px solid #5A5A5A;
-}
-
-.apply h5 {
-  color: white;
-}
-
-.apply h4 {
-  margin-top: 5px;
-  color: black;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 600;
-}
-
-.apply #mc_embed_signup {
-  margin-top: 20px;
-}
-
-.apply #mc_embed_signup .mc-field-group {
-  width: 50%;
-}
-
-.apply #mc_embed_signup .mc-field-group, .apply #mc_embed_signup .clear {
-  display: inline-block;
-  vertical-align: top;
-}
-
-.apply #mc_embed_signup input {
-  width: 100%;
-  display: inline-block;
-  height: 50px;
-  padding-left: 15px;
-  border: none;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.75);
-  font-family: "Source Sans Pro";
-}
-
-.apply #mc_embed_signup input.button {
-  background-color: white;
-  padding: 10px 25px;
-  font-family: "Source Sans Pro";
-  cursor: pointer;
-}
-
-.apply #mc_embed_signup input.button:hover {
-  background-color: #0A7096;
-  color: white;
-}
-
-.apply #mc_embed_signup div.mce_inline_error {
-  background-color: transparent;
-  color: black;
-  text-align: left;
-  font-family: "Source Sans Pro";
-  font-weight: normal;
-}
-
+/* line 567, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #about .about-canvas {
   background-image: url("../img/bg-about.png");
   background-size: cover;
@@ -635,75 +570,63 @@ hr {
   position: absolute;
   z-index: 100;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
+  /* line 568, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .about-canvas .row {
+    max-width: 100%; }
 
-#about .about-canvas .row {
-  max-width: 100%;
-}
-
+/* line 579, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #about .close {
   float: right;
   margin-right: 60px;
-  margin-top: 60px;
-}
+  margin-top: 60px; }
 
+/* line 584, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #about .content {
   width: 90%;
   margin: auto;
-  color: white;
-}
+  color: white; }
+  /* line 588, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content .about {
+    padding-right: 80px; }
+    /* line 590, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #about .content .about p {
+      font-size: 1.4rem; }
+      /* line 592, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      #about .content .about p span {
+        font-weight: 600; }
+  /* line 597, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content .team {
+    padding-left: 80px; }
+  /* line 600, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content h4 {
+    margin-top: 15px;
+    color: black; }
+  /* line 604, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem; }
+  /* line 609, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content ul {
+    margin: 0px;
+    padding-left: 18px; }
+  /* line 613, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .content li {
+    margin-bottom: 5px; }
+    /* line 615, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #about .content li p {
+      font-size: 1.4rem; }
+      /* line 617, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      #about .content li p.title {
+        color: black;
+        font-size: 1.2rem;
+        line-height: 1em; }
+    /* line 623, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #about .content li span {
+      font-weight: 600; }
 
-#about .content .about {
-  padding-right: 80px;
-}
-
-#about .content .about p {
-  font-size: 1.4rem;
-}
-
-#about .content .about p span {
-  font-weight: 600;
-}
-
-#about .content .team {
-  padding-left: 80px;
-}
-
-#about .content h4 {
-  margin-top: 15px;
-  color: black;
-}
-
-#about .content a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-}
-
-#about .content ul {
-  margin: 0px;
-  padding-left: 18px;
-}
-
-#about .content li {
-  margin-bottom: 5px;
-}
-
-#about .content li p {
-  font-size: 1.4rem;
-}
-
-#about .content li p.title {
-  color: black;
-  font-size: 1.2rem;
-  line-height: 1em;
-}
-
-#about .content li span {
-  font-weight: 600;
-}
-
+/* line 632, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #faqs .faqs-canvas {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
@@ -711,153 +634,141 @@ hr {
   position: absolute;
   z-index: 100;
   width: 100%;
-  height: 100%;
-}
+  height: 100%; }
+  /* line 633, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #faqs .faqs-canvas .row {
+    max-width: 100%; }
+  /* line 643, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #faqs .faqs-canvas .close {
+    float: right;
+    margin-right: 60px;
+    margin-top: 60px; }
+  /* line 648, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #faqs .faqs-canvas .content {
+    width: 90%;
+    margin: auto; }
+    /* line 651, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #faqs .faqs-canvas .content p {
+      font-size: 1.3rem; }
+      /* line 653, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      #faqs .faqs-canvas .content p span {
+        font-weight: 600; }
+    /* line 657, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #faqs .faqs-canvas .content ol {
+      padding-left: 18px; }
+    /* line 660, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #faqs .faqs-canvas .content li {
+      margin-bottom: 20px; }
+    /* line 663, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #faqs .faqs-canvas .content .one {
+      padding-right: 80px; }
+    /* line 666, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    #faqs .faqs-canvas .content .two {
+      padding-left: 80px; }
 
-#faqs .faqs-canvas .row {
-  max-width: 100%;
-}
-
-#faqs .faqs-canvas .close {
-  float: right;
-  margin-right: 60px;
-  margin-top: 60px;
-}
-
-#faqs .faqs-canvas .content {
-  width: 90%;
-  margin: auto;
-}
-
-#faqs .faqs-canvas .content p {
-  font-size: 1.3rem;
-}
-
-#faqs .faqs-canvas .content p span {
-  font-weight: 600;
-}
-
-#faqs .faqs-canvas .content ol {
-  padding-left: 18px;
-}
-
-#faqs .faqs-canvas .content li {
-  margin-bottom: 20px;
-}
-
-#faqs .faqs-canvas .content .one {
-  padding-right: 80px;
-}
-
-#faqs .faqs-canvas .content .two {
-  padding-left: 80px;
-}
-
+/* line 674, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #journey-map {
   width: 1024px;
   height: 500px;
   margin: 0 auto;
-  display: block;
-}
+  display: block; }
 
+/* line 681, /Users/AnhLe/Desktop/Vatican/css/style.scss */
 #journey-block-mobile {
   margin: 0 auto;
-  display: none;
-}
+  display: none; }
 
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  /* line 701, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .logo {
     margin-left: 20px;
-    margin-top: 20px;
-  }
+    margin-top: 20px; }
+  /* line 705, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .logo img {
-    max-width: 30px;
-  }
-  .nav button {
+    max-width: 30px; }
+  /* line 708, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .btn {
     padding: 5px 15px;
     clear: both;
-    float: right;
-  }
-  .nav button a {
-    font-size: 14px;
-  }
+    float: right; }
+  /* line 713, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .btn {
+    font-size: 14px; }
+  /* line 716, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu .social a {
     font-size: 14px;
-    padding: 4px 5px;
-  }
+    padding: 4px 5px; }
+  /* line 720, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu {
     margin-top: 20px;
-    margin-right: 20px;
-  }
+    margin-right: 20px; }
+  /* line 724, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu .social {
-    margin-right: 10px;
-  }
-  .nav .menu .about, .nav .menu .faqs {
+    margin-right: 10px; }
+  /* line 727, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .menu .about,
+  .nav .menu .faqs {
     margin-right: 5px;
-    font-size: 14px;
-  }
+    font-size: 14px; }
+  /* line 733, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .home .row {
-    padding-top: 70px;
-  }
+    padding-top: 70px; }
+  /* line 736, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .home h2 {
-    font-size: 30px;
-  }
+    font-size: 30px; }
+  /* line 741, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .focus-areas .stat-tab-facts {
-    display: none;
-  }
+    display: none; }
+  /* line 744, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .focus-areas .stat-tab-question {
     width: 100%;
     background-color: rgba(235, 227, 219, 0.6);
-    padding: 140px 20px 0 20px;
-  }
+    padding: 140px 20px 0 20px; }
+  /* line 749, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .focus-areas .stat-tabs-nav {
     top: 90px;
     left: 0;
-    margin-left: 20px;
-  }
-  .focus-areas .stat-tabs-nav div {
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
-  }
+    margin-left: 20px; }
+    /* line 753, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    .focus-areas .stat-tabs-nav div {
+      width: 40px;
+      height: 40px;
+      border-radius: 40px; }
+  /* line 761, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #journey-map {
-    display: none;
-  }
+    display: none; }
+  /* line 764, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #journey-map-mobile {
     display: block;
     width: 300px;
-    height: 400px;
-  }
+    height: 400px; }
+  /* line 769, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .map h5 {
-    font-size: 14px;
-  }
+    font-size: 14px; }
+  /* line 772, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   h3 {
-    font-size: 20px;
-  }
-}
+    font-size: 20px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
+  /* line 781, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu {
-    width: 260px;
-  }
-  .nav button {
+    width: 260px; }
+  /* line 784, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .nav .btn {
     margin-top: 5px;
-    clear: both;
-  }
+    clear: both; }
+  /* line 788, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu .social {
-    float: right;
-  }
-}
+    float: right; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
+  /* line 797, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .nav .menu {
-    width: 230px;
-  }
-}
+    width: 230px; } }
 
 /*# sourceMappingURL=style.css.map */
