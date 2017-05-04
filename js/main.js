@@ -455,6 +455,19 @@ $(function(){
         currentLevel = 3;
       });
 
+      //Initial plus on apply Cricle
+      var plusV = s.paper.line(53, 440, 53, 452);
+      plusV.attr({
+        stroke: '#8E7534',
+        'stroke-width':2
+      });
+      var plusH = s.paper.line(47,446,59,446);
+      plusH.attr({
+        stroke:'#8E7534',
+        'stroke-width':2
+      });
+
+
     }
     svgAnimate();
 
