@@ -769,6 +769,42 @@ hr {
 /* Medium Devices, Desktops */
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
+  .nav .logo {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .nav .logo img {
+    max-width: 30px;
+  }
+  .nav button {
+    padding: 5px 15px;
+    clear: both;
+    float: right;
+  }
+  .nav button a {
+    font-size: 14px;
+  }
+  .nav .menu .social a {
+    font-size: 14px;
+    padding: 4px 5px;
+  }
+  .nav .menu {
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .nav .menu .social {
+    margin-right: 10px;
+  }
+  .nav .menu .about, .nav .menu .faqs {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  .home .row {
+    padding-top: 70px;
+  }
+  .home h2 {
+    font-size: 30px;
+  }
   #journey-map {
     display: none;
   }
@@ -786,6 +822,24 @@ hr {
 }
 
 /* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .nav .menu {
+    width: 260px;
+  }
+  .nav button {
+    margin-top: 5px;
+    clear: both;
+  }
+  .nav .menu .social {
+    float: right;
+  }
+}
+
 /* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  .nav .menu {
+    width: 230px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
