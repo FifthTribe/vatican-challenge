@@ -330,6 +330,18 @@ $(function(){
       });
 
       acceleratorCircle.click(function(){
+        plusV.attr({
+          x1: 594,
+          y1: 300,
+          x2: 606,
+          y2: 300
+        });
+        plusH.attr({
+          x1: 600,
+          y1: 294,
+          x2: 600,
+          y2: 306
+        });
         $('.process-box > div').removeClass('active');
         $('#accelerator-box').addClass('active');
         this.attr({
@@ -404,6 +416,18 @@ $(function(){
       });
 
       pitchCircle.click(function(){
+        plusV.attr({
+          x1: 894,
+          y1: 150,
+          x2: 906,
+          y2: 150
+        });
+        plusH.attr({
+          x1: 900,
+          y1: 144,
+          x2: 900,
+          y2: 156
+        });
         $('.process-box > div').removeClass('active');
         $('#pitch-box').addClass('active');
         this.attr({
@@ -466,7 +490,6 @@ $(function(){
         stroke:'#8E7534',
         'stroke-width':2
       });
-
 
     }
     svgAnimate();
