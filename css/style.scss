@@ -252,7 +252,7 @@ hr {
   }
   h5 {
     font-size: 1.8rem;
-    margin-top: 40px;
+    margin-top: 2rem;
   }
   .btn {
     display: block;
@@ -267,30 +267,31 @@ hr {
   }
   .stat-tabs-nav {
     position: absolute;
-    top: 240px;
+    top: 180px;
     left: 60%;
     margin-left: 50px;
     z-index: 1000000;
-    div {
-      display: inline-block;
-      margin-right: 10px;
-      width: 70px;
-      height: 70px;
-      background-color: rgba(255, 255, 255, .8);
-      border-radius: 100px;
-      background-size: 55%;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: all .3s ease;
-      a {
-        display: block;
-        height: 100%;
-        width: 100%;
-      }
-      &.active {
-        background-color: white;
-        border: 3px solid $red;
-      }
+    .nav-row {
+      div {
+         display: inline-block;
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: 100px;
+            background-size: 55%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease;
+            a {
+              display: block;
+              height: 100%;
+              width: 100%;
+            }
+            &.active {
+              background-color: white;
+              border: 3px solid $red;
+            }}
     }
   }
   // Icons
@@ -720,13 +721,14 @@ hr {
   }
   .focus-areas {
     .stat-tabs-nav {
-      top: 15rem;
-      div {
-        width: 4rem;
-        height: 4rem;
+      top: 10rem;
+      .nav-row {
+        div {
+          width: 5rem;
+        height: 5rem;}
       }
     }
-    .stat-tab-question {padding-top: 20rem;}
+    .stat-tab-question {padding-top: 22rem;}
     .stat-tab-facts {
       p {width: 80%;}
     }
@@ -759,7 +761,7 @@ hr {
       }
       .content {
         overflow: scroll;
-        max-height: 700px;
+        max-height: 650px;
         .one {
         padding-right: 1rem;
       }
@@ -773,7 +775,7 @@ hr {
     }
     h2 {
       font-size: 2.5rem;
-      margin: 0 0 10px 0;
+      margin: 2rem 0 1rem 0;
     }
   }
   #faqs {
@@ -788,7 +790,7 @@ hr {
       }
       .content {
         overflow: scroll;
-        max-height: 700px;
+        max-height: 650px;
         .one {
         padding-right: 1rem;
       }
@@ -799,7 +801,7 @@ hr {
     }
     h2 {
       font-size: 2.5rem;
-      margin: 0;
+      margin: 2rem 0 1rem 0;
     }
   }
 }
@@ -948,7 +950,7 @@ hr {
   }
  }
  .home {
-   background-position: bottom right;
+   background-position: 70%;
    .row {
      padding-top: 20rem;
    }
