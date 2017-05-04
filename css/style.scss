@@ -6,22 +6,6 @@
   margin: 0;
 }
 
-.stat-tab {
-  display: none;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  &.active {
-    display: block;
-  }
-}
-
-.navigate-up,
-.navigate-down {
-  display: none;
-}
-
 // BASE STYLING
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 @import url('foundation.min.css');
@@ -89,14 +73,14 @@ a {
 }
 
 .btn {
-  padding: 10px 25px;
+  padding: .5em 1.3em;
   background-color: white;
   border-radius: 0;
-  display: block;
+  display: inline-block;
   color: black;
   text-decoration: none;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 20px;
+  font-size: 1.3rem;
   span {
     margin-right: 10px
   }
@@ -116,6 +100,7 @@ a {
   }
   &:hover {
     background-color: $red;
+    span {color:white}
   }
 }
 
@@ -125,6 +110,7 @@ a {
   }
   &:hover {
     background-color: $blue;
+    span {color:white}
   }
 }
 
@@ -158,7 +144,7 @@ hr {
     float: right;
     margin-right: 50px;
     .about,
-    .faqs {
+    .faqs, .apply-now {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
@@ -170,6 +156,9 @@ hr {
       &:hover {
         color: $red;
       }
+    }
+    .apply-now {
+      display: none;
     }
     .social {
       display: inline-block;
@@ -218,8 +207,9 @@ hr {
     font-size: 1.6rem;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0);
-    padding: 5px 10px;
-    margin-left: -10px;
+    padding: .1em 1em;;
+    margin-left: -1em;
+    display: block;
     span {
       font-weight: 600;
     }
@@ -229,7 +219,7 @@ hr {
     }
   }
   .btn {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 }
 
@@ -325,6 +315,23 @@ hr {
   .action {
     margin-top: 30px;
   }
+
+  .stat-tab {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.active {
+      display: block;
+    }
+  }
+
+  .navigate-up,
+  .navigate-down {
+    display: none;
+  }
+
   .stat-tab-facts {
     position: absolute;
     top: 40%;
@@ -384,7 +391,15 @@ hr {
     text {
       color: $dark-grey;
       font-weight: 600 !important;
+      display: block;
     }
+    width: 1024px;
+    height: 500px;
+    margin: -100px auto 0 auto;
+    display: inline-block;
+  }
+  #journey-map-mobile {
+    display: none;
   }
   .process-box {
     background-color: rgba(white, .7);
@@ -496,15 +511,18 @@ hr {
     }
   }
   .btn {
-    display: block;
+    display:inline-block;
     margin: 40px auto 20px auto;
-    padding: 15px 25px;
+    padding: 10px 30px;
     color: $red;
     font-weight: 600;
     font-size: 1.8rem;
     text-transform: uppercase;
     &:hover {
       color: white;
+      span {
+        color: white;
+      }
     }
   }
   hr {
@@ -544,9 +562,12 @@ hr {
     }
     input.btn {
       background-color: white;
+      margin-top: 0px !important;
       padding: 10px 25px;
       font-family: "Source Sans Pro";
       cursor: pointer;
+      font-size: 1.2rem;
+      color: black;
       &:hover {
         background-color: $dark-blue;
         color: white;
@@ -675,7 +696,6 @@ hr {
   width: 1024px;
   height: 500px;
   margin: 0 auto;
-  display: block;
 }
 
 #journey-map-mobile {
@@ -686,7 +706,37 @@ hr {
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1367px) {
+  html {
+    font-size: 12px;
+  }
+  .home {
+    .row {
+      padding-top: 180px;
+    }
+    .btn {
+      margin-top: 10px;
+      font-size: 1.4rem;
+    }
+  }
+  .focus-areas {
+    .stat-tabs-nav {
+      top: 15rem;
+      div {
+        width: 4rem;
+        height: 4rem;
+      }
+    }
+    .stat-tab-question {padding-top: 20rem;}
+  }
+  .map {
+    h3 {
+    margin-top: 1rem;
+  }#journey-map {
+    margin: -170px auto -100px auto;
+  }
+  }
+}
 
 
 /* Medium Devices, Desktops */
@@ -697,66 +747,7 @@ hr {
 /* Small Devices, Tablets */
 
 @media only screen and (max-width: 768px) {
-  // Navigation menu / Logo mobile
-  .nav .logo {
-    margin-left: 20px;
-    margin-top: 20px;
-  }
-  .nav .logo img {
-    max-width: 30px;
-  }
-  .nav .btn {
-    padding: 5px 15px;
-    clear: both;
-    float: right;
-  }
-  .nav .btn {
-    font-size: 14px;
-  }
-  .nav .menu .social a {
-    font-size: 14px;
-    padding: 4px 5px;
-  }
-  .nav .menu {
-    margin-top: 20px;
-    margin-right: 20px;
-  }
-  .nav .menu .social {
-    margin-right: 10px;
-  }
-  .nav .menu .about,
-  .nav .menu .faqs {
-    margin-right: 5px;
-    font-size: 14px;
-  }
-  // Homepage Mobile
-  .home .row {
-    padding-top: 70px;
-  }
-  .home h2 {
-    font-size: 30px;
-  }
-  // Stats tabs mobile view
-  .focus-areas {
-    .stat-tab-facts {
-      display: none;
-    }
-    .stat-tab-question {
-      width: 100%;
-      background-color: rgba(235, 227, 219, 0.6);
-      padding: 140px 20px 0 20px;
-    }
-    .stat-tabs-nav {
-      top: 90px;
-      left: 0;
-      margin-left: 20px;
-      div {
-        width: 40px;
-        height: 40px;
-        border-radius: 40px;
-      }
-    }
-  }
+
   // Journey Map SVG Mobile
   #journey-map {
     display: none;
@@ -778,16 +769,26 @@ hr {
 /* Extra Small Devices, Phones */
 
 @media only screen and (max-width: 480px) {
-  .nav .menu {
+.nav {
+  .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+    img {
+      max-width: 40px;
+    }
+  }
+  .menu {
+    margin-top: 10px;
+    margin-right: 10px;
     width: 260px;
+    .social {
+      float: right;
+    }
   }
-  .nav .btn {
-    margin-top: 5px;
-    clear: both;
+  .btn {
+    display: none !important;
   }
-  .nav .menu .social {
-    float: right;
-  }
+ }
 }
 
 
