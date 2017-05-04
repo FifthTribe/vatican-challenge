@@ -135,7 +135,7 @@ hr {
 
 .nav {
   position: absolute;
-  z-index: 1000;
+  z-index: 50;
   width: 100%;
 }
 
@@ -156,7 +156,7 @@ hr {
   margin-right: 50px;
 }
 
-.nav .menu .about {
+.nav .menu .about, .nav .menu .faqs {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -167,8 +167,8 @@ hr {
   transition: color .3s ease;
 }
 
-.nav .menu .about:hover {
-  color: #00AEEF;
+.nav .menu .about:hover, .nav .menu .faqs:hover {
+  color: #B3282D;
 }
 
 .nav .menu .social {
@@ -416,9 +416,31 @@ hr {
   line-height: 1.5em;
 }
 
+.map #journey-map text {
+  color: #353535;
+  font-weight: 600 !important;
+}
+
 .map .process-box {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 40px;
+}
+
+.map .process-box div {
+  display: none;
+}
+
+.map .process-box div.active {
+  display: block;
+}
+
+.map .process-box p span {
+  color: #B3282D;
+  font-weight: 600;
+}
+
+.map .process-box .deadline {
+  margin-top: 10px;
 }
 
 .map h4 {
@@ -605,3 +627,165 @@ hr {
   font-family: "Source Sans Pro";
   font-weight: normal;
 }
+
+#about .about-canvas {
+  background-image: url("../img/bg-about.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#about .about-canvas .row {
+  max-width: 100%;
+}
+
+#about .close {
+  float: right;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+#about .content {
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+
+#about .content .about {
+  padding-right: 80px;
+}
+
+#about .content .about p {
+  font-size: 1.4rem;
+}
+
+#about .content .about p span {
+  font-weight: 600;
+}
+
+#about .content .team {
+  padding-left: 80px;
+}
+
+#about .content h4 {
+  margin-top: 15px;
+  color: black;
+}
+
+#about .content a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+#about .content ul {
+  margin: 0px;
+  padding-left: 18px;
+}
+
+#about .content li {
+  margin-bottom: 5px;
+}
+
+#about .content li p {
+  font-size: 1.4rem;
+}
+
+#about .content li p.title {
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1em;
+}
+
+#about .content li span {
+  font-weight: 600;
+}
+
+#faqs .faqs-canvas {
+  background-image: url("../img/bg-faqs.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+
+#faqs .faqs-canvas .row {
+  max-width: 100%;
+}
+
+#faqs .faqs-canvas .close {
+  float: right;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+#faqs .faqs-canvas .content {
+  width: 90%;
+  margin: auto;
+}
+
+#faqs .faqs-canvas .content p {
+  font-size: 1.3rem;
+}
+
+#faqs .faqs-canvas .content p span {
+  font-weight: 600;
+}
+
+#faqs .faqs-canvas .content ol {
+  padding-left: 18px;
+}
+
+#faqs .faqs-canvas .content li {
+  margin-bottom: 20px;
+}
+
+#faqs .faqs-canvas .content .one {
+  padding-right: 80px;
+}
+
+#faqs .faqs-canvas .content .two {
+  padding-left: 80px;
+}
+
+#journey-map {
+  width: 1024px;
+  height: 500px;
+  margin: 0 auto;
+  display: block;
+}
+
+#journey-block-mobile {
+  margin: 0 auto;
+  display: none;
+}
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  #journey-map {
+    display: none;
+  }
+  #journey-map-mobile {
+    display: block;
+    width: 300px;
+    height: 400px;
+  }
+  .map h5 {
+    font-size: 14px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+
+/*# sourceMappingURL=style.css.map */
