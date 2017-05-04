@@ -415,7 +415,7 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':6
       });
-      var pitchText = s.paper.text(838, 205, "$1M PITCH");
+      var pitchText = s.paper.text(838, 205, "DEMO DAY");
       pitchText.attr({
         'font-size': '26px',
         'font-weight':'bold'
@@ -426,7 +426,7 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':3
       });
-      var pitchText_mobile = s_mobile.paper.text(230, 48, "$1M PITCH");
+      var pitchText_mobile = s_mobile.paper.text(230, 48, "DEMO DAY");
       pitchText_mobile.attr({
         'font-size': '14px',
         'font-weight':'bold'
