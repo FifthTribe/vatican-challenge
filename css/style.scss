@@ -1,4 +1,4 @@
-.reveal .slides>section {
+.reveal .slides > section {
   text-align: left;
   width: 100%;
   height: 100%;
@@ -37,9 +37,9 @@ h1 {
 
 h2 {
   font-family: "Georgia", serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 h3 {
@@ -148,7 +148,7 @@ hr {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
-      font-size: 18px;
+      font-size: 1.2rem;
       color: $dark-grey;
       text-decoration: none;
       margin-right: 30px;
@@ -196,6 +196,9 @@ hr {
 
 //HOME SLIDE
 .home {
+  background-image: url(../img/pope.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   .row {
     padding-top: 280px;
   }
@@ -249,7 +252,7 @@ hr {
   }
   h5 {
     font-size: 1.8rem;
-    margin-top: 40px;
+    margin-top: 2rem;
   }
   .btn {
     display: block;
@@ -264,30 +267,31 @@ hr {
   }
   .stat-tabs-nav {
     position: absolute;
-    top: 240px;
+    top: 180px;
     left: 60%;
     margin-left: 50px;
     z-index: 1000000;
-    div {
-      display: inline-block;
-      margin-right: 10px;
-      width: 70px;
-      height: 70px;
-      background-color: rgba(255, 255, 255, .8);
-      border-radius: 100px;
-      background-size: 55%;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: all .3s ease;
-      a {
-        display: block;
-        height: 100%;
-        width: 100%;
-      }
-      &.active {
-        background-color: white;
-        border: 3px solid $red;
-      }
+    .nav-row {
+      div {
+         display: inline-block;
+            margin-right: 10px;
+            width: 70px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, .8);
+            border-radius: 100px;
+            background-size: 55%;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: all .3s ease;
+            a {
+              display: block;
+              height: 100%;
+              width: 100%;
+            }
+            &.active {
+              background-color: white;
+              border: 3px solid $red;
+            }}
     }
   }
   // Icons
@@ -386,6 +390,9 @@ hr {
   h5 {
     font-size: 1.4em;
     line-height: 1.5em;
+  }
+  .map-intro-mobile {
+    display: none;
   }
   #journey-map {
     text {
@@ -691,13 +698,6 @@ hr {
   }
 }
 
-// SVG
-#journey-map {
-  width: 1024px;
-  height: 500px;
-  margin: 0 auto;
-}
-
 #journey-map-mobile {
   margin: 0 auto;
   display: none;
@@ -721,13 +721,14 @@ hr {
   }
   .focus-areas {
     .stat-tabs-nav {
-      top: 15rem;
-      div {
-        width: 4rem;
-        height: 4rem;
+      top: 10rem;
+      .nav-row {
+        div {
+          width: 5rem;
+        height: 5rem;}
       }
     }
-    .stat-tab-question {padding-top: 20rem;}
+    .stat-tab-question {padding-top: 22rem;}
     .stat-tab-facts {
       p {width: 80%;}
     }
@@ -738,8 +739,9 @@ hr {
     }
     h3 {
     margin-top: 1rem;
-  }#journey-map {
-    margin: -170px auto -80px auto;
+  }
+  #journey-map {
+    margin: -180px auto -80px auto;
   }
   }
   .apply {
@@ -759,7 +761,7 @@ hr {
       }
       .content {
         overflow: scroll;
-        max-height: 700px;
+        max-height: 650px;
         .one {
         padding-right: 1rem;
       }
@@ -773,7 +775,7 @@ hr {
     }
     h2 {
       font-size: 2.5rem;
-      margin: 0 0 10px 0;
+      margin: 2rem 0 1rem 0;
     }
   }
   #faqs {
@@ -788,7 +790,7 @@ hr {
       }
       .content {
         overflow: scroll;
-        max-height: 700px;
+        max-height: 650px;
         .one {
         padding-right: 1rem;
       }
@@ -799,7 +801,7 @@ hr {
     }
     h2 {
       font-size: 2.5rem;
-      margin: 0;
+      margin: 2rem 0 1rem 0;
     }
   }
 }
@@ -807,7 +809,82 @@ hr {
 
 /* Medium Devices, Desktops */
 
-@media only screen and (max-width: 992px) {}
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  .nav {
+    .logo {
+      margin-left: 20px;
+      margin-top: 20px;
+      img {
+        max-width:40px;
+      }
+    }
+    .menu {
+      margin-right: 20px;
+      margin-top: 20px;
+    }
+    .btn {
+      font-size: 1.1rem;
+    }
+  }
+  .home {
+    .row {
+      padding-top: 10rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+    .inspire {
+      font-size: 1.4rem;
+    }
+  }
+  .focus-areas {
+    .stat-tabs-nav {
+      top: 8rem;
+    }
+    h5 {
+      font-size: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .stat-tab-question {
+      padding-top: 18rem;
+    }
+  }
+  .map {
+
+  }
+  .network {
+    .row {
+      padding-top: 5rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+    h5 {
+      font-size:1.2rem;}
+      h6 {font-size: 1.4rem};
+
+      p {font-size: 1.2rem}
+    }
+    .apply {
+      .row {
+        padding-top: 7rem;
+      }
+      h2 {
+        font-size: 2.5rem;
+        margin-bottom: .5em;
+      }
+      .btn {
+        font-size: 1.4rem;
+        margin: 2rem auto 1rem auto;
+      }
+      hr {
+        margin: 1.5rem auto;
+      }
+    }
+}
 
 
 /* Small Devices, Tablets */
@@ -815,11 +892,11 @@ hr {
 @media only screen and (max-width: 768px) {
 
   // Journey Map SVG Mobile
-  #journey-map {
+  .map #journey-map {
     display: none;
   }
-  #journey-map-mobile {
-    display: block;
+  .map #journey-map-mobile {
+    display: block !important;
     width: 300px;
     height: 400px;
   }
@@ -837,23 +914,105 @@ hr {
 @media only screen and (max-width: 480px) {
 .nav {
   .logo {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
     img {
-      max-width: 40px;
+      max-width: 50px;
     }
   }
   .menu {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
-    width: 260px;
+    .apply-now {
+      display: inline-block;
+    }
+    .about, .faqs,.apply-now {
+      margin-right: 1rem;
+      font-size: 1.4rem;
+    }
     .social {
       float: right;
+      margin-left: 10px;
+      margin-top: 3px;
+      a {
+        background-color: transparent;
+        padding: 0px;
+        margin-right: 5px;
+        &:hover {
+          background-color: transparent;
+          color: $red;
+        }
+      }
     }
   }
   .btn {
     display: none !important;
   }
+ }
+ .home {
+   background-position: 70%;
+   .row {
+     padding-top: 20rem;
+   }
+   h2 {
+     font-size: 2.5rem;
+     padding-right: 2.5rem;
+   }
+   .inspire {
+     font-size: 1.8rem;
+     line-height: 1.3em;
+     margin-bottom: 1rem;
+   }
+ }
+ .focus-areas {
+   .stat-tab-facts {
+     display: none;
+   }
+   .stat-tab-question {
+     width: 100%;
+     padding: 20rem 3rem 0 3rem;
+     background-color: rgba(235, 227, 219, 0.85)
+   }
+   .stat-tabs-nav {
+     left: 3rem;
+     margin-left: 0px;
+   }
+ }
+ .map {
+   .row {
+     padding-top: 6rem;
+   }
+   #journey-map {
+     display: none;
+   }
+   .map-intro {
+     display: none;
+   }
+   .map-intro-mobile {
+     display: block;
+   }
+ }
+ .network {
+   .network-box {
+     padding: 1.5rem;
+     p {margin-bottom: 1rem;}
+   }
+ }
+ .apply {
+   .row {
+     padding-top: 6rem;
+   }
+   h2 {
+     font-size: 2rem;
+     line-height: 1.2em;
+   }
+   p {
+     font-size: 1.3rem;
+     line-height: 1.2em;
+   }
+   h4 {
+     line-height: 1.2em;
+   }
  }
 }
 
@@ -861,7 +1020,13 @@ hr {
 /* Custom, iPhone Retina */
 
 @media only screen and (max-width: 320px) {
-  .nav .menu {
-    width: 230px;
-  }
+  .nav {
+    .logo {
+      margin-top: 10px;
+      margin-left: 10px;
+      img {
+        max-width: 30px;
+      }
+    }
+ }
 }
