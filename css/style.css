@@ -445,7 +445,7 @@ hr {
 
 .map .process-box {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .map .process-box div {
@@ -457,12 +457,7 @@ hr {
 }
 
 .map .process-box p span {
-  color: #B3282D;
   font-weight: 600;
-}
-
-.map .process-box .deadline {
-  margin-top: 10px;
 }
 
 .map h4 {
@@ -477,7 +472,7 @@ hr {
 }
 
 .map .btn {
-  margin-top: 20px;
+  margin-top: 1rem;
 }
 
 .map h3 {
@@ -495,7 +490,7 @@ hr {
 }
 
 .network h5 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   line-height: 1.5em;
 }
 
@@ -507,7 +502,7 @@ hr {
 }
 
 .network h6 {
-  font-size: 1.5em;
+  font-size: 1.7em;
   color: #B3282D;
   font-weight: 600;
   text-transform: uppercase;
@@ -516,7 +511,7 @@ hr {
 }
 
 .network p {
-  font-size: 20px;
+  font-size: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -526,14 +521,14 @@ hr {
 
 .network .network-box {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 40px;
-  margin-top: 40px;
+  padding: 2.5rem;
+  margin-top: 2rem;
 }
 
 .network .network-graphic {
-  padding-top: 180px;
+  padding-top: 10rem;
   display: block;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -751,6 +746,11 @@ hr {
   margin-top: 60px;
 }
 
+#faqs .faqs-canvas .close svg {
+  width: 50px;
+  height: 50px;
+}
+
 #faqs .faqs-canvas .content {
   width: 90%;
   margin: auto;
@@ -786,7 +786,7 @@ hr {
   margin: 0 auto;
 }
 
-#journey-block-mobile {
+#journey-map-mobile {
   margin: 0 auto;
   display: none;
 }
@@ -813,11 +813,67 @@ hr {
   .focus-areas .stat-tab-question {
     padding-top: 20rem;
   }
+  .focus-areas .stat-tab-facts p {
+    width: 80%;
+  }
+  .map .row {
+    padding-top: 100px;
+  }
   .map h3 {
     margin-top: 1rem;
   }
   .map #journey-map {
-    margin: -170px auto -100px auto;
+    margin: -170px auto -80px auto;
+  }
+  .apply .row {
+    padding-top: 15rem;
+  }
+  #about .about-canvas .close {
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+  #about .about-canvas .close svg {
+    width: 40px;
+    height: 40px;
+  }
+  #about .about-canvas .content {
+    overflow: scroll;
+    max-height: 700px;
+  }
+  #about .about-canvas .content .one {
+    padding-right: 1rem;
+  }
+  #about .about-canvas .content .two {
+    padding-left: 1rem;
+  }
+  #about .about-canvas .content h4 {
+    margin-top: 5px;
+  }
+  #about h2 {
+    font-size: 2.5rem;
+    margin: 0 0 10px 0;
+  }
+  #faqs .faqs-canvas .close {
+    margin-right: 3rem;
+    margin-top: 3rem;
+  }
+  #faqs .faqs-canvas .close svg {
+    width: 40px;
+    height: 40px;
+  }
+  #faqs .faqs-canvas .content {
+    overflow: scroll;
+    max-height: 700px;
+  }
+  #faqs .faqs-canvas .content .one {
+    padding-right: 1rem;
+  }
+  #faqs .faqs-canvas .content .two {
+    padding-left: 1rem;
+  }
+  #faqs h2 {
+    font-size: 2.5rem;
+    margin: 0;
   }
 }
 

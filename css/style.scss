@@ -403,7 +403,7 @@ hr {
   }
   .process-box {
     background-color: rgba(white, .7);
-    padding: 40px;
+    padding: 2.5rem;
     div {
       display: none;
       &.active {
@@ -412,12 +412,8 @@ hr {
     }
     p {
       span {
-        color: $red;
         font-weight: 600;
       }
-    }
-    .deadline {
-      margin-top: 10px;
     }
   }
   h4 {
@@ -430,7 +426,7 @@ hr {
     font-size: 20px;
   }
   .btn {
-    margin-top: 20px;
+    margin-top: 1rem;
   }
   h3 {
     margin-top: 20px;
@@ -446,7 +442,7 @@ hr {
     padding-top: 130px;
   }
   h5 {
-    font-size: 1.4em;
+    font-size: 1.5em;
     line-height: 1.5em;
   }
   h4 {
@@ -456,7 +452,7 @@ hr {
     line-height: 1rem;
   }
   h6 {
-    font-size: 1.5em;
+    font-size: 1.7em;
     color: $red;
     font-weight: 600;
     text-transform: uppercase;
@@ -464,7 +460,7 @@ hr {
     line-height: 1em;
   }
   p {
-    font-size: 20px;
+    font-size: 1.5rem;
     margin-bottom: 20px;
   }
   .btn {
@@ -472,13 +468,13 @@ hr {
   }
   .network-box {
     background-color: rgba(white, .7);
-    padding: 40px;
-    margin-top: 40px;
+    padding: 2.5rem;
+    margin-top: 2rem;
   }
   .network-graphic {
-    padding-top: 180px;
+    padding-top: 10rem;
     display: block;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
 }
@@ -665,6 +661,10 @@ hr {
       float: right;
       margin-right: 60px;
       margin-top: 60px;
+      svg {
+        width: 50px;
+        height: 50px;
+      }
     }
     .content {
       width: 90%;
@@ -728,13 +728,79 @@ hr {
       }
     }
     .stat-tab-question {padding-top: 20rem;}
+    .stat-tab-facts {
+      p {width: 80%;}
+    }
   }
   .map {
+    .row {
+      padding-top: 100px;
+    }
     h3 {
     margin-top: 1rem;
   }#journey-map {
-    margin: -170px auto -100px auto;
+    margin: -170px auto -80px auto;
   }
+  }
+  .apply {
+    .row {
+      padding-top: 15rem;
+    }
+  }
+  #about {
+    .about-canvas{
+      .close {
+        margin-right: 3rem;
+        margin-top: 3rem;
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .content {
+        overflow: scroll;
+        max-height: 700px;
+        .one {
+        padding-right: 1rem;
+      }
+      .two {
+        padding-left: 1rem;
+      }
+      h4 {
+        margin-top: 5px;
+      }
+    }
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 0 0 10px 0;
+    }
+  }
+  #faqs {
+    .faqs-canvas{
+      .close {
+        margin-right: 3rem;
+        margin-top: 3rem;
+        svg {
+          width: 40px;
+          height: 40px;
+        }
+      }
+      .content {
+        overflow: scroll;
+        max-height: 700px;
+        .one {
+        padding-right: 1rem;
+      }
+      .two {
+        padding-left: 1rem;
+      }
+    }
+    }
+    h2 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
   }
 }
 

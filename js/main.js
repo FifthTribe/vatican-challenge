@@ -47,7 +47,7 @@ $(function(){
       //M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105
       var applyToMentorLinePath = "M 53 446 S 53 446 75 400 S 75 400 100 350 S 100 350 300 270";
       var applyToMentorLineLength = Snap.path.getTotalLength(applyToMentorLinePath);
-      var mentorToAcceleratorLinePath = "M 300 270 S 300 270 350 280 S 350 280 500 290 S 500 290 600 300";
+      var mentorToAcceleratorLinePath = "M 300 270 S 300 270 350 280 S 350 280 600 300";
       var mentorToAcceleratorLineLength = Snap.path.getTotalLength(mentorToAcceleratorLinePath);
       var acceleratorToPitchLinePath = "M 600 300 S 600 300 680 250 S 680 250 760 190 S 760 190 900 150";
       var acceleratorToPitchLineLength = Snap.path.getTotalLength(acceleratorToPitchLinePath);
@@ -158,6 +158,18 @@ $(function(){
 
       var currentLevel = 1;
       applyCircle.click(function(){
+        plusV.attr({
+          x1: 53,
+          y1: 440,
+          x2: 53,
+          y2: 452
+        });
+        plusH.attr({
+          x1: 47,
+          y1: 446,
+          x2: 59,
+          y2: 446
+        });
         $('.process-box > div').removeClass('active');
         $('#apply-box').addClass('active');
         this.attr({
@@ -167,19 +179,19 @@ $(function(){
           case 3:
             pitchCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },333,function(){
               acceleratorCircle.attr({
                 stroke: '#ADADAD'
-              });
+              }).removeClass('clicked');
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:mentorToAcceleratorLineLength
               },333,function(){
                 mentorCircle.attr({
                   stroke: '#ADADAD'
-                });
+                }).removeClass('clicked');
                 applyToMentorLine.animate({
                   strokeDashoffset:applyToMentorLineLength
                 },334);
@@ -189,13 +201,13 @@ $(function(){
           case 2:
             acceleratorCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             mentorToAcceleratorLine.animate({
               strokeDashoffset:mentorToAcceleratorLineLength
             },500,function(){
               mentorCircle.attr({
                 stroke: '#ADADAD'
-              });
+              }).removeClass('clicked');
               applyToMentorLine.animate({
                 strokeDashoffset:applyToMentorLineLength
               },500);
@@ -204,7 +216,7 @@ $(function(){
           case 1:
             mentorCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             applyToMentorLine.animate({
               strokeDashoffset:applyToMentorLineLength
             },1000);
@@ -252,6 +264,18 @@ $(function(){
       });
 
       mentorCircle.click(function(){
+        plusV.attr({
+          x1: 294,
+          y1: 270,
+          x2: 306,
+          y2: 270
+        });
+        plusH.attr({
+          x1: 300,
+          y1: 264,
+          x2: 300,
+          y2: 276
+        });
         $('.process-box > div').removeClass('active');
         $('#mentor-box').addClass('active');
         this.addClass('clicked');
@@ -263,12 +287,14 @@ $(function(){
             pitchCircle.attr({
               stroke: '#ADADAD'
             });
+            pitchCircle.removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },500,function(){
               acceleratorCircle.attr({
                 stroke: '#ADADAD'
               });
+              acceleratorCircle.removeClass('clicked');
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:mentorToAcceleratorLineLength
               },500);
@@ -278,6 +304,7 @@ $(function(){
             acceleratorCircle.attr({
               stroke: '#ADADAD'
             });
+            acceleratorCircle.removeClass('clicked');
             mentorToAcceleratorLine.animate({
               strokeDashoffset:mentorToAcceleratorLineLength
             },1000);
@@ -330,8 +357,21 @@ $(function(){
       });
 
       acceleratorCircle.click(function(){
+        plusV.attr({
+          x1: 594,
+          y1: 300,
+          x2: 606,
+          y2: 300
+        });
+        plusH.attr({
+          x1: 600,
+          y1: 294,
+          x2: 600,
+          y2: 306
+        });
         $('.process-box > div').removeClass('active');
         $('#accelerator-box').addClass('active');
+        this.addClass('clicked');
         this.attr({
           stroke: activeColor
         });
@@ -340,6 +380,7 @@ $(function(){
             pitchCircle.attr({
               stroke: '#ADADAD'
             });
+            pitchCircle.removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },1000);
@@ -404,8 +445,21 @@ $(function(){
       });
 
       pitchCircle.click(function(){
+        plusV.attr({
+          x1: 894,
+          y1: 150,
+          x2: 906,
+          y2: 150
+        });
+        plusH.attr({
+          x1: 900,
+          y1: 144,
+          x2: 900,
+          y2: 156
+        });
         $('.process-box > div').removeClass('active');
         $('#pitch-box').addClass('active');
+        this.addClass('clicked');
         this.attr({
           stroke: activeColor
         });
@@ -453,6 +507,18 @@ $(function(){
             break;
         }
         currentLevel = 3;
+      });
+
+      //Initial plus on apply Cricle
+      var plusV = s.paper.line(53, 440, 53, 452);
+      plusV.attr({
+        stroke: '#8E7534',
+        'stroke-width':2
+      });
+      var plusH = s.paper.line(47,446,59,446);
+      plusH.attr({
+        stroke:'#8E7534',
+        'stroke-width':2
       });
 
     }
