@@ -158,6 +158,18 @@ $(function(){
 
       var currentLevel = 1;
       applyCircle.click(function(){
+        plusV.attr({
+          x1: 53,
+          y1: 440,
+          x2: 53,
+          y2: 452
+        });
+        plusH.attr({
+          x1: 47,
+          y1: 446,
+          x2: 59,
+          y2: 446
+        });
         $('.process-box > div').removeClass('active');
         $('#apply-box').addClass('active');
         this.attr({
@@ -252,6 +264,18 @@ $(function(){
       });
 
       mentorCircle.click(function(){
+        plusV.attr({
+          x1: 294,
+          y1: 270,
+          x2: 306,
+          y2: 270
+        });
+        plusH.attr({
+          x1: 300,
+          y1: 264,
+          x2: 300,
+          y2: 276
+        });
         $('.process-box > div').removeClass('active');
         $('#mentor-box').addClass('active');
         this.addClass('clicked');
