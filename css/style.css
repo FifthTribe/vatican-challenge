@@ -28,9 +28,9 @@ h1 {
 
 h2 {
   font-family: "Georgia", serif;
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: normal;
-  line-height: 1.2em;
+  line-height: 1.3em;
 }
 
 h3 {
@@ -150,7 +150,7 @@ hr {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #353535;
   text-decoration: none;
   margin-right: 30px;
@@ -202,6 +202,12 @@ hr {
 
 .nav .menu .btn:hover {
   background-color: #0A7096;
+}
+
+.home {
+  background-image: url(../img/pope.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .home .row {
@@ -424,6 +430,10 @@ hr {
 .map h5 {
   font-size: 1.4em;
   line-height: 1.5em;
+}
+
+.map .map-intro-mobile {
+  display: none;
 }
 
 .map #journey-map {
@@ -780,12 +790,6 @@ hr {
   padding-left: 80px;
 }
 
-#journey-map {
-  width: 1024px;
-  height: 500px;
-  margin: 0 auto;
-}
-
 #journey-map-mobile {
   margin: 0 auto;
   display: none;
@@ -823,7 +827,7 @@ hr {
     margin-top: 1rem;
   }
   .map #journey-map {
-    margin: -170px auto -80px auto;
+    margin: -180px auto -80px auto;
   }
   .apply .row {
     padding-top: 15rem;
@@ -878,13 +882,81 @@ hr {
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 12px;
+  }
+  .nav .logo {
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  .nav .logo img {
+    max-width: 40px;
+  }
+  .nav .menu {
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  .nav .btn {
+    font-size: 1.1rem;
+  }
+  .home .row {
+    padding-top: 10rem;
+  }
+  .home h2 {
+    font-size: 2.5rem;
+  }
+  .home .inspire {
+    font-size: 1.4rem;
+  }
+  .focus-areas .stat-tabs-nav {
+    top: 8rem;
+  }
+  .focus-areas h5 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .focus-areas .stat-tab-question {
+    padding-top: 18rem;
+  }
+  .network .row {
+    padding-top: 5rem;
+  }
+  .network h3 {
+    font-size: 2rem;
+  }
+  .network h5 {
+    font-size: 1.2rem;
+  }
+  .network h6 {
+    font-size: 1.4rem;
+  }
+  .network p {
+    font-size: 1.2rem;
+  }
+  .apply .row {
+    padding-top: 7rem;
+  }
+  .apply h2 {
+    font-size: 2.5rem;
+    margin-bottom: .5em;
+  }
+  .apply .btn {
+    font-size: 1.4rem;
+    margin: 2rem auto 1rem auto;
+  }
+  .apply hr {
+    margin: 1.5rem auto;
+  }
+}
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   #journey-map {
     display: none;
   }
   #journey-map-mobile {
-    display: block;
+    display: block !important;
     width: 300px;
     height: 400px;
   }
@@ -899,28 +971,108 @@ hr {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .nav .logo {
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
   }
   .nav .logo img {
-    max-width: 40px;
+    max-width: 50px;
   }
   .nav .menu {
-    margin-top: 10px;
+    margin-top: 20px;
     margin-right: 10px;
-    width: 260px;
+  }
+  .nav .menu .apply-now {
+    display: inline-block;
+  }
+  .nav .menu .about, .nav .menu .faqs, .nav .menu .apply-now {
+    margin-right: 1rem;
+    font-size: 1.4rem;
   }
   .nav .menu .social {
     float: right;
+    margin-left: 10px;
+    margin-top: 3px;
+  }
+  .nav .menu .social a {
+    background-color: transparent;
+    padding: 0px;
+    margin-right: 5px;
+  }
+  .nav .menu .social a:hover {
+    background-color: transparent;
+    color: #B3282D;
   }
   .nav .btn {
     display: none !important;
+  }
+  .home {
+    background-position: bottom right;
+  }
+  .home .row {
+    padding-top: 20rem;
+  }
+  .home h2 {
+    font-size: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .home .inspire {
+    font-size: 1.8rem;
+    line-height: 1.3em;
+    margin-bottom: 1rem;
+  }
+  .focus-areas .stat-tab-facts {
+    display: none;
+  }
+  .focus-areas .stat-tab-question {
+    width: 100%;
+    padding: 20rem 3rem 0 3rem;
+    background-color: rgba(235, 227, 219, 0.85);
+  }
+  .focus-areas .stat-tabs-nav {
+    left: 3rem;
+    margin-left: 0px;
+  }
+  .map .row {
+    padding-top: 6rem;
+  }
+  .map #journey-map {
+    display: none;
+  }
+  .map .map-intro {
+    display: none;
+  }
+  .map .map-intro-mobile {
+    display: block;
+  }
+  .network .network-box {
+    padding: 1.5rem;
+  }
+  .network .network-box p {
+    margin-bottom: 1rem;
+  }
+  .apply .row {
+    padding-top: 6rem;
+  }
+  .apply h2 {
+    font-size: 2rem;
+    line-height: 1.2em;
+  }
+  .apply p {
+    font-size: 1.3rem;
+    line-height: 1.2em;
+  }
+  .apply h4 {
+    line-height: 1.2em;
   }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 320px) {
-  .nav .menu {
-    width: 230px;
+  .nav .logo {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .nav .logo img {
+    max-width: 30px;
   }
 }
