@@ -179,19 +179,19 @@ $(function(){
           case 3:
             pitchCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },333,function(){
               acceleratorCircle.attr({
                 stroke: '#ADADAD'
-              });
+              }).removeClass('clicked');
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:mentorToAcceleratorLineLength
               },333,function(){
                 mentorCircle.attr({
                   stroke: '#ADADAD'
-                });
+                }).removeClass('clicked');
                 applyToMentorLine.animate({
                   strokeDashoffset:applyToMentorLineLength
                 },334);
@@ -201,13 +201,13 @@ $(function(){
           case 2:
             acceleratorCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             mentorToAcceleratorLine.animate({
               strokeDashoffset:mentorToAcceleratorLineLength
             },500,function(){
               mentorCircle.attr({
                 stroke: '#ADADAD'
-              });
+              }).removeClass('clicked');
               applyToMentorLine.animate({
                 strokeDashoffset:applyToMentorLineLength
               },500);
@@ -216,7 +216,7 @@ $(function(){
           case 1:
             mentorCircle.attr({
               stroke: '#ADADAD'
-            });
+            }).removeClass('clicked');
             applyToMentorLine.animate({
               strokeDashoffset:applyToMentorLineLength
             },1000);
@@ -287,12 +287,14 @@ $(function(){
             pitchCircle.attr({
               stroke: '#ADADAD'
             });
+            pitchCircle.removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },500,function(){
               acceleratorCircle.attr({
                 stroke: '#ADADAD'
               });
+              acceleratorCircle.removeClass('clicked');
               mentorToAcceleratorLine.animate({
                 strokeDashoffset:mentorToAcceleratorLineLength
               },500);
@@ -302,6 +304,7 @@ $(function(){
             acceleratorCircle.attr({
               stroke: '#ADADAD'
             });
+            acceleratorCircle.removeClass('clicked');
             mentorToAcceleratorLine.animate({
               strokeDashoffset:mentorToAcceleratorLineLength
             },1000);
@@ -377,6 +380,7 @@ $(function(){
             pitchCircle.attr({
               stroke: '#ADADAD'
             });
+            pitchCircle.removeClass('clicked');
             acceleratorToPitchLine.animate({
               strokeDashoffset:acceleratorToPitchLineLength
             },1000);
