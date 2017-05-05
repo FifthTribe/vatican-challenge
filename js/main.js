@@ -51,9 +51,9 @@ $(function(){
       var acceleratorToPitchLinePath = "M 600 300 S 600 300 680 250 S 680 250 760 190 S 760 190 900 150";
       var acceleratorToPitchLineLength = Snap.path.getTotalLength(acceleratorToPitchLinePath);
 
-      var applyToMentorLinePath_mobile = "M 20 190 S 20 190 45 177 S 45 177 77 150 S 77 150 120 130";
+      var applyToMentorLinePath_mobile = "M 20 140 S 20 140 45 127 S 45 127 77 110 S 77 110 120 100";
       var applyToMentorLineLength_mobile = Snap.path.getTotalLength(applyToMentorLinePath_mobile);
-      var mentorToAcceleratorLinePath_mobile = "M 120 130 S 120 130 150 100 S 150 100 180 75 S 180 75 210 50";
+      var mentorToAcceleratorLinePath_mobile = "M 120 100 S 120 100 150 90 S 150 90 180 75 S 180 75 210 50";
       var mentorToAcceleratorLineLength_mobile = Snap.path.getTotalLength(mentorToAcceleratorLinePath_mobile);
       var acceleratorToPitchLinePath_mobile = "M 210 50 S 219 50 233 35 S 233 35 247 25 S 247 25 285 10";
       var acceleratorToPitchLineLength_mobile = Snap.path.getTotalLength(acceleratorToPitchLinePath_mobile);
@@ -143,13 +143,13 @@ $(function(){
         'font-size': '26px',
         'font-weight':'bold'
       });
-      var applyCircle_mobile = s_mobile.paper.circle(20, 190, 15);
+      var applyCircle_mobile = s_mobile.paper.circle(20, 140, 15);
       applyCircle_mobile.attr({
         fill:'#EEEAE4',
         stroke: activeColor,
         'stroke-width':3
       });
-      var applyText_mobile = s_mobile.paper.text(3, 220, "APPLY");
+      var applyText_mobile = s_mobile.paper.text(3, 170, "APPLY");
       applyText_mobile.attr({
         'font-size': '14px',
         'font-weight':'bold'
@@ -287,13 +287,13 @@ $(function(){
         'font-size': '26px',
         'font-weight':'bold'
       });
-      var mentorCircle_mobile = s_mobile.paper.circle(120, 130, 15);
+      var mentorCircle_mobile = s_mobile.paper.circle(120, 100, 15);
       mentorCircle_mobile.attr({
         fill:'#EEEAE4',
         stroke: '#ADADAD',
         'stroke-width':3
       });
-      var mentorText_mobile = s_mobile.paper.text(100, 160, "MENTOR");
+      var mentorText_mobile = s_mobile.paper.text(100, 130, "MENTOR");
       mentorText_mobile.attr({
         'font-size': '14px',
         'font-weight':'bold'
