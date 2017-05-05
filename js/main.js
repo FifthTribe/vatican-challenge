@@ -419,7 +419,7 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':3
       });
-      var acceleratorText_mobile = s_mobile.paper.text(170, 80, "ACCELERATOR");
+      var acceleratorText_mobile = s_mobile.paper.text(105, 50, "ACCELERATOR");
       acceleratorText_mobile.attr({
         'font-size': '14px',
         'font-weight':'bold'
