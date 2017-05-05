@@ -44,7 +44,6 @@ $(function(){
 
       var activeColor = '#00AEEF';
       var activePathColor = '#353535';
-      //M 75 150 S 75 150 100 130 S 100 130 190 95 S 190 95 400 105
       var applyToMentorLinePath = "M 53 446 S 53 446 75 400 S 75 400 100 350 S 100 350 300 270";
       var applyToMentorLineLength = Snap.path.getTotalLength(applyToMentorLinePath);
       var mentorToAcceleratorLinePath = "M 300 270 S 300 270 350 280 S 350 280 600 300";
@@ -56,7 +55,7 @@ $(function(){
       var applyToMentorLineLength_mobile = Snap.path.getTotalLength(applyToMentorLinePath_mobile);
       var mentorToAcceleratorLinePath_mobile = "M 120 130 S 120 130 150 100 S 150 100 180 75 S 180 75 210 50";
       var mentorToAcceleratorLineLength_mobile = Snap.path.getTotalLength(mentorToAcceleratorLinePath_mobile);
-      var acceleratorToPitchLinePath_mobile = "M 210 50 S 219 50 233 35 S 233 35 247 17 S 247 17 285 10";
+      var acceleratorToPitchLinePath_mobile = "M 210 50 S 219 50 233 35 S 233 35 247 25 S 247 25 285 10";
       var acceleratorToPitchLineLength_mobile = Snap.path.getTotalLength(acceleratorToPitchLinePath_mobile);
 
 
