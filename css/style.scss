@@ -781,6 +781,9 @@ hr {
   }
   .map {
     height:auto;
+    background-size: contain;
+    background-position: top;
+    background-color: $beige;
     .row {
       padding-top: 6rem;
       max-width: 95%;
