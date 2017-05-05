@@ -172,7 +172,8 @@ hr {
 
 .nav .menu .about,
 .nav .menu .faqs,
-.nav .menu .apply-now {
+.nav .menu .apply-now,
+.nav .menu .home-nav {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -185,7 +186,8 @@ hr {
 
 .nav .menu .about:hover,
 .nav .menu .faqs:hover,
-.nav .menu .apply-now:hover {
+.nav .menu .apply-now:hover,
+.nav .menu .home-nav:hover {
   color: #B3282D;
 }
 
@@ -233,10 +235,10 @@ hr {
 }
 
 .home {
+  height: 800px;
   background-image: url(../img/pope.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 800px;
 }
 
 .home .row {
@@ -504,7 +506,7 @@ hr {
 }
 
 .network .row {
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 
 .network h5 {
@@ -655,14 +657,11 @@ hr {
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
 }
 
 #about .about-canvas .row {
   max-width: 100%;
-  padding: 2rem;
+  padding: 8rem 2rem;
 }
 
 #about .close {
@@ -729,14 +728,11 @@ hr {
   background-size: cover;
   background-position: center;
   position: absolute;
-  z-index: 100;
-  width: 100%;
-  height: 100%;
 }
 
 #faqs .faqs-canvas .row {
   max-width: 100%;
-  padding: 2rem;
+  padding: 8rem 4em;
 }
 
 #faqs .faqs-canvas .close {
