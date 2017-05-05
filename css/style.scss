@@ -1,13 +1,3 @@
-.reveal .slides>section {
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  position:relative;
-  overflow:hidden;
-  float:left;
-}
-
 // BASE STYLING
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 @import url('foundation.min.css');
@@ -49,7 +39,7 @@ h2 {
 
 h3 {
   font-family: "Georgia", serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0;
   line-height: 1.2em;
@@ -229,8 +219,9 @@ hr {
   background-image: url(../img/pope.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 800px;
   .row {
-    padding-top: 15%;
+    padding-top: 20%;
   }
   h2 {
     color: $dark-grey;
@@ -248,14 +239,15 @@ hr {
 
 //FOCUS AREAS SLIDE
 .focus-areas {
+  height:800px;
   h1 {
     color: $red;
   }
   .stat-tabs-wrapper {
     height: 100%;
-    width:100%;
-    float:left;
-    overflow:hidden;
+    width: 100%;
+    float: left;
+    overflow: hidden;
   }
   .stat-tab-question {
     width: 40%;
@@ -283,7 +275,7 @@ hr {
     margin: 2rem 0px 1rem 0;
   }
   .stat-tabs-nav {
-    position: absolute;
+    position: relative;
     top: 16%;
     left: 60%;
     margin-left: 50px;
@@ -338,8 +330,8 @@ hr {
     display: none;
     width: 100%;
     height: 100%;
-    overflow:hidden;
-    float:left;
+    overflow: hidden;
+    float: left;
     background-size: cover;
     background-repeat: no-repeat;
     &.active {
@@ -351,7 +343,7 @@ hr {
     display: none;
   }
   .stat-tab-facts {
-    position: absolute;
+    position: relative;
     top: 40%;
     width: 60%;
     p {
@@ -398,6 +390,7 @@ hr {
   background-image: url(../img/bg-map.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height:800px;
   .row {
     padding-top: 8rem;
   }
@@ -443,6 +436,7 @@ hr {
   background-image: url(../img/bg-network.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height:800px;
   .row {
     padding-top: 8rem;
   }
@@ -453,16 +447,19 @@ hr {
   hr {
     border: 0px;
   }
+  h3 {
+    margin-top: 1rem;
+  }
   .btn {
     margin-top: 20px;
   }
   .network-box {
     background-color: rgba(white, .7);
-    padding: 1.5rem;
+    padding: 2.5rem;
     margin-top: 1.5rem;
   }
   .network-graphic {
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: block;
     width: 90%;
     margin: auto;
@@ -475,6 +472,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  height:800px;
   .row {
     text-align: center;
     padding-top: 10rem;
