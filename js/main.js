@@ -77,7 +77,7 @@ $(function(){
           stroke:activePathColor,
           'stroke-dasharray': applyToMentorLineLength_mobile + ' ' + applyToMentorLineLength_mobile,
           'stroke-dashoffset': applyToMentorLineLength_mobile,
-          'stroke-width' :3,
+          'stroke-width' :2,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
@@ -101,7 +101,7 @@ $(function(){
           stroke:activePathColor,
           'stroke-dasharray': mentorToAcceleratorLineLength_mobile + ' ' + mentorToAcceleratorLineLength_mobile,
           'stroke-dashoffset': mentorToAcceleratorLineLength_mobile,
-          'stroke-width' :3,
+          'stroke-width' :2,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
@@ -125,7 +125,7 @@ $(function(){
           stroke:activePathColor,
           'stroke-dasharray': acceleratorToPitchLineLength_mobile + ' ' + acceleratorToPitchLineLength_mobile,
           'stroke-dashoffset': acceleratorToPitchLineLength_mobile,
-          'stroke-width' :3,
+          'stroke-width' :2,
           'stroke-linecap' :'round',
           'stroke-linejoin' :'round',
           'stroke-miterlimit' :10
@@ -680,6 +680,5 @@ $(function(){
 });
 
 function goBack() {
-  console.log("go all the way back");
     window.history.back();
 }
