@@ -761,6 +761,12 @@ hr {
     h3 {
       margin-bottom: .5rem;
     }
+    .map-intro {
+      display: none;
+    }
+    #journey-map {
+      transform: scale(0.5);
+    }
   }
   .network {
     .row {

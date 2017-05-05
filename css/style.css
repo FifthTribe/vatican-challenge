@@ -754,121 +754,127 @@ hr {
   /* line 761, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .map h3 {
     margin-bottom: .5rem; }
-  /* line 766, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 764, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map .map-intro {
+    display: none; }
+  /* line 767, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .map #journey-map {
+    transform: scale(0.5); }
+  /* line 772, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .network .row {
     padding-top: 6rem;
     max-width: 95%; }
-  /* line 770, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 776, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .network .network-graphic {
     display: none; }
-  /* line 773, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 779, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .network h3 {
     margin-top: .2rem; }
-  /* line 776, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 782, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .network h5 {
     font-size: 1.3rem; }
-  /* line 779, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 785, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .network .network-box {
     padding: .5rem; }
-  /* line 784, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 790, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply .row {
     padding-top: 5rem; }
-  /* line 787, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 793, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply .quote {
     display: none; }
-  /* line 790, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 796, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply h5 {
     font-weight: 600;
     font-size: 1.1rem; }
-  /* line 794, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 800, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply .subscribe-box {
     width: 95%;
     padding: 1rem; }
-    /* line 797, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 803, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     .apply .subscribe-box h5 {
       font-size: 1.1rem; }
-  /* line 801, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 807, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply .to-faq,
   .apply .app-deadline {
     display: block; }
-  /* line 805, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 811, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply .divider {
     display: none; }
-  /* line 808, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 814, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .apply #mc_embed_signup {
     margin-top: 10px; }
-    /* line 810, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 816, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     .apply #mc_embed_signup .mc-field-group {
       width: 100%; }
-    /* line 813, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 819, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     .apply #mc_embed_signup .clear {
       width: 100%;
       display: block;
       margin-top: .5rem; }
-      /* line 817, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+      /* line 823, /Users/AnhLe/Desktop/Vatican/css/style.scss */
       .apply #mc_embed_signup .clear input {
         text-align: left;
         margin: 0;
         padding: 0 0 0 15px; }
-  /* line 826, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 832, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about hr {
     display: block;
     border-bottom: 1px solid white;
     border-top: 0px;
     width: 100%;
     margin: 2rem 0; }
-  /* line 833, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 839, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about h1 {
     font-size: 1.8rem;
     margin-bottom: 5px; }
-  /* line 838, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 844, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about .about-canvas .row {
     padding: 0; }
-  /* line 841, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 847, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about .about-canvas .close {
     margin-top: 15px; }
-    /* line 843, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 849, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #about .about-canvas .close svg {
       width: 30px;
       height: 30px; }
-  /* line 848, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 854, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about .about-canvas .content {
     padding: 0px;
     max-height: 32rem;
     overflow: scroll; }
-    /* line 852, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 858, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #about .about-canvas .content .about,
     #about .about-canvas .content .team {
       padding: 0px; }
-  /* line 860, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 866, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #faqs h1 {
     font-size: 1.8rem;
     margin-bottom: 5px; }
-  /* line 865, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 871, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #faqs .faqs-canvas .row {
     padding: 0; }
-  /* line 868, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 874, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #faqs .faqs-canvas .close {
     margin-top: 15px; }
-    /* line 870, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 876, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #faqs .faqs-canvas .close svg {
       width: 30px;
       height: 30px; }
-  /* line 875, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 881, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #faqs .faqs-canvas .content {
     padding: 0px;
     max-height: 32rem;
     overflow: scroll; }
-    /* line 879, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 885, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #faqs .faqs-canvas .content .one,
     #faqs .faqs-canvas .content .two {
       padding: 0px; }
-    /* line 883, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+    /* line 889, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #faqs .faqs-canvas .content ol {
       padding-left: 30px; } }
 
 @media (min-width: 321px) and (max-width: 599px) {
-  /* line 892, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 898, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   html {
     font-size: 14px; } }
 
