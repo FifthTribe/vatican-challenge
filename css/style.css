@@ -364,7 +364,11 @@ hr {
 }
 
 .focus-areas .stat-tab {
-  display: none;
+  display: block;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
   width: 100%;
   height: 100%;
   min-height: 800px;
@@ -372,10 +376,13 @@ hr {
   float: left;
   background-size: cover;
   background-repeat: no-repeat;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .focus-areas .stat-tab.active {
-  display: block;
+  transition: opacity 0.5s ease-in-out;
+  position: static;
+  opacity: 1;
 }
 
 .focus-areas .navigate-up,
