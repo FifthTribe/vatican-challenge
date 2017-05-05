@@ -1,9 +1,8 @@
-.reveal .slides > section {
+.reveal .slides>section {
   text-align: left;
   width: 100%;
   height: 100%;
   padding: 0;
-  margin: 0;
 }
 
 // BASE STYLING
@@ -15,7 +14,9 @@ $dark-blue: #0A7096;
 $beige: #EBE3DB;
 $grey: #5A5A5A;
 $dark-grey: #353535;
-html {}
+html {
+  font-size: 14px;
+}
 
 body {
   font-family: "Source Sans Pro", sans-serif;
@@ -28,39 +29,63 @@ p {
 }
 
 h1 {
-  font-size: 3.5rem;
-  font-family: "Source Sans Pro", sans-serif;
-  color: $red;
+  font-size: 3rem;
+  font-family: "Georgia", serif;
   margin: 0;
-  font-weight: 600;
+  font-weight: normal;
+  line-height: 1.3em;
 }
 
 h2 {
-  font-family: "Georgia", serif;
-  font-size: 3.2rem;
-  font-weight: normal;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
   line-height: 1.3em;
+  margin: 0;
 }
 
 h3 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 700;
-  font-size: 2.5rem;
+  font-family: "Georgia", serif;
+  font-size: 1.2rem;
+  font-weight: normal;
   margin: 0;
+  line-height: 1.2em;
 }
 
 h4 {
-  font-size: 1.5rem;
-  color: $red;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
   margin: 0;
+  line-height: 1.2em;
 }
 
 h5 {
-  font-family: "Georgia", serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
   line-height: 1.3em;
-  font-weight: normal;
-  margin: 0px;
+  span {
+    font-weight: 600;
+  }
+}
+
+span {
+  font-weight: 600;
+}
+
+.direction-desktop,
+.direction-mobile {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1rem 0 0 0;
+  color: $dark-grey;
+}
+
+.direction-mobile {
+  display: none
 }
 
 .row {
@@ -84,7 +109,6 @@ a {
   span {
     margin-right: 10px
   }
-  cursor: pointer;
   transition: all .3s ease;
   &:hover {
     color: white;
@@ -100,7 +124,9 @@ a {
   }
   &:hover {
     background-color: $red;
-    span {color:white}
+    span {
+      color: white
+    }
   }
 }
 
@@ -110,7 +136,9 @@ a {
   }
   &:hover {
     background-color: $blue;
-    span {color:white}
+    span {
+      color: white
+    }
   }
 }
 
@@ -130,21 +158,19 @@ hr {
   position: absolute;
   z-index: 50;
   width: 100%;
+  padding: 2rem 2rem 0 2rem;
   .logo {
     display: inline-block;
-    margin-left: 50px;
-    margin-top: 30px;
     img {
       max-width: 60px;
     }
   }
   .menu {
-    margin-top: 40px;
     display: inline-block;
     float: right;
-    margin-right: 50px;
     .about,
-    .faqs, .apply-now {
+    .faqs,
+    .apply-now {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
@@ -162,14 +188,13 @@ hr {
     }
     .social {
       display: inline-block;
-      margin-right: 30px;
       a {
         background-color: white;
         padding: 8px 10px;
         border-radius: 50px;
         color: $dark-grey;
         margin-right: 5px;
-        display:inline-block;
+        display: inline-block;
         .fa-facebook {
           padding: 0px 3px;
         }
@@ -188,6 +213,7 @@ hr {
       background-color: $blue;
       color: white;
       font-weight: 600;
+      margin-left: 2rem;
       &:hover {
         background-color: $dark-blue;
       }
@@ -201,37 +227,26 @@ hr {
   background-repeat: no-repeat;
   background-size: cover;
   .row {
-    padding-top: 280px;
+    padding-top: 15%;
   }
   h2 {
     color: $dark-grey;
   }
   .inspire {
     color: $red;
-    font-size: 1.6rem;
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0);
-    padding: .1em 1em;;
-    margin-left: -1em;
-    display: block;
-    span {
-      font-weight: 600;
-    }
-    transition: all .3s ease;
-    &:hover {
-      background-color: rgba(255, 255, 255, .6)
-    }
   }
   .btn {
     margin-top: 20px;
+  }
+  .direction {
+    margin-top: 2rem;
   }
 }
 
 //FOCUS AREAS SLIDE
 .focus-areas {
-  .row {
-    width: 100%;
-    height: 100%;
+  h1 {
+    color: $red;
   }
   .stat-tabs-wrapper {
     height: 100%;
@@ -240,24 +255,12 @@ hr {
     width: 40%;
     height: 100%;
     float: right;
-    padding: 350px 50px 0 50px;
-    background-color: rgba($beige, .95);
+    padding: 22rem 3rem 0 3rem;
+    background-color: rgba($beige, .8);
     background-image: url(../img/corner-icon.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 20%;
-  }
-  h1 {
-    line-height: 3.5rem;
-    margin-bottom: 20px;
-  }
-  h5 {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
-  .btn {
-    display: block;
-    margin: 10px 0px;
   }
   .label {
     font-size: 18px;
@@ -265,34 +268,42 @@ hr {
     font-weight: 600;
     text-transform: uppercase;
     color: $grey;
+    span {
+      color: $red
+    }
+  }
+  .btn {
+    display: inline-block;
+    margin: 2rem 0px 1rem 0;
   }
   .stat-tabs-nav {
     position: absolute;
-    top: 180px;
+    top: 20%;
     left: 60%;
     margin-left: 50px;
     z-index: 1000000;
     .nav-row {
       div {
-         display: inline-block;
-            margin-right: 10px;
-            width: 70px;
-            height: 70px;
-            background-color: rgba(255, 255, 255, .8);
-            border-radius: 100px;
-            background-size: 55%;
-            background-repeat: no-repeat;
-            background-position: center;
-            transition: all .3s ease;
-            a {
-              display: block;
-              height: 100%;
-              width: 100%;
-            }
-            &.active {
-              background-color: white;
-              border: 3px solid $red;
-            }}
+        display: inline-block;
+        margin-right: 10px;
+        width: 4rem;
+        height: 4rem;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 100px;
+        background-size: 55%;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all .3s ease;
+        a {
+          display: block;
+          height: 100%;
+          width: 100%;
+        }
+        &.active {
+          background-color: white;
+          border: 3px solid $red;
+        }
+      }
     }
   }
   // Icons
@@ -317,10 +328,6 @@ hr {
   #finance {
     background-image: url(../img/icon-finance.png);
   }
-  .action {
-    margin-top: 30px;
-  }
-
   .stat-tab {
     display: none;
     width: 100%;
@@ -331,12 +338,10 @@ hr {
       display: block;
     }
   }
-
   .navigate-up,
   .navigate-down {
     display: none;
   }
-
   .stat-tab-facts {
     position: absolute;
     top: 40%;
@@ -386,24 +391,25 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   .row {
-    padding-top: 130px;
-  }
-  h5 {
-    font-size: 1.4em;
-    line-height: 1.5em;
+    padding-top: 8rem;
   }
   .map-intro-mobile {
     display: none;
+  }
+  h5 {
+    font-weight: 600;
+    color: $red
   }
   #journey-map {
     text {
       color: $dark-grey;
       font-weight: 600 !important;
       display: block;
+      font-size: 1.3rem !important;
     }
     width: 1024px;
     height: 500px;
-    margin: -100px auto 0 auto;
+    margin: -130px auto 0 auto;
     display: inline-block;
   }
   #journey-map-mobile {
@@ -411,33 +417,16 @@ hr {
   }
   .process-box {
     background-color: rgba(white, .7);
-    padding: 2.5rem;
+    padding: 1.2rem;
     div {
       display: none;
       &.active {
         display: block;
       }
     }
-    p {
-      span {
-        font-weight: 600;
-      }
-    }
-  }
-  h4 {
-    font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    line-height: 1rem;
-  }
-  p {
-    font-size: 20px;
   }
   .btn {
     margin-top: 1rem;
-  }
-  h3 {
-    margin-top: 20px;
   }
 }
 
@@ -447,37 +436,22 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   .row {
-    padding-top: 130px;
+    padding-top: 8rem;
   }
   h5 {
-    font-size: 1.5em;
-    line-height: 1.5em;
-  }
-  h4 {
     font-weight: 600;
-    font-size: 2rem;
-    margin-bottom: 20px;
-    line-height: 1rem;
-  }
-  h6 {
-    font-size: 1.7em;
     color: $red;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin: 0 0 10px 0;
-    line-height: 1em;
   }
-  p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+  hr {
+    border: 0px;
   }
   .btn {
     margin-top: 20px;
   }
   .network-box {
     background-color: rgba(white, .7);
-    padding: 2.5rem;
-    margin-top: 2rem;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
   }
   .network-graphic {
     padding-top: 10rem;
@@ -495,32 +469,26 @@ hr {
   text-align: center;
   .row {
     text-align: center;
-    padding-top: 250px;
+    padding-top: 10rem;
   }
-  h2 {
+  h1 {
     color: white;
-    margin: 0 0 30px 0;
+    margin: .3em 0;
   }
-  p {
-    font-size: 1.5rem;
-    span {
-      color: white;
-      font-size: 1.3rem;
-    }
-  }
-  a {
-    color: white;
-    &:hover {
-      color: $red;
-    }
+  .quote {
+    font-family: "Georgia", serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bold;
+    font-style: italic;
   }
   .btn {
-    display:inline-block;
-    margin: 40px auto 20px auto;
-    padding: 10px 30px;
+    display: inline-block;
+    margin: 1rem;
+    padding: .7rem 2rem;
     color: $red;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
     &:hover {
       color: white;
@@ -530,19 +498,18 @@ hr {
     }
   }
   hr {
-    width: 40%;
-    margin: 30px auto;
-    border: 1px solid $grey;
+    width: 5%;
+    margin: 1rem auto;
+    border-bottom: 1px solid $red;
   }
-  h5 {
-    color: white;
+  h3 {
+    font-size: 1.5rem;
   }
-  h4 {
-    margin-top: 5px;
-    color: black;
-    text-transform: uppercase;
-    font-size: 1.8rem;
-    font-weight: 600;
+  .subscribe-box {
+    width: 70%;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .3)
   }
   #mc_embed_signup {
     margin-top: 20px;
@@ -557,11 +524,11 @@ hr {
     input {
       width: 100%;
       display: inline-block;
-      height: 50px;
+      height: 40px;
       padding-left: 15px;
       border: none;
       outline: none;
-      background-color: rgba(white, .75);
+      background-color: rgba(white, .6);
       font-family: "Source Sans Pro"
     }
     input.btn {
@@ -589,9 +556,13 @@ hr {
 
 // ABOUT PAGE
 #about {
+  hr {
+    display: none;
+  }
   .about-canvas {
     .row {
       max-width: 100%;
+      padding: 2rem;
     }
     background-image: url("../img/bg-about.png");
     background-size: cover;
@@ -603,8 +574,10 @@ hr {
   }
   .close {
     float: right;
-    margin-right: 60px;
-    margin-top: 60px;
+    svg {
+      width: 40px;
+      height: 40px;
+    }
   }
   .content {
     width: 90%;
@@ -612,19 +585,15 @@ hr {
     color: white;
     .about {
       padding-right: 80px;
-      p {
-        font-size: 1.4rem;
-        span {
-          font-weight: 600;
-        }
-      }
     }
     .team {
       padding-left: 80px;
     }
-    h4 {
-      margin-top: 15px;
+    h5 {
+      font-size: 1.1rem;
+      font-weight: 600;
       color: black;
+      margin-top: .5rem;
     }
     a {
       color: white;
@@ -633,15 +602,14 @@ hr {
     }
     ul {
       margin: 0px;
-      padding-left: 18px;
+      list-style-type: none;
+      padding-left: 0px;
     }
     li {
       margin-bottom: 5px;
       p {
-        font-size: 1.4rem;
         &.title {
           color: black;
-          font-size: 1.2rem;
           line-height: 1em;
         }
       }
@@ -650,6 +618,9 @@ hr {
       }
     }
   }
+  .content.row {
+    padding: 0;
+  }
 }
 
 // FAQS PAGE
@@ -657,6 +628,7 @@ hr {
   .faqs-canvas {
     .row {
       max-width: 100%;
+      padding: 2rem;
     }
     background-image: url("../img/bg-faqs.png");
     background-size: cover;
@@ -667,22 +639,12 @@ hr {
     height: 100%;
     .close {
       float: right;
-      margin-right: 60px;
-      margin-top: 60px;
       svg {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
       }
     }
     .content {
-      width: 90%;
-      margin: auto;
-      p {
-        font-size: 1.3rem;
-        span {
-          font-weight: 600;
-        }
-      }
       ol {
         padding-left: 18px;
       }
@@ -696,6 +658,9 @@ hr {
         padding-left: 80px;
       }
     }
+    .content.row {
+      padding: 0;
+    }
   }
 }
 
@@ -704,330 +669,218 @@ hr {
   display: none;
 }
 
-
-/* Large Devices, Wide Screens */
-
-@media only screen and (max-width: 1367px) {
+//RESPONSIVENESS
+@media (max-width: 599px) {
+  .direction-mobile {
+    display: block;
+  }
+  .direction-desktop {
+    display: none;
+  }
   html {
     font-size: 12px;
   }
-  .home {
-    .row {
-      padding-top: 180px;
-    }
-    .btn {
-      margin-top: 10px;
-      font-size: 1.4rem;
-    }
+  h1 {
+    font-size: 2rem;
+    line-height: 1.2em;
   }
-  .focus-areas {
-    .stat-tabs-nav {
-      top: 10rem;
-      .nav-row {
-        div {
-          width: 5rem;
-        height: 5rem;}
-      }
-    }
-    .stat-tab-question {padding-top: 22rem;}
-    .stat-tab-facts {
-      p {width: 80%;}
-    }
+  h2 {
+    font-size: 1.7rem;
   }
-  .map {
-    .row {
-      padding-top: 100px;
-    }
-    h3 {
-    margin-top: 1rem;
+  h3 {
+    font-size: 1.2rem;
   }
-  #journey-map {
-    margin: -180px auto -80px auto;
+  h4 {
+    font-size: 1.5rem;
   }
-  }
-  .apply {
-    .row {
-      padding-top: 15rem;
-    }
-  }
-  #about {
-    .about-canvas{
-      .close {
-        margin-right: 3rem;
-        margin-top: 3rem;
-        svg {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .content {
-        overflow: scroll;
-        max-height: 650px;
-        .one {
-        padding-right: 1rem;
-      }
-      .two {
-        padding-left: 1rem;
-      }
-      h4 {
-        margin-top: 5px;
-      }
-    }
-    }
-    h2 {
-      font-size: 2.5rem;
-      margin: 2rem 0 1rem 0;
-    }
-  }
-  #faqs {
-    .faqs-canvas{
-      .close {
-        margin-right: 3rem;
-        margin-top: 3rem;
-        svg {
-          width: 40px;
-          height: 40px;
-        }
-      }
-      .content {
-        overflow: scroll;
-        max-height: 650px;
-        .one {
-        padding-right: 1rem;
-      }
-      .two {
-        padding-left: 1rem;
-      }
-    }
-    }
-    h2 {
-      font-size: 2.5rem;
-      margin: 2rem 0 1rem 0;
-    }
-  }
-}
-
-
-/* Medium Devices, Desktops */
-
-@media only screen and (max-width: 992px) {
-  html {
-    font-size: 12px;
+  h5 {
+    line-height: 1.2em;
   }
   .nav {
-    .logo {
-      margin-left: 20px;
-      margin-top: 20px;
-      img {
-        max-width:40px;
-      }
+    padding-top: 1rem;
+    .logo img {
+      max-width: 40px;
+      max-height: 40px;
     }
     .menu {
-      margin-right: 20px;
-      margin-top: 20px;
-    }
-    .btn {
-      font-size: 1.1rem;
+      padding-top: 1rem;
+      .btn {
+        display: none;
+      }
+      .apply-now {
+        display: inline-block;
+        color: $red;
+        font-weight: 600;
+      }
+      .apply-now,
+      .about,
+      .faqs {
+        font-size: 1rem;
+        margin-right: 1.3rem;
+      }
+      .social {
+        a {
+          background-color: transparent;
+          padding: 0 0 .7rem 0;
+          &:hover {
+            color: $red;
+            background-color: transparent;
+          }
+        }
+        margin-right: 0px;
+      }
     }
   }
   .home {
+    background-position: 70%;
     .row {
-      padding-top: 10rem;
-    }
-    h2 {
-      font-size: 2.5rem;
-    }
-    .inspire {
-      font-size: 1.4rem;
+      padding-top: 80%;
     }
   }
   .focus-areas {
-    .stat-tabs-nav {
-      top: 8rem;
-    }
-    h5 {
-      font-size: 1.5rem;
-      margin-top: 1.5rem;
-    }
     .stat-tab-question {
-      padding-top: 18rem;
+      width: 100%;
+      padding: 22rem 3rem 0 3rem;
+    }
+    .stat-tab-facts {
+      display: none;
+    }
+    .stat-tabs-nav {
+      left: 0;
+      margin-left: 3rem;
     }
   }
   .map {
-
+    .row {
+      padding-top: 6rem;
+      max-width: 95%;
+    }
+    h3 {
+      margin-bottom: .5rem;
+    }
   }
   .network {
     .row {
-      padding-top: 5rem;
+      padding-top: 6rem;
+      max-width: 95%;
+    }
+    .network-graphic {
+      display: none;
     }
     h3 {
-      font-size: 2rem;
+      margin-top: .5rem;
+    }
+  }
+  .apply {
+    .row {
+      padding-top: 6rem;
+    }
+    .quote {
+      display: none;
     }
     h5 {
-      font-size:1.2rem;}
-      h6 {font-size: 1.4rem};
-
-      p {font-size: 1.2rem}
+      font-weight: 600;
+      font-size: 1.2rem;
     }
-    .apply {
-      .row {
-        padding-top: 7rem;
-      }
-      h2 {
-        font-size: 2.5rem;
-        margin-bottom: .5em;
-      }
-      .btn {
-        font-size: 1.4rem;
-        margin: 2rem auto 1rem auto;
-      }
-      hr {
-        margin: 1.5rem auto;
+    .subscribe-box {
+      width: 95%;
+      padding: 1rem;
+      h5 {
+        font-size: 1.1rem;
       }
     }
-}
-
-
-/* Small Devices, Tablets */
-
-@media only screen and (max-width: 768px) {
-
-  // Journey Map SVG Mobile
-  .map #journey-map {
-    display: none;
-  }
-  .map #journey-map-mobile {
-    display: block !important;
-    width: 300px;
-    height: 400px;
-  }
-  .map h5 {
-    font-size: 14px;
-  }
-  h3 {
-    font-size: 20px;
-  }
-}
-
-
-/* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {
-.nav {
-  .logo {
-    margin-top: 20px;
-    margin-left: 20px;
-    img {
-      max-width: 50px;
+    .to-faq,
+    .app-deadline {
+      display: block;
     }
-  }
-  .menu {
-    margin-top: 20px;
-    margin-right: 10px;
-    .apply-now {
-      display: inline-block;
+    .divider {
+      display: none;
     }
-    .about, .faqs,.apply-now {
-      margin-right: 1rem;
-      font-size: 1.4rem;
-    }
-    .social {
-      float: right;
-      margin-left: 10px;
-      margin-top: 3px;
-      a {
-        background-color: transparent;
-        padding: 0px;
-        margin-right: 5px;
-        &:hover {
-          background-color: transparent;
-          color: $red;
+    #mc_embed_signup {
+      margin-top: 10px;
+      .mc-field-group {
+        width: 100%;
+      }
+      .clear {
+        width: 100%;
+        display: block;
+        margin-top: .5rem;
+        input {
+          text-align: left;
+          margin: 0;
+          padding: 0 0 0 15px;
         }
       }
     }
   }
-  .btn {
-    display: none !important;
-  }
- }
- .home {
-   background-position: 70%;
-   .row {
-     padding-top: 20rem;
-   }
-   h2 {
-     font-size: 2.5rem;
-     padding-right: 2.5rem;
-   }
-   .inspire {
-     font-size: 1.8rem;
-     line-height: 1.3em;
-     margin-bottom: 1rem;
-   }
- }
- .focus-areas {
-   .stat-tab-facts {
-     display: none;
-   }
-   .stat-tab-question {
-     width: 100%;
-     padding: 20rem 3rem 0 3rem;
-     background-color: rgba(235, 227, 219, 0.85)
-   }
-   .stat-tabs-nav {
-     left: 3rem;
-     margin-left: 0px;
-   }
- }
- .map {
-   .row {
-     padding-top: 6rem;
-   }
-   #journey-map {
-     display: none;
-   }
-   .map-intro {
-     display: none;
-   }
-   .map-intro-mobile {
-     display: block;
-   }
- }
- .network {
-   .network-box {
-     padding: 1.5rem;
-     p {margin-bottom: 1rem;}
-   }
- }
- .apply {
-   .row {
-     padding-top: 6rem;
-   }
-   h2 {
-     font-size: 2rem;
-     line-height: 1.2em;
-   }
-   p {
-     font-size: 1.3rem;
-     line-height: 1.2em;
-   }
-   h4 {
-     line-height: 1.2em;
-   }
- }
-}
-
-
-/* Custom, iPhone Retina */
-
-@media only screen and (max-width: 320px) {
-  .nav {
-    .logo {
-      margin-top: 10px;
-      margin-left: 10px;
-      img {
-        max-width: 30px;
+  #about {
+    hr {
+      display: block;
+      border-bottom: 1px solid white;
+      border-top: 0px;
+      width: 100%;
+      margin: 2rem 0;
+    }
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    .about-canvas {
+      .row {
+        padding: 0;
+      }
+      .close {
+        margin-top: 15px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .content {
+        padding: 0px;
+        max-height: 560px;
+        overflow: scroll;
+        .about,
+        .team {
+          padding: 0px;
+        }
       }
     }
- }
+  }
+  #faqs {
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+    .faqs-canvas {
+      .row {
+        padding: 0;
+      }
+      .close {
+        margin-top: 15px;
+        svg {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      .content {
+        padding: 0px;
+        max-height: 560px;
+        overflow: scroll;
+        .one,
+        .two {
+          padding: 0px;
+        }
+        ol {
+          padding-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:321px) and (max-width: 599px) {
+  html {
+    font-size: 14px;
+  }
 }
