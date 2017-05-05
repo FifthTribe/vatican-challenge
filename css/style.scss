@@ -248,6 +248,7 @@ hr {
 
 //FOCUS AREAS SLIDE
 .focus-areas {
+  background-color: $beige;
   height:800px;
   h1 {
     color: $red;
@@ -348,9 +349,9 @@ hr {
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 1.8s ease-in-out;
     &.active {
-      transition: opacity 0.5s ease-in-out;
+      transition: opacity 1.8s ease-in-out;
       position: static;
       opacity: 1;
     }
