@@ -862,7 +862,7 @@ hr {
       }
       .content {
         padding: 0px;
-        max-height: 32rem;
+        height: 32rem;
         overflow: scroll;
         .about,
         .team {
@@ -889,7 +889,7 @@ hr {
       }
       .content {
         padding: 0px;
-        max-height: 32rem;
+        height: 32rem;
         overflow: scroll;
         .one,
         .two {
@@ -917,6 +917,13 @@ hr {
       margin-bottom: 1rem;
     }
     .process-box {
+      margin-top: 1rem;
+    }
+  }
+  #about .about-canvas,
+  #faqs .faqs-canvas {
+    .content {
+      height: 36rem;
       margin-top: 1rem;
     }
   }

@@ -849,7 +849,7 @@ hr {
   /* line 863, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about .about-canvas .content {
     padding: 0px;
-    max-height: 32rem;
+    height: 32rem;
     overflow: scroll; }
     /* line 867, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #about .about-canvas .content .about,
@@ -872,7 +872,7 @@ hr {
   /* line 890, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #faqs .faqs-canvas .content {
     padding: 0px;
-    max-height: 32rem;
+    height: 32rem;
     overflow: scroll; }
     /* line 894, /Users/AnhLe/Desktop/Vatican/css/style.scss */
     #faqs .faqs-canvas .content .one,
@@ -894,6 +894,11 @@ hr {
     margin-bottom: 1rem; }
   /* line 919, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .map .process-box {
+    margin-top: 1rem; }
+  /* line 925, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  #about .about-canvas .content,
+  #faqs .faqs-canvas .content {
+    height: 36rem;
     margin-top: 1rem; } }
 
 /*# sourceMappingURL=style.css.map */
