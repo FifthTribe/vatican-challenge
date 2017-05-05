@@ -15,6 +15,11 @@ body {
   font-family: "Source Sans Pro", sans-serif;
   font-size: 100%;
   font-weight: 400;
+  background-image: url(../img/pope.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 p {
@@ -225,9 +230,6 @@ hr {
 
 //HOME SLIDE
 .home {
-  background-image: url(../img/pope.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 800px;
   .row {
     padding-top: 20%;
