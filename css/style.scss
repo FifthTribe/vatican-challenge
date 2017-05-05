@@ -89,7 +89,7 @@ span {
 }
 
 .row {
-  max-width: 85%;
+  max-width: 95%;
   margin: auto;
 }
 
@@ -278,7 +278,7 @@ hr {
   }
   .stat-tabs-nav {
     position: absolute;
-    top: 20%;
+    top: 16%;
     left: 60%;
     margin-left: 50px;
     z-index: 1000000;
@@ -681,7 +681,7 @@ hr {
     font-size: 12px;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.2em;
   }
   h2 {
@@ -732,15 +732,18 @@ hr {
     }
   }
   .home {
-    background-position: 70%;
+    background-position: 80%;
     .row {
-      padding-top: 80%;
+      padding-top: 65%;
     }
   }
   .focus-areas {
+    h1 {
+      font-size: 2.4rem;
+    }
     .stat-tab-question {
       width: 100%;
-      padding: 22rem 3rem 0 3rem;
+      padding: 16rem 3rem 0 3rem;
     }
     .stat-tab-facts {
       display: none;
@@ -768,19 +771,25 @@ hr {
       display: none;
     }
     h3 {
-      margin-top: .5rem;
+      margin-top: .2rem;
+    }
+    h5 {
+      font-size: 1.3rem;
+    }
+    .network-box {
+      padding: .5rem;
     }
   }
   .apply {
     .row {
-      padding-top: 6rem;
+      padding-top: 5rem;
     }
     .quote {
       display: none;
     }
     h5 {
       font-weight: 600;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
     }
     .subscribe-box {
       width: 95%;
@@ -838,7 +847,7 @@ hr {
       }
       .content {
         padding: 0px;
-        max-height: 560px;
+        max-height: 32rem;
         overflow: scroll;
         .about,
         .team {
@@ -865,7 +874,7 @@ hr {
       }
       .content {
         padding: 0px;
-        max-height: 560px;
+        max-height: 32rem;
         overflow: scroll;
         .one,
         .two {
