@@ -667,6 +667,8 @@ hr {
 #journey-map-mobile {
   margin: 0 auto;
   display: none;
+  width:100%;
+  height:300px;
 }
 
 //RESPONSIVENESS
@@ -761,11 +763,19 @@ hr {
     h3 {
       margin-bottom: .5rem;
     }
+<<<<<<< HEAD
     .map-intro {
       display: none;
     }
     #journey-map {
       transform: scale(0.5);
+=======
+    #journey-map {
+      display:none;
+    }
+    #journey-map-mobile {
+      display:block;
+>>>>>>> c5334b6ead6617bca9c8760ea2bc908458e74fed
     }
   }
   .network {
