@@ -16,7 +16,7 @@ Reveal.initialize({
 $(function(){
   $('.stat-tabs-nav a').on('click',function(e){
     e.preventDefault();
-    $('.stat-tabs-nav > div, .stat-tabs-nav > div > a').removeClass('active');
+    $('.stat-tabs-nav .nav-row div, .stat-tabs-nav .nav-row div > a').removeClass('active');
     $(this).addClass('active');
     $(this).parent().addClass('active');
     $('.stat-tab').removeClass('active');
@@ -26,11 +26,11 @@ $(function(){
 
   $('.stat-tab-answer-no').on('click',function(e){
     e.preventDefault();
-    $('.stat-tabs-nav li').removeClass('active');
-    $('.stat-tab').removeClass('active');
+    $('.stat-tabs-nav .nav-row div, .stat-tabs-nav .nav-row div > a').removeClass('active');
     var id = $(this).attr('href');
     $(id).addClass('active');
-    $('.stat-tabs-nav li a[href="'+id+'"]').parent().addClass('active');
+    $('.stat-tabs-nav .nav-row div > a[href="'+id+'"]').addClass('active');
+    $('.stat-tabs-nav .nav-row div > a[href="'+id+'"]').parent().addClass('active');
   });
 
   $('.goto-next-slide').on('click',function(e){
