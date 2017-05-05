@@ -349,6 +349,7 @@ hr {
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     transition: opacity 1.8s ease-in-out;
     &.active {
       transition: opacity 1.8s ease-in-out;
