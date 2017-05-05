@@ -256,7 +256,7 @@ hr {
     height: 100%;
     float: right;
     padding: 22rem 3rem 0 3rem;
-    background-color: rgba($beige, .8);
+    background-color: rgba($beige, .85);
     background-image: url(../img/corner-icon.png);
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -918,6 +918,11 @@ hr {
     }
     .process-box {
       margin-top: 1rem;
+    }
+  }
+  .network {
+    .network-box {
+      padding: 1rem;
     }
   }
   #about .about-canvas,

@@ -247,7 +247,7 @@ hr {
   height: 100%;
   float: right;
   padding: 22rem 3rem 0 3rem;
-  background-color: rgba(235, 227, 219, 0.8);
+  background-color: rgba(235, 227, 219, 0.85);
   background-image: url(../img/corner-icon.png);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -895,7 +895,10 @@ hr {
   /* line 919, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   .map .process-box {
     margin-top: 1rem; }
-  /* line 925, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  /* line 924, /Users/AnhLe/Desktop/Vatican/css/style.scss */
+  .network .network-box {
+    padding: 1rem; }
+  /* line 930, /Users/AnhLe/Desktop/Vatican/css/style.scss */
   #about .about-canvas .content,
   #faqs .faqs-canvas .content {
     height: 36rem;
