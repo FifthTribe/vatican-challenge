@@ -5,6 +5,18 @@
   width: 100%;
   height: 100%;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.navigate-up,
+.navigate-down {
+  display: none;
+}
+
+.reveal .controls {
+  right: 43%;
+  height: 75px;
 }
 
 html {
@@ -145,10 +157,6 @@ hr {
   margin-left: 0px;
 }
 
-.reveal .controls {
-  display: none !important;
-}
-
 .nav {
   position: absolute;
   z-index: 50;
@@ -257,6 +265,10 @@ hr {
   margin-top: 2rem;
 }
 
+.focus-areas {
+  overflow-y: hidden !important;
+}
+
 .focus-areas h1 {
   color: #B3282D;
 }
@@ -275,6 +287,8 @@ hr {
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 20%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .focus-areas .label {
@@ -360,15 +374,11 @@ hr {
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .focus-areas .stat-tab.active {
   display: block;
-}
-
-.focus-areas .navigate-up,
-.focus-areas .navigate-down {
-  display: none;
 }
 
 .focus-areas .stat-tab-facts {

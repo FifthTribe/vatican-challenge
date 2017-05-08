@@ -6,10 +6,10 @@ Reveal.initialize({
   maxScale: 1,
   autoSlide: 0,
   controls: true,
-  mouseWheel: true,
+  mouseWheel: false,
   progress: true,
   history: true,
-  center: true,
+  center: false,
   transition: 'fade' // none/fade/slide/convex/concave/zoom
 });
 
