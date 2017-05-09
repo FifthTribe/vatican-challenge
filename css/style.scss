@@ -750,6 +750,8 @@ hr {
     }
     .stat-tab-question {
       width: 100%;
+      overflow-x:hidden;
+      overflow-y:scroll;
       padding: 16rem 3rem 0 3rem;
     }
     .stat-tab-facts {
