@@ -630,14 +630,17 @@ hr {
   font-weight: normal;
 }
 
+#about-body {
+  background-image: url("../img/bg-about.png");
+  background-size: cover;
+  background-position: center;
+}
+
 #about hr {
   display: none;
 }
 
 #about .about-canvas {
-  background-image: url("../img/bg-about.png");
-  background-size: cover;
-  background-position: center;
   position: absolute;
   z-index: 100;
   width: 100%;
@@ -708,10 +711,13 @@ hr {
   padding: 0;
 }
 
-#faqs .faqs-canvas {
+#faqs-body {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
   background-position: center;
+}
+
+#faqs .faqs-canvas {
   position: absolute;
   z-index: 100;
   width: 100%;
