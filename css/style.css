@@ -974,8 +974,6 @@ hr {
   }
   #about .about-canvas .content {
     padding: 0px;
-    height: 32rem;
-    overflow: scroll;
   }
   #about .about-canvas .content .about,
   #about .about-canvas .content .team {
@@ -997,8 +995,6 @@ hr {
   }
   #faqs .faqs-canvas .content {
     padding: 0px;
-    height: 32rem;
-    overflow: scroll;
   }
   #faqs .faqs-canvas .content .one,
   #faqs .faqs-canvas .content .two {
