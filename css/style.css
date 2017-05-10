@@ -634,6 +634,19 @@ hr {
   background-image: url("../img/bg-about.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  height: inherit;
+  overflow-y: scroll;
+}
+
+#about-body .nav {
+  position: fixed;
+}
+
+#about {
+  width: 100%;
+  display: block;
+  margin-top: 88px;
 }
 
 #about hr {
@@ -641,10 +654,7 @@ hr {
 }
 
 #about .about-canvas {
-  position: absolute;
-  z-index: 100;
   width: 100%;
-  height: 100%;
 }
 
 #about .about-canvas .row {
@@ -715,13 +725,23 @@ hr {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  height: inherit;
+  overflow-y: scroll;
+}
+
+#faqs-body .nav {
+  position: fixed;
+}
+
+#faqs {
+  width: 100%;
+  display: block;
+  margin-top: 88px;
 }
 
 #faqs .faqs-canvas {
-  position: absolute;
-  z-index: 100;
   width: 100%;
-  height: 100%;
 }
 
 #faqs .faqs-canvas .row {

@@ -1,49 +1,8 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-
-  <title>Laudato Si' Start Up Challenge</title>
-
-  <meta name="description" content="Laudato Si' Startup Challnge - Inspired by Pope Francis">
-  <meta name="author" content="Laudato Si's Challenge">
-
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="css/reveal.css">
-
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
-		<![endif]-->
-
-</head>
-
+<?php include 'includes/head.php'; ?>
 <body>
-
-  <!-- NAVIGATION	 -->
-  <div class="nav">
-    <a class="logo" href="/">
-      <img src="img/logo.png" />
-    </a>
-    <div class="menu">
-      <a class="about" href="/about">About</a>
-      <a class="faqs" href="/faqs">FAQs</a>
-      <a class="apply-now" href="https://www.f6s.com/vaticanaccelerator2017/apply">Apply Now</a>
-      <div class="social">
-        <a href="https://twitter.com/VAccelerator17" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com/LaudatoSiChallenge/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/laudato_si_challenge/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-      </div>
-      <a class="btn" href="https://www.f6s.com/vaticanaccelerator2017/apply"><span>+</span>APPLY NOW</a>
-    </div>
-  </div>
-  <div class="made-by">Made by <a href="http://www.fifthtribe.com/" target="_blank">Fifth Tribe</a></div>
+  <?php include 'includes/nav.php'; ?>
   <!-- SLIDE STARTS HERE -->
   <div class="reveal">
     <div class="slides">
@@ -378,5 +337,4 @@
   <script src="js/main.min.js"></script>
 
 </body>
-
 </html>

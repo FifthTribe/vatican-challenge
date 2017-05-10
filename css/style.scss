@@ -559,13 +559,23 @@ hr {
   }
 }
 
+
 // ABOUT PAGE
 #about-body {
   background-image: url("../img/bg-about.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  height:inherit;
+  overflow-y:scroll;
+  .nav {
+    position: fixed;
+  }
 }
 #about {
+  width:100%;
+  display:block;
+  margin-top:88px;
   hr {
     display: none;
   }
@@ -574,10 +584,7 @@ hr {
       max-width: 100%;
       padding: 2rem;
     }
-    position: absolute;
-    z-index: 100;
     width: 100%;
-    height: 100%;
   }
   .close {
     float: right;
@@ -635,17 +642,23 @@ hr {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  height:inherit;
+  overflow-y:scroll;
+  .nav {
+    position: fixed;
+  }
 }
 #faqs {
+  width:100%;
+  display:block;
+  margin-top:88px;
   .faqs-canvas {
     .row {
       max-width: 100%;
       padding: 2rem;
     }
-    position: absolute;
-    z-index: 100;
     width: 100%;
-    height: 100%;
     .close {
       float: right;
       svg {
