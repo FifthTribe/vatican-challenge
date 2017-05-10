@@ -13,7 +13,7 @@
           <div class="small-12 medium-7 columns">
             <h1>Launching startups that sustainably solve the global climate change crisis by 2030</h1>
             <hr />
-            <h2>Laudato Si' Challenge</h2>
+            <h2>Laudato Si' Startup Challenge</h2>
             <h5 class="inspire">
               Inspired by <span>Pope Francis</span> to care for our common home
             </h5>
@@ -64,9 +64,9 @@
               <div class="label">Areas of Focus - <span>1</span> of 7</div>
               <h1>Energy</h1>
               <hr/>
-              <h4>Can you help transform our energy systems to stop the most severe consequences of climate change?</h4>
+              <h4>Transform our energy systems to stop the most severe consequences of climate change.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
 
             </div>
@@ -83,9 +83,9 @@
               <div class="label">Areas of Focus - <span>2</span> of 7</div>
               <h1>Food</h1>
               <hr/>
-              <h4>Can you help reimagine our food systems to minimize their emissions and guarantee food security for all ?</h4>
+              <h4>Reimagine our food systems to minimize their emissions and guarantee food security for all.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
             </div>
           </div>
@@ -101,9 +101,9 @@
               <div class="label">Areas of Focus - <span>3</span> of 7</div>
               <h1>Water</h1>
               <hr/>
-              <h4>Can you help increase the quantity and quality of freshwater to protect livelihoods?</h4>
+              <h4>Increase the quantity and quality of freshwater to protect livelihoods.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
             </div>
           </div>
@@ -119,9 +119,9 @@
               <div class="label">Areas of Focus - <span>4</span> of 7</div>
               <h1>City</h1>
               <hr/>
-              <h4>Can you help reinvent our urban communities for carbon neutrality and resilience to climate change?</h4>
+              <h4>Reinvent our urban communities for carbon neutrality and resilience to climate change.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
 
 
@@ -139,9 +139,9 @@
               <div class="label">Areas of Focus - <span>5</span> of 7</div>
               <h1>Human Potential</h1>
               <hr/>
-              <h4>Can you help minimize human suffering resulting from forced migration?</h4>
+              <h4>Minimize human suffering resulting from forced migration.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
 
             </div>
@@ -158,9 +158,9 @@
               <div class="label">Areas of Focus - <span>6</span> of 7</div>
               <h1>Conservation</h1>
               <hr/>
-              <h4>Can you help protect the world’s most fragile ecosystems and maintain healthy and thriving ecosystems worldwide?</h4>
+              <h4>Protect the world’s most fragile ecosystems and maintain healthy and thriving ecosystems worldwide.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
 
             </div>
@@ -177,9 +177,9 @@
               <div class="label">Areas of Focus - <span>7</span> of 7</div>
               <h1>Finance</h1>
               <hr/>
-              <h4>Can you help reshape our industries, business models, and finance to mobilize $10 trillion by 2030 in investments for a carbon-neutral global economy?</h4>
+              <h4>Reshape our industries, business models, and finance to mobilize $10 trillion by 2030 in investments for a carbon-neutral global economy.</h4>
               <a href="#" class="goto-next-slide btn red">
-                <span>+</span>Yes, I'm on board
+                <span>+</span>I have a solution
               </a>
 
             </div>
@@ -193,8 +193,8 @@
         <div class="row">
           <div class="small-12 medium-8 column">
             <!-- ADAM NEED TO  REWRITE THIS -->
-            <h3 class="map-intro">Companies selected for the Laudato Si' Challenge will be pushed beyond their limits to compete for multiple rounds of funding.</h3>
-            <h2>A glimpse of the journey</h2>
+            <h3 class="map-intro">Companies selected for the accelerator in Rome receive mentorship and equity funding over a two-month period. The accelerator will maximize your startup's potential across a wide array of disciplines--from user-acquisition to business development and investor pitches.</h3>
+            <h2>Process</h2>
           </div>
           <div class="small-12">
             <div class="svg-wrapper">
@@ -214,27 +214,30 @@
           <div class="small-12 medium-6 medium-offset-6">
             <div class="process-box">
               <div id="apply-box" class="active">
-                <h5>Application Opens</h5>
+                <h5>Application is Open</h5>
                 <p>
-                  Companies with an innovative solution are asked to apply for a chance to obtain $1M+ in investment and mentorship. Startups must be a registered legal entity to apply.
-                  <span class="deadline">Application Deadline: June 30, 2017</span>
+                  Companies with innovative and impactful solutions should apply now to receive mentorship and equity investment. Startups must have a registered legal entity to apply.
+                  <span class="deadline">Application Deadline: June 5, 2017</span>
                 </p>
                 <!-- <a href="#" target="_blank" class="btn blue"><span>+</span>Download 2017 challenge document</a> -->
               </div>
               <div id="mentor-box">
                 <h5>Mentor</h5>
-                <p>50 startups will be screened and selected for initial investment and be paired with a dedicated mentor. Mentors will work with startups as needed and provide support to help define your market strategy and scalability.</p>
+                <p>50 companies will initially receive mentorship to determine scalability and impactfulness. Ability to set and reach milestones will determine the 12 companies invited to Rome for the in-person
+accelerator.
+</p>
               </div>
               <div id="accelerator-box">
                 <h5>Accelerator</h5>
                 <p>
-                  12 startups, known as the Vatican 12 will recive an additional investment round and come to Rome for an in-person accelerator from July 13th to September 9th. Startups will spend time with industry leading mentors, coaches and organizations to refine their business model.
+                  While in Rome, you receive a $100k USD initial equity investment and we will maximize your startup's potential across a wide array of disciplines--from user-acquisition to business development and investor pitches.
                 </p>
               </div>
               <div id="pitch-box">
                 <h5>Demo Day</h5>
                 <p>
-                  The six finalist known as the Vatican six will stage a presentation in Vatican City demonstrating the impact, feasibility and profitability of its solution at Demo Day and each has an opportunity to secure further funding. The world will be watching.
+                  Companies stage a presentation at the Vatican demonstrating the impact, feasibility and profitability of its solution, with an opportunity to secure further funding from the select investors and influencers in attendance.
+
                 </p>
               </div>
 
@@ -255,9 +258,10 @@
                 Companies will provide participating startups expert advice and support on their business strategy, communications and marketing strategy. Top companies from silicon valley will be supporting the Startups.
               </p>
               <hr>
-              <h5>MENTORS &amp; JUDGES</h5>
+              <h5>MENTORS</h5>
               <p>
-                50+ mentors and judges will be working directly with startups. Mentors will come from silicon valley and all over the world. They will support teams in any way to help their success in the challenge and connect them with their entrepreneurial eco-system
+                Companies receive mentorship from tech-centric professors, entrepreneurs and investors to set and reach milestones. Experts in community leadership, business and environmental stewardship evaluate all of the applicants and select 12 startups which are the most transformative, impactful, scalable, sustainable, feasible and profitable. These 12 startups come to Rome for an in-person accelerator from July 13th to September 9th.
+
               </p>
             </div>
           </div>
@@ -272,13 +276,13 @@
         <div class="row">
           <div class="small-12 medium-10 medium-offset-1 column">
             <div class="quote">
-              "Human beings, while capable of the worst, are also capable of rising above themselves, choosing again what is good, and making a new start." - Laudato Si'
+              "All of us can cooperate…for the care of creation, each according to his or her own culture, experience, involvements, and talents." - Laudato Si'
             </div>
-            <h1>Are you ready to reimagine our common home?</h1>
-            <h5> Be one of 50 startups selected for seed funding and mentorship as part of the Laudato Si' Challenge.</h5>
+            <h1>Transform Crisis into Opportunity</h1>
+            <h5>Be one of 50 startups to receive mentorship and equity investment.</h5>
             <a class="btn red" href="https://www.f6s.com/vaticanaccelerator2017/apply"><span>+</span>Apply now</a>
             <p>
-              <span class="app-deadline">Application deadline: <b>June 30, 2017</b></span> <span class="divider">|</span> <span class="to-faq">See <a href="/faqs">FAQs</a> for more information.</span>
+              <span class="app-deadline">Application deadline: <b>June 5, 2017</b></span> <span class="divider">|</span> <span class="to-faq">See <a href="/faqs">FAQs</a> for more information.</span>
             </p>
             <div class="subscribe-box">
               <h5>Stay in touch for our latest updates</h5>

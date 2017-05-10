@@ -11,9 +11,7 @@
             <div class="small-12 medium-6 column about">
               <h1>About the Challenge</h1>
               <p>
-                <span>The Laudato Si’ Startup Challenge</span>, inspired by Pope Francis, is a global initiative that supports early to mid-stage startups in developing breakthrough enterprise solutions to the world’s most urgent challenges. The challenge, a Right Now! initiative, is set by His Holiness Pope Francis and The Pontifical Council for Justice &amp; Peace, and the competition is open to applicants from all continents and faiths.<br/>
-
-                <span>The Laudato Si’ Startup Challenge</span> will forge a business model to demonstrate that business solutions can realign our relationships to accord with the planet, our only common home. Wherever there is a vulnerable ecosystem, there are vulnerable people; any service to mitigate the crisis involving our common home is also a service to the world’s most disadvantaged people. The inaugural challenge will be launched on May 5th, 2017, and aims to become a multi-year initiative to stimulate and develop innovative businesses through a rigorous and tested process.
+                <span>The Laudato Si’ Startup Challenge</span>, The Laudato Si’ Startup Challenge, inspired by Pope Francis, is a global initiative that supports early to mid-stage startups in developing breakthrough enterprise solutions to the world’s most urgent challenges. The initiative was announced May 5th at the Pontifical Academy of Sciences at the Vatican, and calls to action all startup companies—across all continents and faiths—who have solutions that can mitigate climate change.
               </p>
               <h5>MISSION</h5>
               <p> <span>The Laudato Si’ Startup Challenge</span> will unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
