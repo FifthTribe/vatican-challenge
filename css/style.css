@@ -1,24 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700");
 @import url("foundation.min.css");
-.reveal .slides > section {
-  text-align: left;
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-
-.navigate-up,
-.navigate-down {
-  display: none;
-}
-
-.reveal .controls {
-  right: 43%;
-  height: 75px;
-}
-
 html {
   font-size: 14px;
 }
@@ -31,6 +12,14 @@ body {
 
 p {
   margin: 0px;
+}
+
+section {
+  display: block;
+  clear: both;
+  width: 100%;
+  float: left;
+  position: relative;
 }
 
 h1 {
@@ -51,7 +40,7 @@ h2 {
 
 h3 {
   font-family: "Georgia", serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0;
   line-height: 1.2em;
@@ -157,6 +146,10 @@ hr {
   margin-left: 0px;
 }
 
+.reveal .controls {
+  display: none !important;
+}
+
 .nav {
   position: absolute;
   z-index: 50;
@@ -179,7 +172,8 @@ hr {
 
 .nav .menu .about,
 .nav .menu .faqs,
-.nav .menu .apply-now {
+.nav .menu .apply-now,
+.nav .menu .home-nav {
   display: inline-block;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 600;
@@ -192,7 +186,8 @@ hr {
 
 .nav .menu .about:hover,
 .nav .menu .faqs:hover,
-.nav .menu .apply-now:hover {
+.nav .menu .apply-now:hover,
+.nav .menu .home-nav:hover {
   color: #B3282D;
 }
 
@@ -240,13 +235,14 @@ hr {
 }
 
 .home {
+  height: 800px;
   background-image: url(../img/pope.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .home .row {
-  padding-top: 15%;
+  padding-top: 20%;
 }
 
 .home h2 {
@@ -266,7 +262,8 @@ hr {
 }
 
 .focus-areas {
-  overflow-y: hidden !important;
+  background-color: #EBE3DB;
+  height: 800px;
 }
 
 .focus-areas h1 {
@@ -274,21 +271,22 @@ hr {
 }
 
 .focus-areas .stat-tabs-wrapper {
-  height: 100%;
+  width: 100%;
+  float: left;
+  overflow: hidden;
+  display: block;
 }
 
 .focus-areas .stat-tab-question {
   width: 40%;
-  height: 100%;
   float: right;
-  padding: 22rem 3rem 0 3rem;
+  padding: 23rem 3rem 0 3rem;
   background-color: rgba(235, 227, 219, 0.85);
   background-image: url(../img/corner-icon.png);
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: 20%;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  min-height: 800px;
 }
 
 .focus-areas .label {
@@ -369,16 +367,32 @@ hr {
 }
 
 .focus-areas .stat-tab {
-  display: none;
+  display: block;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  opacity: 0;
   width: 100%;
   height: 100%;
+  min-height: 800px;
+  overflow: hidden;
+  float: left;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  transition: opacity 1.8s ease-in-out;
 }
 
 .focus-areas .stat-tab.active {
-  display: block;
+  transition: opacity 1.8s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  position: static;
+  opacity: 1;
+}
+
+.focus-areas .navigate-up,
+.focus-areas .navigate-down {
+  display: none;
 }
 
 .focus-areas .stat-tab-facts {
@@ -436,6 +450,7 @@ hr {
   background-image: url(../img/bg-map.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 800px;
 }
 
 .map .row {
@@ -471,7 +486,7 @@ hr {
 
 .map .process-box {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 1.2rem;
+  padding: 2rem;
 }
 
 .map .process-box div {
@@ -490,10 +505,11 @@ hr {
   background-image: url(../img/bg-network.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height: 800px;
 }
 
 .network .row {
-  padding-top: 8rem;
+  padding-top: 3rem;
 }
 
 .network h5 {
@@ -503,6 +519,11 @@ hr {
 
 .network hr {
   border: 0px;
+  margin: 2rem 0;
+}
+
+.network h3 {
+  margin-top: 1rem;
 }
 
 .network .btn {
@@ -511,12 +532,12 @@ hr {
 
 .network .network-box {
   background-color: rgba(255, 255, 255, 0.7);
-  padding: 1.5rem;
+  padding: 2rem;
   margin-top: 1.5rem;
 }
 
 .network .network-graphic {
-  padding-top: 10rem;
+  padding-top: 5rem;
   display: block;
   width: 90%;
   margin: auto;
@@ -527,6 +548,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  height: 800px;
 }
 
 .apply .row {
@@ -630,36 +652,19 @@ hr {
   font-weight: normal;
 }
 
-#about-body {
-  background-image: url("../img/bg-about.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height: inherit;
-  overflow-y: scroll;
-}
-
-#about-body .nav {
-  position: fixed;
-}
-
-#about {
-  width: 100%;
-  display: block;
-  margin-top: 88px;
-}
-
 #about hr {
   display: none;
 }
 
 #about .about-canvas {
-  width: 100%;
+  background-image: url("../img/bg-about.png");
+  background-size: cover;
+  background-position: center;
 }
 
 #about .about-canvas .row {
   max-width: 100%;
-  padding: 2rem;
+  padding: 8rem 2rem;
 }
 
 #about .close {
@@ -721,32 +726,15 @@ hr {
   padding: 0;
 }
 
-#faqs-body {
+#faqs .faqs-canvas {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
-  height: inherit;
-  overflow-y: scroll;
-}
-
-#faqs-body .nav {
-  position: fixed;
-}
-
-#faqs {
-  width: 100%;
-  display: block;
-  margin-top: 88px;
-}
-
-#faqs .faqs-canvas {
-  width: 100%;
 }
 
 #faqs .faqs-canvas .row {
   max-width: 100%;
-  padding: 2rem;
+  padding: 8rem 4em;
 }
 
 #faqs .faqs-canvas .close {
@@ -776,30 +764,6 @@ hr {
 
 #faqs .faqs-canvas .content.row {
   padding: 0;
-}
-
-.made-by {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  z-index: 1000000;
-}
-
-.made-by a {
-  text-decoration: none;
-  color: #B3282D;
-  transition: color .3s ease;
-}
-
-.made-by a:hover {
-  color: black;
-}
-
-#about-body .made-by, #faqs-body .made-by {
-  position: static;
-  float: left;
-  display: block;
-  padding: 15px;
 }
 
 #journey-map-mobile {
@@ -872,18 +836,21 @@ hr {
   }
   .home {
     background-position: 80%;
+    height: auto;
+    padding: 22rem 0 10rem;
   }
   .home .row {
-    padding-top: 65%;
+    padding-top: 0;
+  }
+  .focus-areas {
+    height: 650px;
   }
   .focus-areas h1 {
     font-size: 2.4rem;
   }
   .focus-areas .stat-tab-question {
     width: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    padding: 16rem 3rem 0 3rem;
+    padding: 20rem 3rem 0 3rem;
   }
   .focus-areas .stat-tab-facts {
     display: none;
@@ -892,41 +859,54 @@ hr {
     left: 0;
     margin-left: 3rem;
   }
+  .map {
+    height: auto;
+    background-size: contain;
+    background-position: top;
+    background-color: #EBE3DB;
+  }
   .map .row {
     padding-top: 6rem;
     max-width: 95%;
   }
   .map h3 {
-    margin-bottom: .5rem;
-  }
-  .map .map-intro {
-    display: none;
+    margin-bottom: 1rem;
   }
   .map #journey-map {
     display: none;
   }
   .map #journey-map-mobile {
     display: block;
+    margin-bottom: 2rem;
   }
   .map #journey-map-mobile text {
     font-size: 1rem !important;
     font-weight: 600 !important;
   }
+  .network {
+    height: auto;
+  }
   .network .row {
     padding-top: 6rem;
     max-width: 95%;
   }
-  .network .network-graphic {
-    display: none;
-  }
   .network h3 {
-    margin-top: .2rem;
+    margin-top: 1rem;
   }
   .network h5 {
     font-size: 1.3rem;
   }
   .network .network-box {
-    padding: .5rem;
+    padding: 1rem;
+  }
+  .network .network-graphic {
+    padding: 0;
+    margin: 3rem 0;
+    width: 100%;
+  }
+  .apply {
+    height: auto;
+    padding: 5rem 0;
   }
   .apply .row {
     padding-top: 5rem;
@@ -991,6 +971,8 @@ hr {
   }
   #about .about-canvas .content {
     padding: 0px;
+    height: 32rem;
+    overflow: scroll;
   }
   #about .about-canvas .content .about,
   #about .about-canvas .content .team {
@@ -1012,6 +994,8 @@ hr {
   }
   #faqs .faqs-canvas .content {
     padding: 0px;
+    height: 32rem;
+    overflow: scroll;
   }
   #faqs .faqs-canvas .content .one,
   #faqs .faqs-canvas .content .two {
@@ -1042,14 +1026,6 @@ hr {
   #faqs .faqs-canvas .content {
     height: 36rem;
     margin-top: 1rem;
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width: 480px) {
-  .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
-    font-size: .8rem;
-    margin-right: 0.5rem;
   }
 }
 

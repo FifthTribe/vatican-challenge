@@ -1,18 +1,3 @@
-Reveal.initialize({
-  width: "100%",
-  height: "100%",
-  margin: 0,
-  minScale: 1,
-  maxScale: 1,
-  autoSlide: 0,
-  controls: true,
-  mouseWheel: false,
-  progress: true,
-  history: true,
-  center: false,
-  transition: 'fade' // none/fade/slide/convex/concave/zoom
-});
-
 $(function(){
   $('.stat-tabs-nav a').on('click',function(e){
     e.preventDefault();

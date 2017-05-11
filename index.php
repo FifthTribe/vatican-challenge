@@ -336,8 +336,6 @@ accelerator.
   </script>
   <!-- End Mailchimp JS -->
 
-  <script src="js/head.min.js"></script>
-  <script src="js/reveal.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://use.fontawesome.com/d989cacb3b.js"></script>
   <script src="js/snap.svg-min.js"></script>

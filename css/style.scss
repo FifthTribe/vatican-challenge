@@ -1,20 +1,3 @@
-.reveal .slides>section {
-  text-align: left;
-  width: 100%;
-  height:100%;
-  padding: 0;
-  overflow-x:hidden;
-  overflow-y:scroll;
-}
-.navigate-up,
-.navigate-down {
-  display: none;
-}
-.reveal .controls {
-  right:43%;
-  height:75px;
-}
-
 // BASE STYLING
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700');
 @import url('foundation.min.css');
@@ -38,6 +21,14 @@ p {
   margin: 0px;
 }
 
+section {
+  display:block;
+  clear:both;
+  width:100%;
+  float:left;
+  position: relative;
+}
+
 h1 {
   font-size: 3rem;
   font-family: "Georgia", serif;
@@ -56,7 +47,7 @@ h2 {
 
 h3 {
   font-family: "Georgia", serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: normal;
   margin: 0;
   line-height: 1.2em;
@@ -158,6 +149,11 @@ hr {
   margin-left: 0px;
 }
 
+// Hide controls
+.reveal .controls {
+  display: none !important;
+}
+
 //Navigation
 .nav {
   position: absolute;
@@ -175,7 +171,8 @@ hr {
     float: right;
     .about,
     .faqs,
-    .apply-now {
+    .apply-now,
+    .home-nav {
       display: inline-block;
       font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
@@ -228,11 +225,12 @@ hr {
 
 //HOME SLIDE
 .home {
+  height: 800px;
   background-image: url(../img/pope.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   .row {
-    padding-top: 15%;
+    padding-top: 20%;
   }
   h2 {
     color: $dark-grey;
@@ -250,25 +248,27 @@ hr {
 
 //FOCUS AREAS SLIDE
 .focus-areas {
-  overflow-y:hidden !important;
+  background-color: $beige;
+  height:800px;
   h1 {
     color: $red;
   }
   .stat-tabs-wrapper {
-    height: 100%;
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    display: block;
   }
   .stat-tab-question {
     width: 40%;
-    height: 100%;
     float: right;
-    padding: 22rem 3rem 0 3rem;
+    padding: 23rem 3rem 0 3rem;
     background-color: rgba($beige, .85);
     background-image: url(../img/corner-icon.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 20%;
-    overflow-y:scroll;
-    overflow-x:hidden;
+    min-height: 800px;
   }
   .label {
     font-size: 18px;
@@ -337,15 +337,30 @@ hr {
     background-image: url(../img/icon-finance.png);
   }
   .stat-tab {
-    display: none;
+    display: block;
+    position: absolute;
+    top:-9999px;
+    left:-9999px;
+    opacity: 0;
     width: 100%;
     height: 100%;
+    min-height:800px;
+    overflow: hidden;
+    float: left;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    transition: opacity 1.8s ease-in-out;
     &.active {
-      display: block;
+      transition: opacity 1.8s ease-in-out;
+    transition: opacity 1s ease-in-out;
+      position: static;
+      opacity: 1;
     }
+  }
+  .navigate-up,
+  .navigate-down {
+    display: none;
   }
   .stat-tab-facts {
     position: absolute;
@@ -395,6 +410,7 @@ hr {
   background-image: url(../img/bg-map.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height:800px;
   .row {
     padding-top: 8rem;
   }
@@ -422,7 +438,7 @@ hr {
   }
   .process-box {
     background-color: rgba(white, .7);
-    padding: 1.2rem;
+    padding: 2rem;
     div {
       display: none;
       &.active {
@@ -440,8 +456,9 @@ hr {
   background-image: url(../img/bg-network.png);
   background-size: cover;
   background-repeat: no-repeat;
+  height:800px;
   .row {
-    padding-top: 8rem;
+    padding-top: 3rem;
   }
   h5 {
     font-weight: 600;
@@ -449,17 +466,21 @@ hr {
   }
   hr {
     border: 0px;
+    margin: 2rem 0;
+  }
+  h3 {
+    margin-top: 1rem;
   }
   .btn {
     margin-top: 20px;
   }
   .network-box {
     background-color: rgba(white, .7);
-    padding: 1.5rem;
+    padding: 2rem;
     margin-top: 1.5rem;
   }
   .network-graphic {
-    padding-top: 10rem;
+    padding-top: 5rem;
     display: block;
     width: 90%;
     margin: auto;
@@ -472,6 +493,7 @@ hr {
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
+  height:800px;
   .row {
     text-align: center;
     padding-top: 10rem;
@@ -559,32 +581,19 @@ hr {
   }
 }
 
-
 // ABOUT PAGE
-#about-body {
-  background-image: url("../img/bg-about.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height:inherit;
-  overflow-y:scroll;
-  .nav {
-    position: fixed;
-  }
-}
 #about {
-  width:100%;
-  display:block;
-  margin-top:88px;
   hr {
     display: none;
   }
   .about-canvas {
     .row {
       max-width: 100%;
-      padding: 2rem;
+      padding: 8rem 2rem;
     }
-    width: 100%;
+    background-image: url("../img/bg-about.png");
+    background-size: cover;
+    background-position: center;
   }
   .close {
     float: right;
@@ -638,27 +647,15 @@ hr {
 }
 
 // FAQS PAGE
-#faqs-body {
-  background-image: url("../img/bg-faqs.png");
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  height:inherit;
-  overflow-y:scroll;
-  .nav {
-    position: fixed;
-  }
-}
 #faqs {
-  width:100%;
-  display:block;
-  margin-top:88px;
   .faqs-canvas {
     .row {
       max-width: 100%;
-      padding: 2rem;
+      padding: 8rem 4em;
     }
-    width: 100%;
+    background-image: url("../img/bg-faqs.png");
+    background-size: cover;
+    background-position: center;
     .close {
       float: right;
       svg {
@@ -685,26 +682,7 @@ hr {
     }
   }
 }
-.made-by {
-  position: absolute;
-  bottom:15px;
-  left:15px;
-  z-index: 1000000;
-  a {
-    text-decoration: none;
-    color: $red;
-    transition: color .3s ease;
-    &:hover {
-      color: black
-    }
-  }
-}
-#about-body .made-by, #faqs-body .made-by {
-  position: static;
-  float:left;
-  display:block;
-  padding:15px;
-}
+
 #journey-map-mobile {
   margin: 0 auto;
   display: none;
@@ -776,19 +754,20 @@ hr {
   }
   .home {
     background-position: 80%;
+    height: auto;
+    padding: 22rem 0 10rem;
     .row {
-      padding-top: 65%;
+      padding-top: 0;
     }
   }
   .focus-areas {
+    height: 650px;
     h1 {
       font-size: 2.4rem;
     }
     .stat-tab-question {
       width: 100%;
-      overflow-x:hidden;
-      overflow-y:scroll;
-      padding: 16rem 3rem 0 3rem;
+      padding: 20rem 3rem 0 3rem;
     }
     .stat-tab-facts {
       display: none;
@@ -799,21 +778,23 @@ hr {
     }
   }
   .map {
+    height:auto;
+    background-size: contain;
+    background-position: top;
+    background-color: $beige;
     .row {
       padding-top: 6rem;
       max-width: 95%;
     }
     h3 {
-      margin-bottom: .5rem;
-    }
-    .map-intro {
-      display: none;
+      margin-bottom: 1rem;
     }
     #journey-map {
       display: none;
     }
     #journey-map-mobile {
       display: block;
+      margin-bottom: 2rem;
       text {
         font-size: 1rem !important;
         font-weight: 600 !important;
@@ -821,24 +802,29 @@ hr {
     }
   }
   .network {
+    height:auto;
     .row {
       padding-top: 6rem;
       max-width: 95%;
     }
-    .network-graphic {
-      display: none;
-    }
     h3 {
-      margin-top: .2rem;
+      margin-top: 1rem;
     }
     h5 {
       font-size: 1.3rem;
     }
     .network-box {
-      padding: .5rem;
+      padding: 1rem;
+    }
+    .network-graphic{
+      padding: 0;
+      margin: 3rem 0;
+      width: 100%;
     }
   }
   .apply {
+    height: auto;
+    padding: 5rem 0;
     .row {
       padding-top: 5rem;
     }
@@ -905,6 +891,8 @@ hr {
       }
       .content {
         padding: 0px;
+        height: 32rem;
+        overflow: scroll;
         .about,
         .team {
           padding: 0px;
@@ -930,6 +918,8 @@ hr {
       }
       .content {
         padding: 0px;
+        height: 32rem;
+        overflow: scroll;
         .one,
         .two {
           padding: 0px;
@@ -970,13 +960,5 @@ hr {
       height: 36rem;
       margin-top: 1rem;
     }
-  }
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
-  .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
-    font-size: .8rem;
-    margin-right: 0.5rem;
   }
 }
