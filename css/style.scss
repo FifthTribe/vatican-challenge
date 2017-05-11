@@ -582,6 +582,12 @@ hr {
 }
 
 // ABOUT PAGE
+#about-body {
+  background-image: url("../img/bg-about.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 #about {
   hr {
     display: none;
@@ -591,9 +597,6 @@ hr {
       max-width: 100%;
       padding: 8rem 2rem;
     }
-    background-image: url("../img/bg-about.png");
-    background-size: cover;
-    background-position: center;
   }
   .close {
     float: right;
@@ -648,7 +651,10 @@ hr {
 
 // FAQS PAGE
 #faqs-body {
-  background-color:#EFE9E3;
+  background-image: url("../img/bg-faqs.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #faqs {
   .faqs-canvas {
@@ -964,3 +970,11 @@ hr {
     }
   }
 }
+
+/* Extra Small Devices, Phones */
+ @media only screen and (max-width : 480px) {
+  .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
+    margin-right:.5rem;
+    font-size:.8rem;
+  }
+ }

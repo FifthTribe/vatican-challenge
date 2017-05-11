@@ -652,14 +652,15 @@ hr {
   font-weight: normal;
 }
 
-#about hr {
-  display: none;
-}
-
-#about .about-canvas {
+#about-body {
   background-image: url("../img/bg-about.png");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+}
+
+#about hr {
+  display: none;
 }
 
 #about .about-canvas .row {
@@ -727,7 +728,10 @@ hr {
 }
 
 #faqs-body {
-  background-color: #EFE9E3;
+  background-image: url("../img/bg-faqs.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #faqs .faqs-canvas {
@@ -1029,6 +1033,14 @@ hr {
   #about .about-canvas .content,
   #faqs .faqs-canvas .content {
     margin-top: 5rem;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
+    margin-right: .5rem;
+    font-size: .8rem;
   }
 }
 
