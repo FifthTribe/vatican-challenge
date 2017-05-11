@@ -972,3 +972,11 @@ hr {
     }
   }
 }
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+  .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
+    font-size: .8rem;
+    margin-right: 0.5rem;
+  }
+}
