@@ -703,6 +703,8 @@ hr {
   text-align: center;
 }
 
+.made-by {a {text-decoration:none; color:$red; &:hover {color: white}}}
+
 //RESPONSIVENESS
 @media (max-width: 599px) {
   .direction-mobile {
@@ -976,5 +978,11 @@ hr {
   .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
     margin-right:.5rem;
     font-size:.8rem;
+  }
+  #about .about-canvas,
+  #faqs .faqs-canvas {
+    .content {
+      margin-top: 5rem;
+    }
   }
  }

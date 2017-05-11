@@ -785,6 +785,15 @@ hr {
   text-align: center;
 }
 
+.made-by a {
+  text-decoration: none;
+  color: #B3282D;
+}
+
+.made-by a:hover {
+  color: white;
+}
+
 @media (max-width: 599px) {
   .direction-mobile {
     display: block;
@@ -1041,6 +1050,10 @@ hr {
   .nav .menu .apply-now, .nav .menu .about, .nav .menu .faqs {
     margin-right: .5rem;
     font-size: .8rem;
+  }
+  #about .about-canvas .content,
+  #faqs .faqs-canvas .content {
+    margin-top: 5rem;
   }
 }
 

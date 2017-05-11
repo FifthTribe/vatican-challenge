@@ -116,7 +116,7 @@
             </div>
             <div class="stat-tab-question">
               <div class="label">Areas of Focus - <span>4</span> of 7</div>
-              <h1>City</h1>
+              <h1>Crowded Cities</h1>
               <hr/>
               <h4>Reinvent our urban communities for carbon neutrality and resilience to climate change.</h4>
               <a href="#" class="goto-next-slide btn red">

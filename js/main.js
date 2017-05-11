@@ -520,7 +520,7 @@ $(function(){
         stroke: '#ADADAD',
         'stroke-width':3
       });
-      var pitchText_mobile = s_mobile.paper.text(260, 48, "DEMO DAY");
+      var pitchText_mobile = s_mobile.paper.text(250, 48, "DEMO DAY");
       pitchText_mobile.attr({
         'font-size': '14px',
         'font-weight':'bold'
