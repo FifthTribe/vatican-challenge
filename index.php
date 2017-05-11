@@ -265,7 +265,7 @@ accelerator.
               </p>
             </div>
           </div>
-          <div class="small-12 medium-6 column">
+          <div class="small-12 medium-6 large-5 column">
             <img class="network-graphic" src="img/network.png" />
           </div>
         </div>
