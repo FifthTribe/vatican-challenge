@@ -726,6 +726,10 @@ hr {
   padding: 0;
 }
 
+#faqs-body {
+  background-color: #EFE9E3;
+}
+
 #faqs .faqs-canvas {
   background-image: url("../img/bg-faqs.png");
   background-size: cover;
