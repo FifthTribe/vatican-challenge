@@ -687,9 +687,17 @@ hr {
 }
 .made-by {
   position: absolute;
-  bottom:5px;
-  right:15px;
+  bottom:15px;
+  left:15px;
   z-index: 1000000;
+  a {
+    text-decoration: none;
+    color: $red;
+    transition: color .3s ease;
+    &:hover {
+      color: black
+    }
+  }
 }
 #journey-map-mobile {
   margin: 0 auto;
