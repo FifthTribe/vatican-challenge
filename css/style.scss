@@ -699,6 +699,12 @@ hr {
     }
   }
 }
+#about-body .made-by, #faqs-body .made-by {
+  position: static;
+  float:left;
+  display:block;
+  padding:15px;
+}
 #journey-map-mobile {
   margin: 0 auto;
   display: none;

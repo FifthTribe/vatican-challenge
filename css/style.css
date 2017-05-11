@@ -780,9 +780,26 @@ hr {
 
 .made-by {
   position: absolute;
-  bottom: 5px;
-  right: 15px;
+  bottom: 15px;
+  left: 15px;
   z-index: 1000000;
+}
+
+.made-by a {
+  text-decoration: none;
+  color: #B3282D;
+  transition: color .3s ease;
+}
+
+.made-by a:hover {
+  color: black;
+}
+
+#about-body .made-by, #faqs-body .made-by {
+  position: static;
+  float: left;
+  display: block;
+  padding: 15px;
 }
 
 #journey-map-mobile {

@@ -315,6 +315,9 @@ accelerator.
 
   </div>
 
+  <?php include 'includes/footer.php'; ?>
+
+
   <!-- Mailchimp JS -->
   <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
   <script type="text/javascript">
