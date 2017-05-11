@@ -4,6 +4,7 @@
     <img src="img/logo.png" />
   </a>
   <div class="menu">
+    <a class="about" href="/">Home</a>
     <a class="about" href="/about">About</a>
     <a class="faqs" href="/faqs">FAQs</a>
     <a class="apply-now" href="https://www.f6s.com/vaticanaccelerator2017/apply">Apply Now</a>
