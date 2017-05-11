@@ -308,13 +308,14 @@ accelerator.
           </div>
 
         </div>
+        <?php include 'includes/footer.php'; ?>
+        
       </section>
 
     </div>
 
   </div>
 
-  <?php include 'includes/footer.php'; ?>
 
 
   <!-- Mailchimp JS -->

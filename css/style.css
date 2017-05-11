@@ -773,6 +773,10 @@ hr {
   height: 175px;
 }
 
+.footer {
+  text-align: center;
+}
+
 @media (max-width: 599px) {
   .direction-mobile {
     display: block;
@@ -821,7 +825,7 @@ hr {
   .nav .menu .about,
   .nav .menu .faqs {
     font-size: 1rem;
-    margin-right: 1.3rem;
+    margin-right: .8rem;
   }
   .nav .menu .social {
     margin-right: 0px;
@@ -971,8 +975,6 @@ hr {
   }
   #about .about-canvas .content {
     padding: 0px;
-    height: 32rem;
-    overflow: scroll;
   }
   #about .about-canvas .content .about,
   #about .about-canvas .content .team {
@@ -994,8 +996,6 @@ hr {
   }
   #faqs .faqs-canvas .content {
     padding: 0px;
-    height: 32rem;
-    overflow: scroll;
   }
   #faqs .faqs-canvas .content .one,
   #faqs .faqs-canvas .content .two {
@@ -1024,8 +1024,7 @@ hr {
   }
   #about .about-canvas .content,
   #faqs .faqs-canvas .content {
-    height: 36rem;
-    margin-top: 1rem;
+    margin-top: 5rem;
   }
 }
 
