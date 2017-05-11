@@ -4,7 +4,7 @@
 <body>
   <?php include 'includes/nav.php'; ?>
   <!-- SLIDE STARTS HERE -->
-  <div class="reveal">
+  <div class="slides-wrapper">
     <div class="slides">
 
       <!-- #1 HOME SLIDE -->
@@ -17,8 +17,7 @@
             <h5 class="inspire">
               Inspired by <span>Pope Francis</span> to care for our common home
             </h5>
-            <div class="direction-desktop">Use the arrows below to learn more <i class="fa fa-angle-double-down" aria-hidden="true"></i></div>
-            <div class="direction-mobile">Swipe right or use the arrows below to learn more <i class="fa fa-angle-double-right" aria-hidden="true"></i></div>
+            <p>Scroll down to learn more <i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
           </div>
         </div>
       </section>
