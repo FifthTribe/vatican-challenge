@@ -197,7 +197,7 @@
           </div>
           <div class="small-12">
             <div class="svg-wrapper">
-              <svg id="journey-map">
+              <svg id="journey-map" viewBox="0 0 1024 500" width="100%" height="100%">
 				<path id="apply-to-mentor-line" d="M 53 446 S 53 446 75 400 S 75 400 100 350 S 100 350 300 270" stroke="#FFFFFF" stroke-width="6" fill="transparent"/>
 				<path id="mentor-to-accelerator-line" d="M 300 270 S 300 270 350 280 S 350 280 600 300" stroke="#FFFFFF" stroke-width="6" fill="transparent"/>
 				<path id="accelerator-to-pitch-line" d="M 600 300 S 600 300 680 250 S 680 250 760 190 S 760 190 900 150" stroke="#FFFFFF" stroke-width="6" fill="transparent"/>

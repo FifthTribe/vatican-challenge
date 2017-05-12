@@ -20,7 +20,9 @@ $(function(){
 
   $('.goto-next-slide').on('click',function(e){
     e.preventDefault();
-    Reveal.next();
+    $('html, body').animate({
+        scrollTop: $(".map").offset().top
+    }, 1000);
   });
 
   function svgAnimate (){
