@@ -904,6 +904,11 @@ hr {
   .map #journey-map {
     display: none;
   }
+  .map .svg-wrapper {
+    width: 315px;
+    margin: 0 auto;
+    min-height: 200px;
+  }
   .map #journey-map-mobile {
     display: block;
     margin-bottom: 2rem;

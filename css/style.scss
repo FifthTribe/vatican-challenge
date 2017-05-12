@@ -814,6 +814,11 @@ hr {
     #journey-map {
       display: none;
     }
+    .svg-wrapper {
+      width:315px;
+      margin:0 auto;
+      min-height:200px;
+    }
     #journey-map-mobile {
       display: block;
       margin-bottom: 2rem;
