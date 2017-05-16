@@ -10,6 +10,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="google-site-verification" content="5vDH8Hl2rxBLVigYWoUU0Mcnyr9807XsTSkWdJ5VEFc" />
 
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
