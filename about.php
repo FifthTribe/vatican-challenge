@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <p>
-                    <span>Ahmad Ashkar</span> - Co-Founder &amp; Managing Director
+                    <span>Ahmad Ashkar</span> - Co-Founder
                   </p>
                   <p class="title">
                     Founder &amp; CEO, Hult Prize
