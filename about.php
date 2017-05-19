@@ -81,6 +81,21 @@
                     <span>Darcie Newton</span> - Chief of Staff
                   </p>
                 </li>
+                <li>
+                  <p>
+                    <span>Jean Marc Ly</span> - Growth Hacker in Residence
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Ben Stanfield</span> - Assistance Program Director
+                  </p>
+                  <li>
+                    <p>
+                      <span>Shelly Strebel</span> - Assistance Program Director
+                    </p>
+                  </li>
+                </li>
                 </ul>
 
               <h5>FOUNDING PARTNERS</h5>
