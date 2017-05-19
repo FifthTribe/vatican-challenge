@@ -13,9 +13,11 @@
               <p>
                 <span>The Laudato Si’ Startup Challenge</span>, The Laudato Si’ Startup Challenge, inspired by Pope Francis, is a global initiative that supports early to mid-stage startups in developing breakthrough enterprise solutions to the world’s most urgent challenges. The initiative was announced May 5th at the Pontifical Academy of Sciences at the Vatican, and calls to action all startup companies—across all continents and faiths—who have solutions that can mitigate climate change.
               </p>
+              <br>
               <h5>MISSION</h5>
               <p> <span>The Laudato Si’ Startup Challenge</span> will unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
               </p>
+              <br>
               <h5>CONTACT</h5>
               <a href="mailto:info@laudatosichallenge.org">info@laudatosichallenge.org</a>
             </div>
@@ -41,7 +43,7 @@
                   </p>
                 </li>
               </ul>
-
+<br>
               <h5>LEADERSHIP TEAM</h5>
               <ul>
                 <li>
@@ -80,24 +82,36 @@
                   <p>
                     <span>Darcie Newton</span> - Chief of Staff
                   </p>
+                  <p class="title">
+                    Imagine Ventures
+                  </p>
                 </li>
                 <li>
                   <p>
                     <span>Jean Marc Ly</span> - Growth Hacker in Residence
+                  </p>
+                  <p class="title">
+                    Cofounder, Recime
                   </p>
                 </li>
                 <li>
                   <p>
                     <span>Ben Stanfield</span> - Assistance Program Director
                   </p>
+                  <p class="title">
+                    Iovine &amp; Young Academy, USC
+                  </p>
                   <li>
                     <p>
                       <span>Shelly Strebel</span> - Assistance Program Director
                     </p>
+                    <p class="title">
+                      Imagine Ventures
+                    </p>
                   </li>
                 </li>
                 </ul>
-
+<br>
               <h5>FOUNDING PARTNERS</h5>
               <ul>
                 <li>
