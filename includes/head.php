@@ -11,6 +11,7 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="google-site-verification" content="5vDH8Hl2rxBLVigYWoUU0Mcnyr9807XsTSkWdJ5VEFc" />
+  <meta name="google-site-verification" content="i4N13S3l865wmPf-0XtT3rl04g7TX-JUHaoFBjTF5NQ" />
 
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
