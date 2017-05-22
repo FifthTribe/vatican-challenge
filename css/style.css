@@ -308,15 +308,20 @@ hr {
 
 .focus-areas .stat-tabs-nav {
   position: absolute;
-  top: 16%;
+  top: 12%;
   left: 60%;
   margin-left: 50px;
   z-index: 1000000;
 }
 
+.focus-areas .stat-tabs-nav .nav-row {
+  margin-top: 4px;
+}
+
 .focus-areas .stat-tabs-nav .nav-row div {
   display: inline-block;
   margin-right: 10px;
+  margin-top: 10px;
   width: 4rem;
   height: 4rem;
   background-color: rgba(255, 255, 255, 0.8);
@@ -887,6 +892,7 @@ hr {
   .focus-areas .stat-tabs-nav {
     left: 0;
     margin-left: 3rem;
+    top: 8%;
   }
   .map {
     height: auto;
@@ -1070,4 +1076,15 @@ hr {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/* larger devices greater than 2000px wide */
+@media only screen and (min-width: 2000px) {
+  .network, .home, .focus-areas, .map, .apply {
+    height: 1100px;
+  }
+  .focus-areas .stat-tab, .focus-areas .stat-tab-question {
+    min-height: 1100px;
+  }
+  body {
+    font-size: 150%;
+  }
+}

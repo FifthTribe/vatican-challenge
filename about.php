@@ -11,12 +11,14 @@
             <div class="small-12 medium-6 column about">
               <h1>About the Challenge</h1>
               <p>
-                <span>The Laudato Si’ Startup Challenge</span>, The Laudato Si’ Startup Challenge, inspired by Pope Francis, is a global initiative that supports early to mid-stage startups in developing breakthrough enterprise solutions to the world’s most urgent challenges. The initiative was announced May 5th at the Pontifical Academy of Sciences at the Vatican, and calls to action all startup companies—across all continents and faiths—who have solutions that can mitigate climate change.
+                <span>The Laudato Si’ Startup Challenge, inspired by Pope Francis</span> is a global initiative, an urgent call-to-action, that encourages early to mid-stage startups to grow their breakthrough solutions to the world’s boldest challenges. Teams of young people, of all faiths, all backgrounds, on every continent, are being asked to scale their profitable, innovative and sustainable products and services which address a grand challenge. The challenge category for 2017 is: climate change and involuntary migration. Startup teams from over 100 countries are now being recruited through a direct call-to-action, through global startup ecosystems, university partners and a worldwide executive network. After submitting first-round entries, the field will be narrowed to 50. Following a rigorous, 60-day screening and interview process, a panel of experts will choose the most promising 12 startups (semi-finalists) to advance into an 8-week business accelerator in Rome to expand and scale their solution.
               </p>
               <br>
-              <h5>MISSION</h5>
-              <p> <span>The Laudato Si’ Startup Challenge</span> will unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
+              <p>
+                Each semi-finalist will be offered an equity investment and mentorship as they work to become one of the finalists. All of the startups that reach the semi-finals stage of The Challenge will receive ongoing support to further define their products and services, with the goal of emerging as fully-investable enterprises. In December, The Laudato Si’ Challenge will culminate with a demo day and grand ceremony inside Vatican City. The global event will celebrate each of the six startups as they present their game-changing products and services to the world, as well as memorialize the 21st Century standard of doing business: profitable, social, mission aligned and bankable.
               </p>
+              <h5>MISSION</h5>
+              <p> <span>The Laudato Si’ Startup Challenge</span> wwill unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
               <br>
               <h5>CONTACT</h5>
               <a href="mailto:info@laudatosichallenge.org">info@laudatosichallenge.org</a>

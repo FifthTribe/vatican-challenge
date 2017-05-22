@@ -26,6 +26,7 @@
       <section class="focus-areas">
         <div class="stat-tabs-wrapper">
           <div class="stat-tabs-nav">
+            <h5>Entreprenuers are challenged to innovate across seven key areas. </h5>
             <div class="nav-row">
               <div id="energy" class="active">
                 <a href="#stat-tab-energy" class="active"></a>
