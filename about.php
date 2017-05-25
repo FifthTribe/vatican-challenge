@@ -74,18 +74,26 @@
                 </li>
                 <li>
                   <p>
-                    <span>Paul Orlando</span> - Program Director
-                  </p>
-                  <p class="title">
-                    Incubator Director &amp; Adjunct Professor, USC
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Darcie Newton</span> - Chief of Staff
                   </p>
                   <p class="title">
                     Imagine Ventures
+                  </p>
+                </li>
+		<li>
+		  <p>
+		    <span>Shelly Strebel</span> - Assistance Program Director
+		  </p>
+		  <p class="title">
+		    Imagine Ventures
+		  </p>
+		</li>
+                <li>
+                  <p>
+                    <span>Paul Orlando</span> - Program Director
+                  </p>
+                  <p class="title">
+                    Incubator Director &amp; Adjunct Professor, USC
                   </p>
                 </li>
                 <li>
@@ -103,14 +111,6 @@
                   <p class="title">
                     Iovine &amp; Young Academy, USC
                   </p>
-                  <li>
-                    <p>
-                      <span>Shelly Strebel</span> - Assistance Program Director
-                    </p>
-                    <p class="title">
-                      Imagine Ventures
-                    </p>
-                  </li>
                 </li>
                 </ul>
 <br>
@@ -122,6 +122,14 @@
                   </p>
                   <p class="title">
                     Founder, The Husseini Group
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Thomas Ermacora</span>
+                  </p>
+                  <p class="title">
+                    Futurist &amp; Impact Entrepreneur, Recoded City Author
                   </p>
                 </li>
                 <li>
@@ -142,26 +150,18 @@
                 </li>
                 <li>
                   <p>
-                    <span>Jeff Cherry</span>
-                  </p>
-                  <p class="title">
-                    Founder &amp; Executive Director Conscious Venture Lab
-                  </p>
-                </li>
-                <li>
-                  <p>
-                    <span>Thomas Ermacora</span>
-                  </p>
-                  <p class="title">
-                    Futurist &amp; Impact Entrepreneur, Recoded City Author
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Andrew Mangino</span>
                   </p>
                   <p class="title">
                     Founder, The Future Fund
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span>Jeff Cherry</span>
+                  </p>
+                  <p class="title">
+                    Founder &amp; Executive Director Conscious Venture Lab
                   </p>
                 </li>
                 <li>
