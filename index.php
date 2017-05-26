@@ -68,6 +68,11 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+              <div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
 
             </div>
           </div>
@@ -87,6 +92,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+		<div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
             </div>
           </div>
 
@@ -105,6 +116,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+	      <div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
             </div>
           </div>
 
@@ -123,6 +140,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+		<div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
 
 
             </div>
@@ -143,6 +166,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+	      <div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
 
             </div>
           </div>
@@ -162,6 +191,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+		<div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
 
             </div>
           </div>
@@ -181,6 +216,12 @@
               <a href="#" class="goto-next-slide btn red">
                 <span>+</span>I have a solution
               </a>
+		<div style="margin-top:-25px">
+	      	<a href="/Laudato_Si_Challenge.pdf" target="_blank" class="btn red">
+                	<span>?</span>Read more
+              	</a>
+	      </div>
+
 
             </div>
           </div>
@@ -193,8 +234,8 @@
         <div class="row">
           <div class="small-12 medium-8 column">
             <!-- ADAM NEED TO  REWRITE THIS -->
-            <h3 class="map-intro">Companies selected for the accelerator in Rome receive mentorship and equity funding over a two-month period. The accelerator will maximize your startup's potential across a wide array of disciplines--from user-acquisition to business development and investor pitches.</h3>
             <h2>Process</h2>
+            <h3 class="map-intro">Companies selected for the accelerator in Rome receive mentorship and equity funding over a two-month period. The accelerator will maximize your startup's potential across a wide array of disciplines--from user-acquisition to business development and investor pitches.</h3>
           </div>
           <div class="small-12">
             <div class="svg-wrapper">
