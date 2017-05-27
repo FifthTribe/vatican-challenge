@@ -1,0 +1,60 @@
+/*Changes to about page*/
+
+#about-body {
+  background-color: white !important;
+  background-image: none !important;
+}
+
+#about-body h1, p {
+  color: #333333;
+}
+
+#about-body p {
+  font-size: 1.2em;
+}
+
+#about-body .small-12 {
+  margin-top: 30px;
+}
+
+#about a {
+  color: #00aff5 !important;
+}
+
+#about a:hover {
+  color: #0f8daa !important;
+}
+
+#about .content h5 {
+  margin-top: 0px;
+  font-size: 1.2em;
+  color: #B3282D;
+  margin-bottom: 5px;
+}
+
+#about .content .about {
+  padding-right: 30px;
+}
+
+.ally-logo {
+  width: 130px;
+  filter: grayscale(100%);
+}
+
+.ally-lrg {
+  width: 160px;
+}
+
+.ally-col {
+  margin-top: 10px !important;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.hero-img img {
+  border-bottom: 5px solid #B3282D;
+}

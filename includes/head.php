@@ -14,6 +14,7 @@
   <meta name="google-site-verification" content="i4N13S3l865wmPf-0XtT3rl04g7TX-JUHaoFBjTF5NQ" />
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/additional.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <!--[if lt IE 9]>
