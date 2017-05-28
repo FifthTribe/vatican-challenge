@@ -9,15 +9,17 @@
 
       <!-- #1 HOME SLIDE -->
       <section class="home">
-        <div class="row">
-          <div class="small-12 medium-7 columns">
-            <h1>Launching startups that sustainably solve the global climate change crisis by 2030</h1>
-            <hr />
-            <h2>Laudato Si' Startup Challenge</h2>
-            <h5 class="inspire">
-              Inspired by <span>Pope Francis</span> to care for our common home
-            </h5>
-            <p>Scroll down to learn more <i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+        <div class="bound">
+          <div class="row full-row">
+            <div class="small-12 medium-7 columns">
+              <h1>Launching startups that sustainably solve the global climate change crisis by 2030</h1>
+              <hr />
+              <h2>Laudato Si' Startup Challenge</h2>
+              <h5 class="inspire">
+                Inspired by <span>Pope Francis</span> to care for our common home
+              </h5>
+              <p>Scroll down to learn more <i class="fa fa-angle-double-down" aria-hidden="true"></i></p>
+            </div>
           </div>
         </div>
       </section>
@@ -26,7 +28,7 @@
       <section class="focus-areas">
         <div class="stat-tabs-wrapper">
           <div class="stat-tabs-nav">
-            <h5>Entreprenuers are challenged to innovate across seven key areas. </h5>
+            <h5>Entrepreneurs are challenged to innovate across seven key areas. </h5>
             <div class="nav-row">
               <div id="energy" class="active">
                 <a href="#stat-tab-energy" class="active"></a>
@@ -317,10 +319,10 @@ accelerator.
         <div class="row">
           <div class="small-12 medium-10 medium-offset-1 column">
             <div class="quote">
-              "All of us can cooperate…for the care of creation, each according to his or her own culture, experience, involvements, and talents." - Laudato Si'
+              "All of us can cooperate…for the care of creation, each according to his or her own culture, experience, involvements, and talents." - From the Laudato Si' of His Holiness Pope Francis
             </div>
             <h1>Transform Crisis into Opportunity</h1>
-            <h5>Be one of 50 startups to receive mentorship and equity investment.</h5>
+            <h5>Be one of the startups to receive mentorship and equity investment.</h5>
             <a class="btn red" href="https://www.f6s.com/vaticanaccelerator2017/apply"><span>+</span>Apply now</a>
             <p>
               <span class="app-deadline">Application deadline: <b>June 5, 2017</b></span> <span class="divider">|</span> <span class="to-faq">See <a href="/faqs">FAQs</a> for more information.</span>
