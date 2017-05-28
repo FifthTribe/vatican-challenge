@@ -142,6 +142,34 @@
   padding-bottom: 20px;
 }
 
+/*Changes to FAQs page*/
+.faqs-sym {
+  width: 100%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 20px !important;
+}
+
+.questions {
+  max-width: 1100px;
+}
+
+.questions h5 {
+  color: #333333 !important;
+}
+
+.questions p {
+  opacity: .65;
+}
+
+.chapter {
+  color: #B3282D !important;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 @media (max-width: 830px) {
   .nav-content .logo {
     display: none !important;
