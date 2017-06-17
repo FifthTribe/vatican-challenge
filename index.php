@@ -8,12 +8,12 @@
     <div class="slides">
 
       <!-- #1 HOME SLIDE -->
-      <section class="home">
+      <section class="home home-mobile">
         <div class="bound">
           <div class="row full-row">
-            <div class="small-12 medium-7 columns">
-              <h1>Launching startups that sustainably solve the global climate change crisis by 2030</h1>
-              <hr />
+            <div class="small-12 medium-7 columns columns-mobile">
+              <h1 class="mobile-hide">Launching startups that sustainably solve the global climate change crisis by 2030</h1>
+              <hr class="mobile-hide"/>
               <h2>Laudato Si' Startup Challenge</h2>
               <h5 class="inspire">
                 Inspired by <span>Pope Francis</span> to care for our common home

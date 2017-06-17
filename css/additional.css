@@ -195,6 +195,14 @@
     display: none;
   }
 
+  .home-mobile {
+    height: 660px !important;
+  }
+
+  .columns-mobile {
+    margin-top: 350px !important;
+  }
+
   #about .about-canvas .content {
     margin-top: -4em;
   }
