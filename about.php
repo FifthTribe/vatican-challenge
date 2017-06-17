@@ -122,7 +122,7 @@
                 </li>
 		<li>
 		  <p>
-		    <span>Shelly Strebel</span> - Assistance Program Director
+		    <span>Shelly Strebel</span> - Assistant Program Director
 		  </p>
 		  <p class="title">
 		    Imagine Ventures
@@ -146,7 +146,7 @@
                 </li>
                 <li>
                   <p>
-                    <span>Ben Stanfield</span> - Assistance Program Director
+                    <span>Ben Stanfield</span> - Assistant Program Director
                   </p>
                   <p class="title">
                     Iovine &amp; Young Academy, USC
