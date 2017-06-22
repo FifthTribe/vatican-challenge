@@ -39,24 +39,8 @@
                         <span>It takes a village to take care of our global village. <br>We are grateful to be working with:</span><br>
                       </p>
                     </li>
-                      <div class="small-12 column ally-col">
-                        <div class="content row">
-                          <div class="small-12 medium-3 column">
-                              <img class="ally-logo" alt="Right Now" src="img/right-now-logo.png">
-                          </div>
-
-                          <div class="small-12 medium-3 column">
-                              <img class="ally-logo" alt="Earth Day Network" src="img/earth-day-logo.png">
-                          </div>
-
-                          <div class="small-12 medium-3 column">
-                              <img class="ally-logo ally-lrg" alt="Facebook" src="img/facebook-logo.png">
-                          </div>
-
-                          <div class="small-12 medium-3 column">
-                              <img class="ally-logo ally-lrg" alt="Instagram" src="img/instagram-logo.png">
-                          </div>
-                        </div>
+                    <div class="sponsors">
+                      <img src="../img/sponsors-LSC.png">
                     </div>
 
               <br>
@@ -122,7 +106,7 @@
                 </li>
 		<li>
 		  <p>
-		    <span>Shelly Strebel</span> - Assistant Program Director
+		    <span>Shelly Strebel</span> - Brand/Content Strategist
 		  </p>
 		  <p class="title">
 		    Imagine Ventures
