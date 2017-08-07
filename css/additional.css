@@ -1,3 +1,19 @@
+.full-width {
+  background-color: black;
+  padding:50px;
+}
+
+.video-container {
+  width: 100%;
+  text-align:center;
+}
+
+iframe {
+  width: 640px;
+  height: 360px;
+}
+
+
 /*Changes to about page navigation*/
 html {
   background-color: #cccccc !important;

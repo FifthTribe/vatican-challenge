@@ -24,6 +24,13 @@
         </div>
       </section>
 
+      <!-- #1.5 VIDEO SLIDE -->
+      <div class="full-width">
+        <div class="video-container">
+          <iframe src="https://player.vimeo.com/video/222750489" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+
       <!-- #2 AREAS SLIDE -->
       <section class="focus-areas">
         <div class="stat-tabs-wrapper">

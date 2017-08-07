@@ -1,10 +1,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Laudato Si' Start Up Challenge</title>
+  <title>Laudato Si' Challenge</title>
 
-  <meta name="description" content="Laudato Si' Startup Challnge - Inspired by Pope Francis">
-  <meta name="author" content="Laudato Si's Challenge">
+  <meta name="description" content="Laudato Si' Challenge - Inspired by Pope Francis">
+  <meta name="author" content="Laudato Si' Challenge">
+  <meta property="og:image" content="http://cdn.pcwallart.com/images/rome-wallpaper-3.jpg">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
