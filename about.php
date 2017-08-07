@@ -6,26 +6,50 @@
   <div id="about">
     <div class="about-canvas">
       <div class="row">
+        <div class="hero-img mobile-show">
+            <img src="img/rome-hero.jpg" alt="Roman Skyline">
+        </div>
+        <div class="bound">
         <div class="small-12 column">
           <div class="content row">
-            <div class="small-12 medium-6 column about">
-              <h1>About the Challenge</h1>
+            <div class="small-12 medium-7 column about">
+              <div class="hero-img mobile-hide">
+                  <img src="img/rome-hero.jpg" alt="Roman Skyline">
+              </div>
+              <h1>About the Challenge</h1><br>
+
               <p>
                 <span>The Laudato Si’ Startup Challenge, inspired by Pope Francis</span> is a global initiative, an urgent call-to-action, that encourages early to mid-stage startups to grow their breakthrough solutions to the world’s boldest challenges. Teams of young people, of all faiths, all backgrounds, on every continent, are being asked to scale their profitable, innovative and sustainable products and services which address a grand challenge. The challenge category for 2017 is: climate change and involuntary migration. Startup teams from over 100 countries are now being recruited through a direct call-to-action, through global startup ecosystems, university partners and a worldwide executive network. After submitting first-round entries, the field will be narrowed to 50. Following a rigorous, 60-day screening and interview process, a panel of experts will choose the most promising 12 startups (semi-finalists) to advance into an 8-week business accelerator in Rome to expand and scale their solution.
               </p>
               <br>
+                <div class="par-break">
+                  <img style="width:100px;" src="img/symbols.png" alt="The Laudato Si' Startup Challenge">
+                </div>
               <p>
                 Each semi-finalist will be offered an equity investment and mentorship as they work to become one of the finalists. All of the startups that reach the semi-finals stage of The Challenge will receive ongoing support to further define their products and services, with the goal of emerging as fully-investable enterprises. In December, The Laudato Si’ Challenge will culminate with a demo day and grand ceremony inside Vatican City. The global event will celebrate each of the six startups as they present their game-changing products and services to the world, as well as memorialize the 21st Century standard of doing business: profitable, social, mission aligned and bankable.
               </p>
+              <br>
               <h5>MISSION</h5>
-              <p> <span>The Laudato Si’ Startup Challenge</span> wwill unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
+              <p> <span>The Laudato Si’ Startup Challenge</span> will unite humanity in common purpose and productive conversation, much like His Holiness Pope Francis’s “Revolution of Tenderness.” It will be a beacon of new business, inspiring a new generation of entrepreneurs to build for-profit, for-purpose companies that address humanity’s biggest challenges in ways that are beneficial to all.
+              <br><br>
+                  <h5>ALLIANCES</h5>
+                  <ul>
+                    <li>
+                      <p>
+                        <span>It takes a village to take care of our global village. <br>We are grateful to be working with:</span><br>
+                      </p>
+                    </li>
+                    <div class="sponsors">
+                      <img src="../img/sponsors-LSC.png">
+                    </div>
+
               <br>
               <h5>CONTACT</h5>
               <a href="mailto:info@laudatosichallenge.org">info@laudatosichallenge.org</a>
             </div>
-            <div class="small-12 medium-6 column team">
+            <div class="small-12 medium-5 column team">
               <hr>
-              <h1>Key People</h1>
+              <h1>Key People</h1><br>
               <h5>INSPIRATION</h5>
               <ul>
                 <li>
@@ -82,7 +106,7 @@
                 </li>
 		<li>
 		  <p>
-		    <span>Shelly Strebel</span> - Assistance Program Director
+		    <span>Shelly Strebel</span> - Brand/Content Strategist
 		  </p>
 		  <p class="title">
 		    Imagine Ventures
@@ -98,7 +122,7 @@
                 </li>
                 <li>
                   <p>
-                    <span>Jean Marc Ly</span> - Growth Hacker in Residence
+                    <span>Jean-Marc Ly</span> - Growth Hacker in Residence
                   </p>
                   <p class="title">
                     Cofounder, Recime
@@ -106,7 +130,7 @@
                 </li>
                 <li>
                   <p>
-                    <span>Ben Stanfield</span> - Assistance Program Director
+                    <span>Ben Stanfield</span> - Assistant Program Director
                   </p>
                   <p class="title">
                     Iovine &amp; Young Academy, USC
@@ -142,14 +166,6 @@
                 </li>
                 <li>
                   <p>
-                    <span>Caitlin Sparks</span>
-                  </p>
-                  <p class="title">
-                    Partner, FullCycle Energy Fund
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Andrew Mangino</span>
                   </p>
                   <p class="title">
@@ -174,10 +190,10 @@
                 </li>
               </ul>
 
-
             </div>
           </div>
         </div>
+      </div>
       </div>
       <?php include 'includes/footer.php'; ?>
 

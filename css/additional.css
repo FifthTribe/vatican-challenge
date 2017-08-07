@@ -1,0 +1,243 @@
+.full-width {
+  background-color: black;
+  padding:50px;
+}
+
+.video-container {
+  width: 100%;
+  text-align:center;
+}
+
+iframe {
+  width: 640px;
+  height: 360px;
+}
+
+
+/*Changes to about page navigation*/
+html {
+  background-color: #cccccc !important;
+}
+
+.nav {
+  background-color: white;
+  position: fixed;
+  border-bottom: 2px solid #c5c5c5;
+  z-index: 999;
+}
+
+.full-row {
+  max-width: 1400px;
+  width: 88% !important;
+}
+
+.home .bound .row {
+  margin: auto;
+}
+
+.nav-content {
+  width: 90%;
+  padding-bottom: 2em;
+  margin: auto;
+}
+
+.nav .menu {
+  margin-top: 2px;
+  font-size: 1.3em;
+}
+
+.nav .logo img {
+  max-width: 160px;
+}
+
+.about, .faqs {
+  font-size: 1em !important;
+}
+
+.nav .btn {
+  border-radius: 5px;
+}
+
+.focus-areas .stat-tabs-nav {
+  z-index: 998;
+}
+
+
+
+/*Changes to about page*/
+.bound {
+  max-width: 1400px;
+  margin: auto;
+  width: 90%;
+}
+
+#about-body {
+  background-color: #f7f7f7 !important;
+  background-image: none !important;
+}
+
+#about-body h1, p {
+  color: #333333;
+}
+
+#about-body p {
+  font-size: 1.2em;
+}
+
+#about-body .small-12 {
+  margin-top: 30px;
+}
+
+#about a {
+  color: #00aff5 !important;
+}
+
+#about a:hover {
+  color: #0f8daa !important;
+}
+
+#about .content {
+  width: 100%;
+}
+
+#about .content h5 {
+  margin-top: 0px;
+  font-size: 1.2em;
+  color: #B3282D;
+  margin-bottom: 5px;
+}
+
+#about .content .about {
+  padding-right: 30px;
+}
+
+#about .column {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.mobile-show {
+  display: none;
+}
+
+.ally-logo {
+  width: 130px;
+  filter: grayscale(100%);
+}
+
+.ally-lrg {
+  width: 160px;
+}
+
+.ally-col {
+  margin-top: 10px !important;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+.hero-img img {
+  border-bottom: 5px solid #B3282D;
+}
+
+.title {
+  opacity: .40;
+  margin-bottom: 12px !important;
+}
+
+.par-break {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+/*Changes to homepage*/
+.apply .quote {
+  max-width: 800px !important;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+/*Changes to FAQs page*/
+.faqs-sym {
+  width: 100%;
+  text-align: left;
+  margin-top: 0px;
+  margin-bottom: 20px !important;
+}
+
+.questions {
+  max-width: 1100px;
+}
+
+.questions h5 {
+  color: #333333 !important;
+}
+
+.questions p {
+  opacity: .65;
+}
+
+.chapter {
+  color: #B3282D !important;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 830px) {
+  .nav-content .logo {
+    display: none !important;
+  }
+
+  .nav {
+    padding: 1rem 2rem 1em 2rem;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mobile-show {
+    display: block;
+    margin-top: 80px;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .home-mobile {
+    height: 660px !important;
+  }
+
+  .columns-mobile {
+    margin-top: 120px !important;
+  }
+
+  #about .about-canvas .content {
+    margin-top: -4em;
+  }
+
+  #about-body h1 {
+    margin-bottom: -.5em;
+  }
+
+  .ally-col {
+    text-align: center;
+    margin-top: 50px !important;
+    margin-bottom: 40px;
+  }
+
+  .ally-logo {
+    width: 160px;
+  }
+}

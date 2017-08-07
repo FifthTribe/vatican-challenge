@@ -1,10 +1,11 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Laudato Si' Start Up Challenge</title>
+  <title>Laudato Si' Challenge</title>
 
-  <meta name="description" content="Laudato Si' Startup Challnge - Inspired by Pope Francis">
-  <meta name="author" content="Laudato Si's Challenge">
+  <meta name="description" content="Laudato Si' Challenge - Inspired by Pope Francis">
+  <meta name="author" content="Laudato Si' Challenge">
+  <meta property="og:image" content="http://cdn.pcwallart.com/images/rome-wallpaper-3.jpg">
 
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -14,6 +15,8 @@
   <meta name="google-site-verification" content="i4N13S3l865wmPf-0XtT3rl04g7TX-JUHaoFBjTF5NQ" />
 
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/additional.css">
+  <link rel="stylesheet" href="css/faqs.css">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <!--[if lt IE 9]>
