@@ -166,14 +166,6 @@
                 </li>
                 <li>
                   <p>
-                    <span>Caitlin Sparks</span>
-                  </p>
-                  <p class="title">
-                    Partner, FullCycle Energy Fund
-                  </p>
-                </li>
-                <li>
-                  <p>
                     <span>Andrew Mangino</span>
                   </p>
                   <p class="title">
